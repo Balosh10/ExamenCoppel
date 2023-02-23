@@ -21,7 +21,13 @@ extension CPLoginPresenter: CPLoginPresenterProtocol {
     func viewDidLoad() {
         view?.initUI()
     }
+    func logIn(_ name: String, _ password: String) {
+        interactor?.logIn(name, password)
+    }
 }
 
 extension CPLoginPresenter: CPLoginInteractorOutputProtocol {
+    func showInfo(message: String) {
+        view?.showError(text: message)
+    }
 }

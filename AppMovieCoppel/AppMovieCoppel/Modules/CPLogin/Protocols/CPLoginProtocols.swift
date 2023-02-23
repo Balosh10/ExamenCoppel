@@ -11,7 +11,12 @@ import UIKit
 
 protocol CPLoginViewProtocol: AnyObject {
     var presenter: CPLoginPresenterProtocol? { get set }
+    
     func initUI()
+    func setupImageBackground()
+    func setupScrollView()
+    func gradientImageBackground()
+    func showError(text: String)
 }
 
 protocol CPLoginRouterProtocol: AnyObject {
@@ -24,15 +29,20 @@ protocol CPLoginPresenterProtocol: AnyObject {
     var router: CPLoginRouterProtocol? { get set }
     
     func viewDidLoad()
+    func logIn(_ name: String, _ password: String)
 }
 
 protocol CPLoginInteractorOutputProtocol: AnyObject {
+    func showInfo(message: String)
 }
 
 protocol CPLoginInteractorInputProtocol: AnyObject {
     var presenter: CPLoginInteractorOutputProtocol? { get set }
     var localDatamanager: CPLoginLocalDataManagerInputProtocol? { get set }
     var remoteDatamanager: CPLoginRemoteDataManagerInputProtocol? { get set }
+
+    func logIn(_ name: String, _ password: String)
+
 }
 
 protocol CPLoginDataManagerInputProtocol: AnyObject {
@@ -40,9 +50,15 @@ protocol CPLoginDataManagerInputProtocol: AnyObject {
 
 protocol CPLoginRemoteDataManagerInputProtocol: AnyObject {
     var remoteRequestHandler: CPLoginRemoteDataManagerOutputProtocol? { get set }
+    func logIn(_ name: String, _ password: String)
+    func createGuestSessionNew()
+    func createRequestToken()
+    func createSesionWithLogin()
+
 }
 
 protocol CPLoginRemoteDataManagerOutputProtocol: AnyObject {
+    func showInfo(message: String)
 }
 
 protocol CPLoginLocalDataManagerInputProtocol: AnyObject {

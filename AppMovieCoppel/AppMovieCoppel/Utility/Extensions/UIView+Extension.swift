@@ -22,7 +22,7 @@ extension UIView {
         let gradientLayer = CAGradientLayer()
         gradientLayer.type = .axial
         gradientLayer.colors = color
-        gradientLayer.locations = [0, 0.5, 1]
+        gradientLayer.locations = [0, 0.4, 1]
         gradientLayer.frame = CGRect(x: 0,
                                      y: 0,
                                      width: width,

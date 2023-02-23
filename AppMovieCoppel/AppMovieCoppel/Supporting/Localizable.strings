@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  AppMovieCoppel
+
+  Created by osvaldo cespedes on 22/02/23.
+  
+*/
+// Login View
+
+"username" = "Username";
+"password" = "Password";
+
+// Error Services
+"withoutInternet" = "No hay conexión a internet";
+"serviceNotAvailable" = "Servicio no disponible";
+

@@ -15,7 +15,14 @@ class CPLoginInteractor: CPLoginInteractorInputProtocol {
     var localDatamanager: CPLoginLocalDataManagerInputProtocol?
     var remoteDatamanager: CPLoginRemoteDataManagerInputProtocol?
 
+    func logIn(_ name: String, _ password: String) {
+        remoteDatamanager?.logIn(name, password)
+    }
 }
 
 extension CPLoginInteractor: CPLoginRemoteDataManagerOutputProtocol {
+    func showInfo(message: String) {
+        presenter?.showInfo(message: message)
+    }
+    
 }

@@ -8,11 +8,13 @@
 import UIKit
 
 enum colorType: String {
-    case principal = "#FFFFFD"
-    case secundary = "#FFFFFG"
+    case principal = "#46AA0E"
+    case secundary = "#05771A"
     case text100 = "#9F9F9F"
     case white100 = "#FFFFFF"
     case base100 = "#FBFBFB"
+    case red100 = "#D14722"
+    case gray100 = "#C6C6C6"
 }
 
 extension UIColor {
@@ -30,6 +32,12 @@ extension UIColor {
     }
     static var CPBase100: UIColor {
         return .getColorWith(hex: colorType.base100.rawValue)
+    }
+    static var CPRed100: UIColor {
+        return .getColorWith(hex: colorType.red100.rawValue)
+    }
+    static var CPGray100: UIColor {
+        return .getColorWith(hex: colorType.gray100.rawValue)
     }
 }
 extension UIColor {

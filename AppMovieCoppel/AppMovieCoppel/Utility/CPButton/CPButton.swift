@@ -23,6 +23,7 @@ import UIKit
         case secundary = 1
         case transparent = 2
         case backgroundWhite = 3
+        case inactive = 4
     }
     public var styleButton: StyleButton = .primary {
         didSet {
@@ -30,23 +31,22 @@ import UIKit
         }
     }
     internal func loadStyle() {
+        isEnabled = false
+        layer.borderColor = UIColor.clear.cgColor
+        clipsToBounds = true
         switch styleButton {
             case .primary:
-                backgroundColor = .CPPrincipal
-                let text = NSMutableAttributedString().boldText(title, .CPText100, .center, .large)
+                let text = NSMutableAttributedString().boldText(title, .CPWhite100, .center, .large)
                 setAttributedTitle(text, for: .normal)
-                layer.borderWidth = 1
-                layer.borderColor = UIColor.CPSecundary.cgColor
                 layer.cornerRadius = 16
-                clipsToBounds = true
                 contentHorizontalAlignment = .center
+                backgroundColor = .CPPrincipal
                 
             case .secundary:
-                backgroundColor = .CPSecundary
-                let text = NSMutableAttributedString().boldText(title, .CPText100, .center, .large)
+                backgroundColor = .yellow
+                let text = NSMutableAttributedString().boldText(title, .CPWhite100, .center, .large)
                 setAttributedTitle(text, for: .normal)
                 layer.borderWidth = 1
-                layer.borderColor = UIColor.CPPrincipal.cgColor
                 layer.cornerRadius = 16
                 clipsToBounds = true
                 contentHorizontalAlignment = .center
@@ -73,21 +73,25 @@ import UIKit
                 label.attributedText = text
                 titleLabel?.text = ""
                 setTitle("", for: .normal)
-                layer.borderWidth = 0
-                layer.borderColor = UIColor.clear.cgColor
                 layer.cornerRadius = 0
-                clipsToBounds = true
                 contentHorizontalAlignment = .left
                 
             case .backgroundWhite:
-                backgroundColor = .CPWhite100
                 let text = NSMutableAttributedString().boldText(title, .CPText100, .center, .large)
                 setAttributedTitle(text, for: .normal)
                 layer.borderWidth = 1
-                layer.borderColor = UIColor.clear.cgColor
                 layer.cornerRadius = 16
-                clipsToBounds = true
                 contentHorizontalAlignment = .center
+                backgroundColor = .CPWhite100
+
+            case .inactive:
+                let text = NSMutableAttributedString().boldText(title, .CPWhite100, .center, .large)
+                setAttributedTitle(text, for: .normal)
+                layer.cornerRadius = 6
+                contentHorizontalAlignment = .center
+                backgroundColor = .CPGray100
+                isEnabled = true
+                
         }
     }
 }

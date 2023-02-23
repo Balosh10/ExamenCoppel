@@ -19,8 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let backgroundView = CPLoginRouter.createCPLoginModule()
-        window?.rootViewController = UINavigationController(rootViewController: backgroundView)
+        let loginView = CPLoginRouter.createCPLoginModule()
+        window?.rootViewController = loginView
         window?.makeKeyAndVisible()
     }
 
