@@ -4,6 +4,13 @@
 <dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+		<key>UIAppFonts</key>
+		<array>
+			<string>ufonts.com_gotham-bold.ttf</string>
+			<string>ufonts.com_gotham-book.ttf</string>
+			<string>ufonts.com_gotham-light.ttf</string>
+			<string>ufonts.com_gotham-medium.ttf</string>
+		</array>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>

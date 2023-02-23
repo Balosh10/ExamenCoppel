@@ -9,13 +9,39 @@
 /* Begin PBXBuildFile section */
 		F92B26AA29A6D9C8007E97CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26A929A6D9C8007E97CD /* AppDelegate.swift */; };
 		F92B26AC29A6D9C8007E97CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26AB29A6D9C8007E97CD /* SceneDelegate.swift */; };
-		F92B26AE29A6D9C8007E97CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26AD29A6D9C8007E97CD /* ViewController.swift */; };
 		F92B26B129A6D9C8007E97CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92B26AF29A6D9C8007E97CD /* Main.storyboard */; };
 		F92B26B329A6D9CA007E97CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92B26B229A6D9CA007E97CD /* Assets.xcassets */; };
 		F92B26B629A6D9CA007E97CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92B26B429A6D9CA007E97CD /* LaunchScreen.storyboard */; };
 		F92B26C129A6D9CA007E97CD /* AppMovieCoppelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26C029A6D9CA007E97CD /* AppMovieCoppelTests.swift */; };
 		F92B26CB29A6D9CA007E97CD /* AppMovieCoppelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26CA29A6D9CA007E97CD /* AppMovieCoppelUITests.swift */; };
 		F92B26CD29A6D9CA007E97CD /* AppMovieCoppelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26CC29A6D9CA007E97CD /* AppMovieCoppelUITestsLaunchTests.swift */; };
+		F92B26F529A6DA7D007E97CD /* CPLoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26E829A6DA7D007E97CD /* CPLoginProtocols.swift */; };
+		F92B26F629A6DA7D007E97CD /* CPLoginRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26EA29A6DA7D007E97CD /* CPLoginRemoteDataManager.swift */; };
+		F92B26F729A6DA7D007E97CD /* CPLoginLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26EB29A6DA7D007E97CD /* CPLoginLocalDataManager.swift */; };
+		F92B26F829A6DA7D007E97CD /* CPLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26ED29A6DA7D007E97CD /* CPLoginInteractor.swift */; };
+		F92B26F929A6DA7D007E97CD /* CPLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26EF29A6DA7D007E97CD /* CPLoginRouter.swift */; };
+		F92B26FA29A6DA7D007E97CD /* CPLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26F129A6DA7D007E97CD /* CPLoginPresenter.swift */; };
+		F92B26FB29A6DA7D007E97CD /* CPLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26F329A6DA7D007E97CD /* CPLoginView.swift */; };
+		F92B26FF29A6DBFA007E97CD /* CPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26FE29A6DBFA007E97CD /* CPTextField.swift */; };
+		F92B270329A6DD11007E97CD /* CPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B270229A6DD11007E97CD /* CPColor.swift */; };
+		F92B270529A6DD23007E97CD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B270429A6DD23007E97CD /* UIColorExtension.swift */; };
+		F92B270829A6DE71007E97CD /* CPFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B270729A6DE71007E97CD /* CPFont.swift */; };
+		F92B271529A6DF49007E97CD /* ufonts.com_gotham-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B270B29A6DF48007E97CD /* ufonts.com_gotham-bold.ttf */; };
+		F92B271629A6DF49007E97CD /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B270C29A6DF48007E97CD /* RobotoCondensed-Italic.ttf */; };
+		F92B271729A6DF49007E97CD /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B270D29A6DF48007E97CD /* RobotoCondensed-LightItalic.ttf */; };
+		F92B271829A6DF49007E97CD /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B270E29A6DF48007E97CD /* RobotoCondensed-Regular.ttf */; };
+		F92B271929A6DF49007E97CD /* ufonts.com_gotham-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B270F29A6DF49007E97CD /* ufonts.com_gotham-light.ttf */; };
+		F92B271A29A6DF49007E97CD /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B271029A6DF49007E97CD /* RobotoCondensed-Light.ttf */; };
+		F92B271B29A6DF49007E97CD /* ufonts.com_gotham-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B271129A6DF49007E97CD /* ufonts.com_gotham-medium.ttf */; };
+		F92B271C29A6DF49007E97CD /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B271229A6DF49007E97CD /* RobotoCondensed-Bold.ttf */; };
+		F92B271D29A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B271329A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf */; };
+		F92B271E29A6DF49007E97CD /* ufonts.com_gotham-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B271429A6DF49007E97CD /* ufonts.com_gotham-book.ttf */; };
+		F92B272129A6E3A3007E97CD /* CPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272029A6E3A3007E97CD /* CPButton.swift */; };
+		F92B272429A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272329A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift */; };
+		F92B272729A6F07B007E97CD /* CPIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272629A6F07B007E97CD /* CPIcon.swift */; };
+		F92B272929A6F352007E97CD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272829A6F352007E97CD /* UIView+Extension.swift */; };
+		F92B272B29A6F44C007E97CD /* MyTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272A29A6F44C007E97CD /* MyTapGestureRecognizer.swift */; };
+		F92B272D29A6F6BD007E97CD /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272C29A6F6BD007E97CD /* UIVIewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +65,6 @@
 		F92B26A629A6D9C8007E97CD /* AppMovieCoppel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMovieCoppel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92B26A929A6D9C8007E97CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92B26AB29A6D9C8007E97CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F92B26AD29A6D9C8007E97CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F92B26B029A6D9C8007E97CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F92B26B229A6D9CA007E97CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92B26B529A6D9CA007E97CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +74,33 @@
 		F92B26C629A6D9CA007E97CD /* AppMovieCoppelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppMovieCoppelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92B26CA29A6D9CA007E97CD /* AppMovieCoppelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMovieCoppelUITests.swift; sourceTree = "<group>"; };
 		F92B26CC29A6D9CA007E97CD /* AppMovieCoppelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMovieCoppelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F92B26E829A6DA7D007E97CD /* CPLoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginProtocols.swift; sourceTree = "<group>"; };
+		F92B26EA29A6DA7D007E97CD /* CPLoginRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginRemoteDataManager.swift; sourceTree = "<group>"; };
+		F92B26EB29A6DA7D007E97CD /* CPLoginLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginLocalDataManager.swift; sourceTree = "<group>"; };
+		F92B26ED29A6DA7D007E97CD /* CPLoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginInteractor.swift; sourceTree = "<group>"; };
+		F92B26EF29A6DA7D007E97CD /* CPLoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginRouter.swift; sourceTree = "<group>"; };
+		F92B26F129A6DA7D007E97CD /* CPLoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginPresenter.swift; sourceTree = "<group>"; };
+		F92B26F329A6DA7D007E97CD /* CPLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginView.swift; sourceTree = "<group>"; };
+		F92B26FE29A6DBFA007E97CD /* CPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPTextField.swift; sourceTree = "<group>"; };
+		F92B270229A6DD11007E97CD /* CPColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPColor.swift; sourceTree = "<group>"; };
+		F92B270429A6DD23007E97CD /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		F92B270729A6DE71007E97CD /* CPFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFont.swift; sourceTree = "<group>"; };
+		F92B270B29A6DF48007E97CD /* ufonts.com_gotham-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-bold.ttf"; sourceTree = "<group>"; };
+		F92B270C29A6DF48007E97CD /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		F92B270D29A6DF48007E97CD /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		F92B270E29A6DF48007E97CD /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		F92B270F29A6DF49007E97CD /* ufonts.com_gotham-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-light.ttf"; sourceTree = "<group>"; };
+		F92B271029A6DF49007E97CD /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		F92B271129A6DF49007E97CD /* ufonts.com_gotham-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-medium.ttf"; sourceTree = "<group>"; };
+		F92B271229A6DF49007E97CD /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		F92B271329A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F92B271429A6DF49007E97CD /* ufonts.com_gotham-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-book.ttf"; sourceTree = "<group>"; };
+		F92B272029A6E3A3007E97CD /* CPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPButton.swift; sourceTree = "<group>"; };
+		F92B272329A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		F92B272629A6F07B007E97CD /* CPIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPIcon.swift; sourceTree = "<group>"; };
+		F92B272829A6F352007E97CD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F92B272A29A6F44C007E97CD /* MyTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTapGestureRecognizer.swift; sourceTree = "<group>"; };
+		F92B272C29A6F6BD007E97CD /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +151,11 @@
 		F92B26A829A6D9C8007E97CD /* AppMovieCoppel */ = {
 			isa = PBXGroup;
 			children = (
+				F92B270929A6DE9A007E97CD /* Resources */,
+				F92B26FD29A6DBDF007E97CD /* Utility */,
+				F92B26D929A6DA51007E97CD /* Modulos */,
 				F92B26A929A6D9C8007E97CD /* AppDelegate.swift */,
 				F92B26AB29A6D9C8007E97CD /* SceneDelegate.swift */,
-				F92B26AD29A6D9C8007E97CD /* ViewController.swift */,
 				F92B26AF29A6D9C8007E97CD /* Main.storyboard */,
 				F92B26B229A6D9CA007E97CD /* Assets.xcassets */,
 				F92B26B429A6D9CA007E97CD /* LaunchScreen.storyboard */,
@@ -125,6 +179,166 @@
 				F92B26CC29A6D9CA007E97CD /* AppMovieCoppelUITestsLaunchTests.swift */,
 			);
 			path = AppMovieCoppelUITests;
+			sourceTree = "<group>";
+		};
+		F92B26D929A6DA51007E97CD /* Modulos */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26DA29A6DA5B007E97CD /* CPLogin */,
+			);
+			path = Modulos;
+			sourceTree = "<group>";
+		};
+		F92B26DA29A6DA5B007E97CD /* CPLogin */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26E929A6DA7D007E97CD /* Entity */,
+				F92B26EC29A6DA7D007E97CD /* Interactor */,
+				F92B26F029A6DA7D007E97CD /* Presenter */,
+				F92B26E729A6DA7D007E97CD /* Protocols */,
+				F92B26EE29A6DA7D007E97CD /* Router */,
+				F92B26F229A6DA7D007E97CD /* View */,
+			);
+			path = CPLogin;
+			sourceTree = "<group>";
+		};
+		F92B26E729A6DA7D007E97CD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26E829A6DA7D007E97CD /* CPLoginProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F92B26E929A6DA7D007E97CD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26EA29A6DA7D007E97CD /* CPLoginRemoteDataManager.swift */,
+				F92B26EB29A6DA7D007E97CD /* CPLoginLocalDataManager.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F92B26EC29A6DA7D007E97CD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26ED29A6DA7D007E97CD /* CPLoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F92B26EE29A6DA7D007E97CD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26EF29A6DA7D007E97CD /* CPLoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F92B26F029A6DA7D007E97CD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26F129A6DA7D007E97CD /* CPLoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F92B26F229A6DA7D007E97CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26F329A6DA7D007E97CD /* CPLoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F92B26FD29A6DBDF007E97CD /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F92B272229A6E3E4007E97CD /* Extensions */,
+				F92B272529A6F070007E97CD /* CPIcon */,
+				F92B271F29A6E388007E97CD /* CPButton */,
+				F92B270629A6DE66007E97CD /* CPFont */,
+				F92B270129A6DC6F007E97CD /* CPColor */,
+				F92B270029A6DC64007E97CD /* CPTextField */,
+				F92B272A29A6F44C007E97CD /* MyTapGestureRecognizer.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F92B270029A6DC64007E97CD /* CPTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26FE29A6DBFA007E97CD /* CPTextField.swift */,
+			);
+			path = CPTextField;
+			sourceTree = "<group>";
+		};
+		F92B270129A6DC6F007E97CD /* CPColor */ = {
+			isa = PBXGroup;
+			children = (
+				F92B270229A6DD11007E97CD /* CPColor.swift */,
+				F92B270429A6DD23007E97CD /* UIColorExtension.swift */,
+			);
+			path = CPColor;
+			sourceTree = "<group>";
+		};
+		F92B270629A6DE66007E97CD /* CPFont */ = {
+			isa = PBXGroup;
+			children = (
+				F92B270729A6DE71007E97CD /* CPFont.swift */,
+			);
+			path = CPFont;
+			sourceTree = "<group>";
+		};
+		F92B270929A6DE9A007E97CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F92B270A29A6DEA0007E97CD /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F92B270A29A6DEA0007E97CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F92B271229A6DF49007E97CD /* RobotoCondensed-Bold.ttf */,
+				F92B271329A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf */,
+				F92B270C29A6DF48007E97CD /* RobotoCondensed-Italic.ttf */,
+				F92B271029A6DF49007E97CD /* RobotoCondensed-Light.ttf */,
+				F92B270D29A6DF48007E97CD /* RobotoCondensed-LightItalic.ttf */,
+				F92B270E29A6DF48007E97CD /* RobotoCondensed-Regular.ttf */,
+				F92B270B29A6DF48007E97CD /* ufonts.com_gotham-bold.ttf */,
+				F92B271429A6DF49007E97CD /* ufonts.com_gotham-book.ttf */,
+				F92B270F29A6DF49007E97CD /* ufonts.com_gotham-light.ttf */,
+				F92B271129A6DF49007E97CD /* ufonts.com_gotham-medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F92B271F29A6E388007E97CD /* CPButton */ = {
+			isa = PBXGroup;
+			children = (
+				F92B272029A6E3A3007E97CD /* CPButton.swift */,
+			);
+			path = CPButton;
+			sourceTree = "<group>";
+		};
+		F92B272229A6E3E4007E97CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F92B272329A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift */,
+				F92B272829A6F352007E97CD /* UIView+Extension.swift */,
+				F92B272C29A6F6BD007E97CD /* UIVIewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F92B272529A6F070007E97CD /* CPIcon */ = {
+			isa = PBXGroup;
+			children = (
+				F92B272629A6F07B007E97CD /* CPIcon.swift */,
+			);
+			path = CPIcon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +445,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92B271729A6DF49007E97CD /* RobotoCondensed-LightItalic.ttf in Resources */,
+				F92B271A29A6DF49007E97CD /* RobotoCondensed-Light.ttf in Resources */,
+				F92B271D29A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				F92B26B629A6D9CA007E97CD /* LaunchScreen.storyboard in Resources */,
+				F92B271829A6DF49007E97CD /* RobotoCondensed-Regular.ttf in Resources */,
 				F92B26B329A6D9CA007E97CD /* Assets.xcassets in Resources */,
 				F92B26B129A6D9C8007E97CD /* Main.storyboard in Resources */,
+				F92B271E29A6DF49007E97CD /* ufonts.com_gotham-book.ttf in Resources */,
+				F92B271529A6DF49007E97CD /* ufonts.com_gotham-bold.ttf in Resources */,
+				F92B271629A6DF49007E97CD /* RobotoCondensed-Italic.ttf in Resources */,
+				F92B271929A6DF49007E97CD /* ufonts.com_gotham-light.ttf in Resources */,
+				F92B271B29A6DF49007E97CD /* ufonts.com_gotham-medium.ttf in Resources */,
+				F92B271C29A6DF49007E97CD /* RobotoCondensed-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +482,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92B26AE29A6D9C8007E97CD /* ViewController.swift in Sources */,
+				F92B26FF29A6DBFA007E97CD /* CPTextField.swift in Sources */,
+				F92B26F629A6DA7D007E97CD /* CPLoginRemoteDataManager.swift in Sources */,
+				F92B26FB29A6DA7D007E97CD /* CPLoginView.swift in Sources */,
+				F92B272729A6F07B007E97CD /* CPIcon.swift in Sources */,
+				F92B26F729A6DA7D007E97CD /* CPLoginLocalDataManager.swift in Sources */,
+				F92B26FA29A6DA7D007E97CD /* CPLoginPresenter.swift in Sources */,
+				F92B26F929A6DA7D007E97CD /* CPLoginRouter.swift in Sources */,
+				F92B272929A6F352007E97CD /* UIView+Extension.swift in Sources */,
+				F92B26F829A6DA7D007E97CD /* CPLoginInteractor.swift in Sources */,
 				F92B26AA29A6D9C8007E97CD /* AppDelegate.swift in Sources */,
+				F92B272D29A6F6BD007E97CD /* UIVIewController+Extension.swift in Sources */,
+				F92B272429A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift in Sources */,
+				F92B270829A6DE71007E97CD /* CPFont.swift in Sources */,
+				F92B26F529A6DA7D007E97CD /* CPLoginProtocols.swift in Sources */,
+				F92B272129A6E3A3007E97CD /* CPButton.swift in Sources */,
+				F92B270329A6DD11007E97CD /* CPColor.swift in Sources */,
+				F92B272B29A6F44C007E97CD /* MyTapGestureRecognizer.swift in Sources */,
 				F92B26AC29A6D9C8007E97CD /* SceneDelegate.swift in Sources */,
+				F92B270529A6DD23007E97CD /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +683,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,8 +711,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
