@@ -92,6 +92,15 @@ extension CPTapBarView: CPTapBarViewProtocol {
         showMenu(asChildViewController: menuTop)
     }
     @objc func didTapMenu() {
-       
+        CPAlert.shared.actionSheet(targetVC: self) { response in
+            switch response {
+                case .viewProfile:
+                    print("viewProfile")
+                    let profileView = CPProfileRouter.createCPProfileModule()
+                    self.present(profileView, animated: true)
+                case .logOut:
+                    print("logOut")
+            }
+        }
     }
 }

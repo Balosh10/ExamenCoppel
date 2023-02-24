@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class MovieCollectionViewDelegate<CELL : UICollectionViewCell,T> : NSObject, UICollectionViewDelegate {
+class CPCollectionViewDelegate<CELL : UICollectionViewCell,T> : NSObject, UICollectionViewDelegate {
     
     private var cellIdentifier : String!
     private var items : [T]?

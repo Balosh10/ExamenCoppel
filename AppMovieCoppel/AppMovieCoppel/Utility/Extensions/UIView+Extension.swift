@@ -22,14 +22,12 @@ extension UIView {
         layer.insertSublayer(gradientLayer, at:0)
     }
     
-    func radiusCircle(_ backgroundColor: UIColor = .CPWhite100,
-                      _ borderColor: UIColor = .CPWhite100) {
-        layer.cornerRadius = layer.frame.width / 2
-        clipsToBounds = true
-        self.backgroundColor = backgroundColor
+    func radiusCircle() {
         layer.borderWidth = 1
-        layer.borderColor = borderColor.withAlphaComponent(0.5).cgColor
-        
+        layer.masksToBounds = false
+        layer.borderColor = UIColor.black.cgColor
+        layer.cornerRadius = self.frame.height / 2
+        clipsToBounds = true
     }
     
     func radiusView(radius: CGFloat = 10.0, _ backgroundColor: UIColor = .CPWhite100){
@@ -62,20 +60,6 @@ extension UIView {
         let backgroundCGColor = backgroundColor?.cgColor
         backgroundColor = nil
         layer.backgroundColor =  backgroundCGColor
-    }
-    func addSubviews(_ views: UIView...) {
-        views.forEach{ addSubview($0) }
-    }
-    func animationView() {
-        isHidden = true
-        UIView.transition(with: self, duration: 0.5, options: .transitionCrossDissolve, animations: {
-            self.isHidden = false
-        })
-    }
-    func removeFromSuperviewAll(tag:Int) {
-        while let viewRemove = viewWithTag(tag) {
-            viewRemove.removeFromSuperview()
-        }
     }
     func addTapGesture(action: @escaping () -> Void) {
         let tap = MyTapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
