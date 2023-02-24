@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol MovieCollectionViewCellDelegate: AnyObject {
+/*protocol MovieCollectionViewCellDelegate: AnyObject {
     func collectionView(collectionviewcell: MovieCollectionViewCell?,
                         selectMovie: CollectionMoviesModel?,
                         didTappedInTableViewCell: MovieTableViewCell)
     // other delegate methods that you can define to perform action in viewcontroller
-}
+}*/
 
 class MovieTableViewCell: UITableViewCell {
     
@@ -20,7 +20,7 @@ class MovieTableViewCell: UITableViewCell {
     static var cellCollectionViewIdentifier = "MovieCollectionViewCell"
     private var collectiondataSource : MovieCollectionViewDataSource<MovieCollectionViewCell, CollectionMoviesModel>!
     private var collectionDelegate : MovieCollectionViewDelegate<MovieCollectionViewCell, CollectionMoviesModel>!
-    weak var cellDelegate: MovieCollectionViewCellDelegate?
+   // weak var cellDelegate: MovieCollectionViewCellDelegate?
     
     var movie: SubCategoryModel? {
         didSet {
@@ -86,9 +86,9 @@ extension MovieTableViewCell {
         self.collectionDelegate = MovieCollectionViewDelegate(cellIdentifier: MovieTableViewCell.cellCollectionViewIdentifier,
                                                               items: row,
                                                               configureCell: { (cellCollection, itemMovie) in
-            self.cellDelegate?.collectionView(collectionviewcell: cellCollection,
+           /* self.cellDelegate?.collectionView(collectionviewcell: cellCollection,
                                               selectMovie: itemMovie,
-                                              didTappedInTableViewCell: self)
+                                              didTappedInTableViewCell: self)*/
         })
         
         

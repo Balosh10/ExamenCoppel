@@ -56,6 +56,7 @@ import UIKit
     }
     func showVC(asChildViewController viewController: UIViewController) {
         removeChild(viewController)
+        removeChild()
         addSelectChild(viewController)
     }
     func showMenu(asChildViewController viewController: UIViewController) {

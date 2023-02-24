@@ -18,7 +18,7 @@ class CPAiringTodayView: UIViewController {
    // private var cellIdentifier = "movieTableViewCell"
     //private var headerCellIdentifier = "movieHeaderTableViewCell"
     // MARK: Lifecycle
-    private var movieCollectioViewCell: UICollectionView?
+    private var movieCollectioView: UICollectionView?
     private var cellCollectionViewIdentifier = "MovieCollectionViewCell"
     private var collectiondataSource : MovieCollectionViewDataSource<MovieCollectionViewCell, CollectionMoviesModel>!
     private var collectionDelegate : MovieCollectionViewDelegate<MovieCollectionViewCell, CollectionMoviesModel>!
@@ -45,17 +45,21 @@ extension CPAiringTodayView: CPAiringTodayViewProtocol {
         tableView.rowHeight = 300
         tableView.reloadData()*/
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.scrollDirection = .horizontal
-        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
-        flowLayout.itemSize = CGSize(width: 200, height: 300)
-        flowLayout.minimumLineSpacing = 6
-        flowLayout.minimumInteritemSpacing = 16
-        movieCollectioViewCell = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
-        movieCollectioViewCell?.collectionViewLayout = flowLayout
-        movieCollectioViewCell?.showsHorizontalScrollIndicator = false
-        movieCollectioViewCell?.translatesAutoresizingMaskIntoConstraints = false
-        movieCollectioViewCell?.backgroundColor = .clear
-        guard let collection = movieCollectioViewCell else {
+        //flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
+       // flowLayout.itemSize = CGSize(width: 200, height: 300)
+        flowLayout.scrollDirection = .vertical
+        flowLayout.minimumLineSpacing = 10
+        flowLayout.minimumInteritemSpacing = 10
+        let size = CGSize(width: (UIScreen.main.bounds.width - 30) / 2, height: 250)
+        flowLayout.itemSize = size
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        movieCollectioView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+        movieCollectioView?.collectionViewLayout = flowLayout
+        movieCollectioView?.showsHorizontalScrollIndicator = false
+        movieCollectioView?.translatesAutoresizingMaskIntoConstraints = false
+        movieCollectioView?.backgroundColor = .clear
+        
+        guard let collection = movieCollectioView else {
             return
         }
         view.addSubview(collection)
@@ -78,8 +82,8 @@ extension CPAiringTodayView: CPAiringTodayViewProtocol {
         updateCellWith(row: moview.results)
     }
     var collectionViewOffset: CGFloat {
-        set { movieCollectioViewCell?.contentOffset.x = newValue }
-        get { return movieCollectioViewCell?.contentOffset.x ?? 0}
+        set { movieCollectioView?.contentOffset.x = newValue }
+        get { return movieCollectioView?.contentOffset.x ?? 0}
     }
     func updateCellWith(row: [CollectionMoviesModel]?) {
         self.collectiondataSource = MovieCollectionViewDataSource(cellIdentifier: MovieTableViewCell.cellCollectionViewIdentifier,
@@ -101,13 +105,12 @@ extension CPAiringTodayView: CPAiringTodayViewProtocol {
                 //                              didTappedInTableViewCell: self)
         })
         
-        
         DispatchQueue.main.async {
-            self.movieCollectioViewCell?.delegate = self.collectionDelegate
-            self.movieCollectioViewCell?.dataSource = self.collectiondataSource
-            self.movieCollectioViewCell?.register(UINib(nibName: MovieTableViewCell.cellCollectionViewIdentifier, bundle: nil),
+            self.movieCollectioView?.delegate = self.collectionDelegate
+            self.movieCollectioView?.dataSource = self.collectiondataSource
+            self.movieCollectioView?.register(UINib(nibName: MovieTableViewCell.cellCollectionViewIdentifier, bundle: nil),
                                                  forCellWithReuseIdentifier: MovieTableViewCell.cellCollectionViewIdentifier)
-            self.movieCollectioViewCell?.reloadData()
+            self.movieCollectioView?.reloadData()
         }
     }
     
@@ -139,7 +142,7 @@ extension CPAiringTodayView: CPAiringTodayViewProtocol {
         }*/
     }*/
 }
-extension CPAiringTodayView: MovieCollectionViewCellDelegate {
+/*extension CPAiringTodayView: MovieCollectionViewCellDelegate {
     
     func collectionView(collectionviewcell: MovieCollectionViewCell?,
                         selectMovie: CollectionMoviesModel?,
@@ -151,3 +154,4 @@ extension CPAiringTodayView: MovieCollectionViewCellDelegate {
           */  // You can also do changes to the cell you tapped using the 'collectionviewcell'
     }
 }
+*/
