@@ -8,13 +8,12 @@
 import Foundation
 
 struct CPRequestToken: Codable {
-    let success, failure: Bool
-    let statusCode: Int
-    let statusMessage: String
-
+    let success: Bool
+    let expiresAt, requestToken: String
+    
     enum CodingKeys: String, CodingKey {
-        case success, failure
-        case statusCode = "status_code"
-        case statusMessage = "status_message"
+        case success
+        case expiresAt = "expires_at"
+        case requestToken = "request_token"
     }
 }

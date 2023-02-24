@@ -9,11 +9,10 @@ import Foundation
 
 struct CPGuestSessionNew: Codable {
     let success: Bool
-    let expiresAt, requestToken: String
-
+    let sessionID: String
+    
     enum CodingKeys: String, CodingKey {
         case success
-        case expiresAt = "expires_at"
-        case requestToken = "request_token"
+        case sessionID = "session_id"
     }
 }

@@ -11,6 +11,7 @@ import Foundation
 enum CpImagen: String {
     case logoMovie
     case background
+    case icMenu
 }
 
 struct CPIcon {

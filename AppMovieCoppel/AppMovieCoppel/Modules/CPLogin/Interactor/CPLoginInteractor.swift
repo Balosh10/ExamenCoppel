@@ -12,7 +12,6 @@ class CPLoginInteractor: CPLoginInteractorInputProtocol {
 
     // MARK: Properties
     weak var presenter: CPLoginInteractorOutputProtocol?
-    var localDatamanager: CPLoginLocalDataManagerInputProtocol?
     var remoteDatamanager: CPLoginRemoteDataManagerInputProtocol?
 
     func logIn(_ name: String, _ password: String) {
@@ -24,5 +23,7 @@ extension CPLoginInteractor: CPLoginRemoteDataManagerOutputProtocol {
     func showInfo(message: String) {
         presenter?.showInfo(message: message)
     }
-    
+    func presentDashboard() {
+        presenter?.presentDashboard()
+    }
 }

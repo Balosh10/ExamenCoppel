@@ -37,7 +37,8 @@ extension APIService {
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             self.printRequest(urlRequest: urlRequest,
                               data: data,
-                              error: error?.localizedDescription)
+                              error: error?.localizedDescription,
+                              code: (response as? HTTPURLResponse)?.statusCode ?? 0)
             guard let safeData = data,
                   let response = response as? HTTPURLResponse,
                   error == nil else {
@@ -91,13 +92,15 @@ extension APIService {
     
     private func printRequest(urlRequest: URLRequest,
                               data: Data?,
-                              error: String?) {
+                              error: String?,
+                              code: Int) {
         
         guard Setting.activePrintRequest else {
             return
         }
         
         debugPrint("-------- REQUEST INFORMATION --------------")
+        debugPrint("Code: \(code)")
         debugPrint("URL: \(urlRequest.url!)")
         debugPrint("METHOD: \(String(describing: urlRequest.httpMethod))")
         debugPrint("Request Header: \(String(describing: urlRequest.allHTTPHeaderFields))")

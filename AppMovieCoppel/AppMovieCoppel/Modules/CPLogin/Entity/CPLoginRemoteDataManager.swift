@@ -22,12 +22,12 @@ class CPLoginRemoteDataManager: CPLoginRemoteDataManagerInputProtocol {
     
     func createRequestToken() {
         loginService = CPLoginService(repository: CPLoginRepositoryHttp())
-        loginService?.createGuestSessionNew() { [weak self] result in
+        loginService?.createRequestToken() { [weak self] result in
             guard let self = self else { return }
             switch result {
-                case .success(let success):
-                    if !success.requestToken.isEmpty {
-                        CPSession.shared.saveValue(.request_token, value: success.requestToken)
+                case .success(let result):
+                    if result.success {
+                        CPSession.shared.saveValue(.requestToken, value: result.requestToken)
                         self.createSesionWithLogin()
                     } else  {
                         self.remoteRequestHandler?.showInfo(message: Localizable.text(.serviceNotAvailable))
@@ -39,29 +39,44 @@ class CPLoginRemoteDataManager: CPLoginRemoteDataManagerInputProtocol {
         }
     }
     
-    func createGuestSessionNew() {
-        
-    }
-    
     func createSesionWithLogin() {
         guard let name = self.name,
               let password = self.password else {
-            print("!no hay credenciales")
+            self.remoteRequestHandler?.showInfo(message: Localizable.text(.credentialsRequired))
             return
         }
         loginService = CPLoginService(repository: CPLoginRepositoryHttp())
         loginService?.createSesionWithLogin(name, password) { [weak self] result in
             guard let self = self else { return }
             switch result {
-                case .success(let success):
-                    if !success.requestToken.isEmpty {
-                        CPSession.shared.saveValue(.request_token, value: success.requestToken)
-                        self.createSesionWithLogin()
+                case .success(let result):
+                    if result.success {
+                        CPSession.shared.saveValue(.requestToken, value: result.requestToken)
+                        self.createGuestSessionNew()
                     } else  {
-                        print("Error: \(success)")
+                        self.remoteRequestHandler?.showInfo(message: Localizable.text(.serviceNotAvailable))
                     }
                 case .failure(let failure):
-                    print("Error: \(failure)")
+                    self.remoteRequestHandler?.showInfo(message: failure.localizedDescription)
+            }
+            self.loginService = nil
+        }
+    }
+    
+    func createGuestSessionNew() {
+        loginService = CPLoginService(repository: CPLoginRepositoryHttp())
+        loginService?.createGuestSessionNew() { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+                case .success(let result):
+                    if result.success {
+                        CPSession.shared.saveValue(.sessionId, value: result.sessionID)
+                        self.remoteRequestHandler?.presentDashboard()
+                    } else  {
+                        self.remoteRequestHandler?.showInfo(message: Localizable.text(.serviceNotAvailable))
+                    }
+                case .failure(let failure):
+                    self.remoteRequestHandler?.showInfo(message: failure.localizedDescription)
             }
             self.loginService = nil
         }

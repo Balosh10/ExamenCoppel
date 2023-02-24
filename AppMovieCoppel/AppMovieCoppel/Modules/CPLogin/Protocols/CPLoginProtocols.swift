@@ -21,6 +21,7 @@ protocol CPLoginViewProtocol: AnyObject {
 
 protocol CPLoginRouterProtocol: AnyObject {
     static func createCPLoginModule() -> UIViewController
+    func presentDashboard(from view: CPLoginViewProtocol?)
 }
 
 protocol CPLoginPresenterProtocol: AnyObject {
@@ -34,32 +35,25 @@ protocol CPLoginPresenterProtocol: AnyObject {
 
 protocol CPLoginInteractorOutputProtocol: AnyObject {
     func showInfo(message: String)
+    func presentDashboard()
 }
 
 protocol CPLoginInteractorInputProtocol: AnyObject {
     var presenter: CPLoginInteractorOutputProtocol? { get set }
-    var localDatamanager: CPLoginLocalDataManagerInputProtocol? { get set }
     var remoteDatamanager: CPLoginRemoteDataManagerInputProtocol? { get set }
 
     func logIn(_ name: String, _ password: String)
 
 }
-
-protocol CPLoginDataManagerInputProtocol: AnyObject {
-}
-
 protocol CPLoginRemoteDataManagerInputProtocol: AnyObject {
     var remoteRequestHandler: CPLoginRemoteDataManagerOutputProtocol? { get set }
     func logIn(_ name: String, _ password: String)
-    func createGuestSessionNew()
     func createRequestToken()
     func createSesionWithLogin()
-
+    func createGuestSessionNew()
 }
 
 protocol CPLoginRemoteDataManagerOutputProtocol: AnyObject {
     func showInfo(message: String)
-}
-
-protocol CPLoginLocalDataManagerInputProtocol: AnyObject {
+    func presentDashboard()
 }

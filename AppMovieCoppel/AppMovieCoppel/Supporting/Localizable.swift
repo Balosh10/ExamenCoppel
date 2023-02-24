@@ -23,19 +23,26 @@ extension LocalizableDelegate {
 }
 
 enum Localizable {
-    enum loginView: String, LocalizableDelegate {
+    enum LoginView: String, LocalizableDelegate {
         case username
         case password
+        case credentialsRequired
     }
-    enum errorService: String, LocalizableDelegate {
+    enum TapBar: String, LocalizableDelegate {
+        case tvShow
+    }
+    enum ErrorService: String, LocalizableDelegate {
         case withoutInternet
         case serviceNotAvailable
 
     }
-    static func text(_ description: loginView) -> String {
+    static func text(_ description: LoginView) -> String {
         return description.localized
     }
-    static func text(_ description: errorService) -> String {
+    static func text(_ description: ErrorService) -> String {
+        return description.localized
+    }
+    static func text(_ description: TapBar) -> String {
         return description.localized
     }
 }

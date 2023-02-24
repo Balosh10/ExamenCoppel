@@ -16,7 +16,6 @@
 		F92B26CD29A6D9CA007E97CD /* AppMovieCoppelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26CC29A6D9CA007E97CD /* AppMovieCoppelUITestsLaunchTests.swift */; };
 		F92B26F529A6DA7D007E97CD /* CPLoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26E829A6DA7D007E97CD /* CPLoginProtocols.swift */; };
 		F92B26F629A6DA7D007E97CD /* CPLoginRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26EA29A6DA7D007E97CD /* CPLoginRemoteDataManager.swift */; };
-		F92B26F729A6DA7D007E97CD /* CPLoginLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26EB29A6DA7D007E97CD /* CPLoginLocalDataManager.swift */; };
 		F92B26F829A6DA7D007E97CD /* CPLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26ED29A6DA7D007E97CD /* CPLoginInteractor.swift */; };
 		F92B26F929A6DA7D007E97CD /* CPLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26EF29A6DA7D007E97CD /* CPLoginRouter.swift */; };
 		F92B26FA29A6DA7D007E97CD /* CPLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26F129A6DA7D007E97CD /* CPLoginPresenter.swift */; };
@@ -40,6 +39,29 @@
 		F92B272929A6F352007E97CD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272829A6F352007E97CD /* UIView+Extension.swift */; };
 		F92B272B29A6F44C007E97CD /* MyTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272A29A6F44C007E97CD /* MyTapGestureRecognizer.swift */; };
 		F92B272D29A6F6BD007E97CD /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272C29A6F6BD007E97CD /* UIVIewController+Extension.swift */; };
+		F993FD6E29A7CA7F00081A69 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD6D29A7CA7F00081A69 /* UIApplication+Extension.swift */; };
+		F993FD8A29A7CC6400081A69 /* CPBackgroundRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD7D29A7CC6400081A69 /* CPBackgroundRouter.swift */; };
+		F993FD8D29A7CC6400081A69 /* CPBackgroundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD8229A7CC6400081A69 /* CPBackgroundPresenter.swift */; };
+		F993FD8E29A7CC6400081A69 /* CPBackgroundInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD8429A7CC6400081A69 /* CPBackgroundInteractor.swift */; };
+		F993FD8F29A7CC6400081A69 /* CPBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD8629A7CC6400081A69 /* CPBackgroundView.swift */; };
+		F993FD9129A7CC6400081A69 /* CPBackgroundProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD8929A7CC6400081A69 /* CPBackgroundProtocols.swift */; };
+		F993FD9329A7CE7C00081A69 /* loader_d.json in Resources */ = {isa = PBXBuildFile; fileRef = F993FD9229A7CE7C00081A69 /* loader_d.json */; };
+		F993FDB629A7DC1200081A69 /* CPAiringTodayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDA929A7DC1200081A69 /* CPAiringTodayRouter.swift */; };
+		F993FDB829A7DC1200081A69 /* CPAiringTodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDAC29A7DC1200081A69 /* CPAiringTodayView.swift */; };
+		F993FDB929A7DC1200081A69 /* CPAiringTodayProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDAE29A7DC1200081A69 /* CPAiringTodayProtocols.swift */; };
+		F993FDBA29A7DC1200081A69 /* CPAiringTodayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDB029A7DC1200081A69 /* CPAiringTodayInteractor.swift */; };
+		F993FDBB29A7DC1200081A69 /* CPAiringTodayRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDB229A7DC1200081A69 /* CPAiringTodayRemoteDataManager.swift */; };
+		F993FDBC29A7DC1200081A69 /* CPAiringTodayLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDB329A7DC1200081A69 /* CPAiringTodayLocalDataManager.swift */; };
+		F993FDBD29A7DC1200081A69 /* CPAiringTodayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDB529A7DC1200081A69 /* CPAiringTodayPresenter.swift */; };
+		F993FE0029A8459A00081A69 /* CPTapBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDF329A8459A00081A69 /* CPTapBarInteractor.swift */; };
+		F993FE0129A8459A00081A69 /* CPTapBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDF529A8459A00081A69 /* CPTapBarRouter.swift */; };
+		F993FE0229A8459A00081A69 /* CPTapBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDF729A8459A00081A69 /* CPTapBarPresenter.swift */; };
+		F993FE0329A8459A00081A69 /* CPTapBarLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDF929A8459A00081A69 /* CPTapBarLocalDataManager.swift */; };
+		F993FE0429A8459A00081A69 /* CPTapBarRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDFA29A8459A00081A69 /* CPTapBarRemoteDataManager.swift */; };
+		F993FE0629A8459A00081A69 /* CPTapBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDFD29A8459A00081A69 /* CPTapBarView.swift */; };
+		F993FE0729A8459A00081A69 /* CPTapBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDFF29A8459A00081A69 /* CPTapBarProtocols.swift */; };
+		F993FE0E29A84B9800081A69 /* UISegmentedControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FE0D29A84B9800081A69 /* UISegmentedControl+Extension.swift */; };
+		F993FE1029A84E0000081A69 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FE0F29A84E0000081A69 /* UIImage+Extension.swift */; };
 		F9BE949729A71BCC00C07F4A /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE949629A71BCC00C07F4A /* Localizable.swift */; };
 		F9BE949929A71BDB00C07F4A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9BE949829A71BDB00C07F4A /* Localizable.strings */; };
 		F9BE949C29A7206C00C07F4A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE949B29A7206C00C07F4A /* APIService.swift */; };
@@ -61,6 +83,22 @@
 		F9D2F71229A7489D00D85132 /* CPLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F71129A7489D00D85132 /* CPLoginView.swift */; };
 		F9D2F71C29A752DA00D85132 /* CPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F71B29A752DA00D85132 /* CPError.swift */; };
 		F9D2F71F29A7568000D85132 /* CPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F71E29A7568000D85132 /* CPAlert.swift */; };
+		F9D2F72129A7B4C000D85132 /* CPDeleteSesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F72029A7B4C000D85132 /* CPDeleteSesion.swift */; };
+		F9D2F72529A7C72800D85132 /* CPLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F72429A7C72800D85132 /* CPLoader.swift */; };
+		F9D2F72829A7C84700D85132 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F9D2F72729A7C84700D85132 /* Lottie */; };
+		F9D5E17D29A868FA00C9230D /* CTapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E17C29A868FA00C9230D /* CTapBar.swift */; };
+		F9D5E17F29A86E8000C9230D /* CPTapBarTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E17E29A86E8000C9230D /* CPTapBarTop.swift */; };
+		F9D5E18229A8776500C9230D /* MovieTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E18129A8776500C9230D /* MovieTableViewDataSource.swift */; };
+		F9D5E18429A8777F00C9230D /* MovieTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E18329A8777F00C9230D /* MovieTableViewDelegate.swift */; };
+		F9D5E18629A8779200C9230D /* MovieCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E18529A8779200C9230D /* MovieCollectionViewDataSource.swift */; };
+		F9D5E18829A877A100C9230D /* MovieCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E18729A877A100C9230D /* MovieCollectionViewDelegate.swift */; };
+		F9D5E18A29A877C800C9230D /* SubCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E18929A877C800C9230D /* SubCategoryModel.swift */; };
+		F9D5E18C29A8780300C9230D /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E18B29A8780300C9230D /* MoviesModel.swift */; };
+		F9D5E18E29A8781600C9230D /* CollectionMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E18D29A8781600C9230D /* CollectionMoviesModel.swift */; };
+		F9D5E19229A8786A00C9230D /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E19029A8786A00C9230D /* MovieTableViewCell.swift */; };
+		F9D5E19729A879A100C9230D /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E19529A879A100C9230D /* MovieCollectionViewCell.swift */; };
+		F9D5E19829A879A100C9230D /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9D5E19629A879A100C9230D /* MovieCollectionViewCell.xib */; };
+		F9D5E19B29A87A2000C9230D /* MovieHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E19929A87A2000C9230D /* MovieHeaderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +132,6 @@
 		F92B26CC29A6D9CA007E97CD /* AppMovieCoppelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMovieCoppelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F92B26E829A6DA7D007E97CD /* CPLoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginProtocols.swift; sourceTree = "<group>"; };
 		F92B26EA29A6DA7D007E97CD /* CPLoginRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginRemoteDataManager.swift; sourceTree = "<group>"; };
-		F92B26EB29A6DA7D007E97CD /* CPLoginLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginLocalDataManager.swift; sourceTree = "<group>"; };
 		F92B26ED29A6DA7D007E97CD /* CPLoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginInteractor.swift; sourceTree = "<group>"; };
 		F92B26EF29A6DA7D007E97CD /* CPLoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginRouter.swift; sourceTree = "<group>"; };
 		F92B26F129A6DA7D007E97CD /* CPLoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginPresenter.swift; sourceTree = "<group>"; };
@@ -118,6 +155,29 @@
 		F92B272829A6F352007E97CD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F92B272A29A6F44C007E97CD /* MyTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTapGestureRecognizer.swift; sourceTree = "<group>"; };
 		F92B272C29A6F6BD007E97CD /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
+		F993FD6D29A7CA7F00081A69 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		F993FD7D29A7CC6400081A69 /* CPBackgroundRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPBackgroundRouter.swift; sourceTree = "<group>"; };
+		F993FD8229A7CC6400081A69 /* CPBackgroundPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPBackgroundPresenter.swift; sourceTree = "<group>"; };
+		F993FD8429A7CC6400081A69 /* CPBackgroundInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPBackgroundInteractor.swift; sourceTree = "<group>"; };
+		F993FD8629A7CC6400081A69 /* CPBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPBackgroundView.swift; sourceTree = "<group>"; };
+		F993FD8929A7CC6400081A69 /* CPBackgroundProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPBackgroundProtocols.swift; sourceTree = "<group>"; };
+		F993FD9229A7CE7C00081A69 /* loader_d.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader_d.json; sourceTree = "<group>"; };
+		F993FDA929A7DC1200081A69 /* CPAiringTodayRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAiringTodayRouter.swift; sourceTree = "<group>"; };
+		F993FDAC29A7DC1200081A69 /* CPAiringTodayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAiringTodayView.swift; sourceTree = "<group>"; };
+		F993FDAE29A7DC1200081A69 /* CPAiringTodayProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAiringTodayProtocols.swift; sourceTree = "<group>"; };
+		F993FDB029A7DC1200081A69 /* CPAiringTodayInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAiringTodayInteractor.swift; sourceTree = "<group>"; };
+		F993FDB229A7DC1200081A69 /* CPAiringTodayRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAiringTodayRemoteDataManager.swift; sourceTree = "<group>"; };
+		F993FDB329A7DC1200081A69 /* CPAiringTodayLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAiringTodayLocalDataManager.swift; sourceTree = "<group>"; };
+		F993FDB529A7DC1200081A69 /* CPAiringTodayPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAiringTodayPresenter.swift; sourceTree = "<group>"; };
+		F993FDF329A8459A00081A69 /* CPTapBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarInteractor.swift; sourceTree = "<group>"; };
+		F993FDF529A8459A00081A69 /* CPTapBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarRouter.swift; sourceTree = "<group>"; };
+		F993FDF729A8459A00081A69 /* CPTapBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarPresenter.swift; sourceTree = "<group>"; };
+		F993FDF929A8459A00081A69 /* CPTapBarLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarLocalDataManager.swift; sourceTree = "<group>"; };
+		F993FDFA29A8459A00081A69 /* CPTapBarRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarRemoteDataManager.swift; sourceTree = "<group>"; };
+		F993FDFD29A8459A00081A69 /* CPTapBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarView.swift; sourceTree = "<group>"; };
+		F993FDFF29A8459A00081A69 /* CPTapBarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarProtocols.swift; sourceTree = "<group>"; };
+		F993FE0D29A84B9800081A69 /* UISegmentedControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extension.swift"; sourceTree = "<group>"; };
+		F993FE0F29A84E0000081A69 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		F9BE949629A71BCC00C07F4A /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		F9BE949829A71BDB00C07F4A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F9BE949B29A7206C00C07F4A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -139,6 +199,21 @@
 		F9D2F71129A7489D00D85132 /* CPLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLoginView.swift; sourceTree = "<group>"; };
 		F9D2F71B29A752DA00D85132 /* CPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPError.swift; sourceTree = "<group>"; };
 		F9D2F71E29A7568000D85132 /* CPAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPAlert.swift; sourceTree = "<group>"; };
+		F9D2F72029A7B4C000D85132 /* CPDeleteSesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPDeleteSesion.swift; sourceTree = "<group>"; };
+		F9D2F72429A7C72800D85132 /* CPLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLoader.swift; sourceTree = "<group>"; };
+		F9D5E17C29A868FA00C9230D /* CTapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTapBar.swift; sourceTree = "<group>"; };
+		F9D5E17E29A86E8000C9230D /* CPTapBarTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPTapBarTop.swift; sourceTree = "<group>"; };
+		F9D5E18129A8776500C9230D /* MovieTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewDataSource.swift; sourceTree = "<group>"; };
+		F9D5E18329A8777F00C9230D /* MovieTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewDelegate.swift; sourceTree = "<group>"; };
+		F9D5E18529A8779200C9230D /* MovieCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		F9D5E18729A877A100C9230D /* MovieCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		F9D5E18929A877C800C9230D /* SubCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryModel.swift; sourceTree = "<group>"; };
+		F9D5E18B29A8780300C9230D /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		F9D5E18D29A8781600C9230D /* CollectionMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMoviesModel.swift; sourceTree = "<group>"; };
+		F9D5E19029A8786A00C9230D /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		F9D5E19529A879A100C9230D /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		F9D5E19629A879A100C9230D /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		F9D5E19929A87A2000C9230D /* MovieHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHeaderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D2F72829A7C84700D85132 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,8 +265,6 @@
 		F92B26A829A6D9C8007E97CD /* AppMovieCoppel */ = {
 			isa = PBXGroup;
 			children = (
-				F9BE94BB29A746E100C07F4A /* Main.storyboard */,
-				F9BE949D29A7209A00C07F4A /* Enum */,
 				F9BE949A29A7206000C07F4A /* Network */,
 				F9BE949529A71BBF00C07F4A /* Supporting */,
 				F92B270929A6DE9A007E97CD /* Resources */,
@@ -199,6 +273,7 @@
 				F92B26A929A6D9C8007E97CD /* AppDelegate.swift */,
 				F92B26AB29A6D9C8007E97CD /* SceneDelegate.swift */,
 				F92B26B229A6D9CA007E97CD /* Assets.xcassets */,
+				F9BE94BB29A746E100C07F4A /* Main.storyboard */,
 				F92B26B429A6D9CA007E97CD /* LaunchScreen.storyboard */,
 				F92B26B729A6D9CA007E97CD /* Info.plist */,
 			);
@@ -225,6 +300,9 @@
 		F92B26D929A6DA51007E97CD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F9D5E18029A8702800C9230D /* Movies */,
+				F993FDE529A8457200081A69 /* CPTapBar */,
+				F993FD6F29A7CBD500081A69 /* CPBackground */,
 				F92B26DA29A6DA5B007E97CD /* CPLogin */,
 			);
 			path = Modules;
@@ -256,11 +334,11 @@
 			isa = PBXGroup;
 			children = (
 				F92B26EA29A6DA7D007E97CD /* CPLoginRemoteDataManager.swift */,
-				F92B26EB29A6DA7D007E97CD /* CPLoginLocalDataManager.swift */,
 				F9BE94AF29A7253E00C07F4A /* CPGuestSessionNew.swift */,
 				F9BE94B129A725D900C07F4A /* CPRequestToken.swift */,
 				F9BE94B329A726EE00C07F4A /* CPSesionUser.swift */,
 				F9D2F71B29A752DA00D85132 /* CPError.swift */,
+				F9D2F72029A7B4C000D85132 /* CPDeleteSesion.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -300,13 +378,8 @@
 		F92B26FD29A6DBDF007E97CD /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				F9D2F72229A7C70D00D85132 /* Generics */,
 				F92B272229A6E3E4007E97CD /* Extensions */,
-				F9D2F71D29A7566F00D85132 /* CPAlert */,
-				F92B272529A6F070007E97CD /* CPIcon */,
-				F92B271F29A6E388007E97CD /* CPButton */,
-				F92B270629A6DE66007E97CD /* CPFont */,
-				F92B270129A6DC6F007E97CD /* CPColor */,
-				F92B270029A6DC64007E97CD /* CPTextField */,
 				F92B272A29A6F44C007E97CD /* MyTapGestureRecognizer.swift */,
 				F9BE94A229A720ED00C07F4A /* InternetConnectionManager.swift */,
 				F9BE94A429A7225400C07F4A /* AppInfo.swift */,
@@ -343,6 +416,7 @@
 		F92B270929A6DE9A007E97CD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F9D2F72929A7C97200D85132 /* Animation */,
 				F92B270A29A6DEA0007E97CD /* Fonts */,
 			);
 			path = Resources;
@@ -381,6 +455,9 @@
 				F92B272C29A6F6BD007E97CD /* UIVIewController+Extension.swift */,
 				F9BE94B529A72A7A00C07F4A /* NSError+Extension.swift */,
 				F9BE94B929A730B100C07F4A /* UserDefaults+Extension.swift */,
+				F993FD6D29A7CA7F00081A69 /* UIApplication+Extension.swift */,
+				F993FE0D29A84B9800081A69 /* UISegmentedControl+Extension.swift */,
+				F993FE0F29A84E0000081A69 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -391,6 +468,201 @@
 				F92B272629A6F07B007E97CD /* CPIcon.swift */,
 			);
 			path = CPIcon;
+			sourceTree = "<group>";
+		};
+		F993FD6F29A7CBD500081A69 /* CPBackground */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD7E29A7CC6400081A69 /* Entity */,
+				F993FD8329A7CC6400081A69 /* Interactor */,
+				F993FD8129A7CC6400081A69 /* Presenter */,
+				F993FD8829A7CC6400081A69 /* Protocols */,
+				F993FD7C29A7CC6400081A69 /* Router */,
+				F993FD8529A7CC6400081A69 /* View */,
+			);
+			path = CPBackground;
+			sourceTree = "<group>";
+		};
+		F993FD7C29A7CC6400081A69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD7D29A7CC6400081A69 /* CPBackgroundRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F993FD7E29A7CC6400081A69 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F993FD8129A7CC6400081A69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD8229A7CC6400081A69 /* CPBackgroundPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F993FD8329A7CC6400081A69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD8429A7CC6400081A69 /* CPBackgroundInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F993FD8529A7CC6400081A69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD8629A7CC6400081A69 /* CPBackgroundView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F993FD8829A7CC6400081A69 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD8929A7CC6400081A69 /* CPBackgroundProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F993FD9B29A7DBCE00081A69 /* CPAiringToday */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDB129A7DC1200081A69 /* Entity */,
+				F993FDAF29A7DC1200081A69 /* Interactor */,
+				F993FDB429A7DC1200081A69 /* Presenter */,
+				F993FDAD29A7DC1200081A69 /* Protocols */,
+				F993FDA829A7DC1200081A69 /* Router */,
+				F993FDAA29A7DC1200081A69 /* View */,
+			);
+			path = CPAiringToday;
+			sourceTree = "<group>";
+		};
+		F993FDA829A7DC1200081A69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDA929A7DC1200081A69 /* CPAiringTodayRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F993FDAA29A7DC1200081A69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5E19429A8798B00C9230D /* CollectionViewCell */,
+				F9D5E18F29A8784B00C9230D /* TableViewCells */,
+				F993FDAC29A7DC1200081A69 /* CPAiringTodayView.swift */,
+				F9D5E18129A8776500C9230D /* MovieTableViewDataSource.swift */,
+				F9D5E18329A8777F00C9230D /* MovieTableViewDelegate.swift */,
+				F9D5E18529A8779200C9230D /* MovieCollectionViewDataSource.swift */,
+				F9D5E18729A877A100C9230D /* MovieCollectionViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F993FDAD29A7DC1200081A69 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDAE29A7DC1200081A69 /* CPAiringTodayProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F993FDAF29A7DC1200081A69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDB029A7DC1200081A69 /* CPAiringTodayInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F993FDB129A7DC1200081A69 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDB229A7DC1200081A69 /* CPAiringTodayRemoteDataManager.swift */,
+				F993FDB329A7DC1200081A69 /* CPAiringTodayLocalDataManager.swift */,
+				F9D5E18929A877C800C9230D /* SubCategoryModel.swift */,
+				F9D5E18B29A8780300C9230D /* MoviesModel.swift */,
+				F9D5E18D29A8781600C9230D /* CollectionMoviesModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F993FDB429A7DC1200081A69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDB529A7DC1200081A69 /* CPAiringTodayPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F993FDE529A8457200081A69 /* CPTapBar */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDF829A8459A00081A69 /* Entity */,
+				F993FDF229A8459A00081A69 /* Interactor */,
+				F993FDF629A8459A00081A69 /* Presenter */,
+				F993FDFE29A8459A00081A69 /* Protocols */,
+				F993FDF429A8459A00081A69 /* Router */,
+				F993FDFB29A8459A00081A69 /* View */,
+			);
+			path = CPTapBar;
+			sourceTree = "<group>";
+		};
+		F993FDF229A8459A00081A69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDF329A8459A00081A69 /* CPTapBarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F993FDF429A8459A00081A69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDF529A8459A00081A69 /* CPTapBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F993FDF629A8459A00081A69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDF729A8459A00081A69 /* CPTapBarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F993FDF829A8459A00081A69 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDF929A8459A00081A69 /* CPTapBarLocalDataManager.swift */,
+				F993FDFA29A8459A00081A69 /* CPTapBarRemoteDataManager.swift */,
+				F9D5E17C29A868FA00C9230D /* CTapBar.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F993FDFB29A8459A00081A69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDFD29A8459A00081A69 /* CPTapBarView.swift */,
+				F9D5E17E29A86E8000C9230D /* CPTapBarTop.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F993FDFE29A8459A00081A69 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDFF29A8459A00081A69 /* CPTapBarProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		F9BE949529A71BBF00C07F4A /* Supporting */ = {
@@ -405,6 +677,7 @@
 		F9BE949A29A7206000C07F4A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F9BE949D29A7209A00C07F4A /* Enum */,
 				F9BE949B29A7206C00C07F4A /* APIService.swift */,
 				F9BE94A629A7238200C07F4A /* Setting.swift */,
 			);
@@ -438,6 +711,62 @@
 			path = CPAlert;
 			sourceTree = "<group>";
 		};
+		F9D2F72229A7C70D00D85132 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				F9D2F72329A7C71A00D85132 /* CPLoader */,
+				F9D2F71D29A7566F00D85132 /* CPAlert */,
+				F92B272529A6F070007E97CD /* CPIcon */,
+				F92B271F29A6E388007E97CD /* CPButton */,
+				F92B270629A6DE66007E97CD /* CPFont */,
+				F92B270129A6DC6F007E97CD /* CPColor */,
+				F92B270029A6DC64007E97CD /* CPTextField */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		F9D2F72329A7C71A00D85132 /* CPLoader */ = {
+			isa = PBXGroup;
+			children = (
+				F9D2F72429A7C72800D85132 /* CPLoader.swift */,
+			);
+			path = CPLoader;
+			sourceTree = "<group>";
+		};
+		F9D2F72929A7C97200D85132 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD9229A7CE7C00081A69 /* loader_d.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		F9D5E18029A8702800C9230D /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD9B29A7DBCE00081A69 /* CPAiringToday */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		F9D5E18F29A8784B00C9230D /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5E19029A8786A00C9230D /* MovieTableViewCell.swift */,
+				F9D5E19929A87A2000C9230D /* MovieHeaderTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		F9D5E19429A8798B00C9230D /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5E19529A879A100C9230D /* MovieCollectionViewCell.swift */,
+				F9D5E19629A879A100C9230D /* MovieCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -454,6 +783,9 @@
 			dependencies = (
 			);
 			name = AppMovieCoppel;
+			packageProductDependencies = (
+				F9D2F72729A7C84700D85132 /* Lottie */,
+			);
 			productName = AppMovieCoppel;
 			productReference = F92B26A629A6D9C8007E97CD /* AppMovieCoppel.app */;
 			productType = "com.apple.product-type.application";
@@ -526,6 +858,9 @@
 				Base,
 			);
 			mainGroup = F92B269D29A6D9C8007E97CD;
+			packageReferences = (
+				F9D2F72629A7C84700D85132 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = F92B26A729A6D9C8007E97CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -544,6 +879,8 @@
 			files = (
 				F92B271729A6DF49007E97CD /* RobotoCondensed-LightItalic.ttf in Resources */,
 				F92B271A29A6DF49007E97CD /* RobotoCondensed-Light.ttf in Resources */,
+				F993FD9329A7CE7C00081A69 /* loader_d.json in Resources */,
+				F9D5E19829A879A100C9230D /* MovieCollectionViewCell.xib in Resources */,
 				F92B271D29A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				F9BE949929A71BDB00C07F4A /* Localizable.strings in Resources */,
 				F92B26B629A6D9CA007E97CD /* LaunchScreen.storyboard in Resources */,
@@ -585,38 +922,73 @@
 				F9BE94AA29A723EE00C07F4A /* CPLoginRepository.swift in Sources */,
 				F9BE949729A71BCC00C07F4A /* Localizable.swift in Sources */,
 				F92B26F629A6DA7D007E97CD /* CPLoginRemoteDataManager.swift in Sources */,
+				F9D2F72529A7C72800D85132 /* CPLoader.swift in Sources */,
 				F9BE949C29A7206C00C07F4A /* APIService.swift in Sources */,
 				F92B272729A6F07B007E97CD /* CPIcon.swift in Sources */,
-				F92B26F729A6DA7D007E97CD /* CPLoginLocalDataManager.swift in Sources */,
 				F9BE94AE29A7242E00C07F4A /* CPLoginService.swift in Sources */,
+				F993FDB629A7DC1200081A69 /* CPAiringTodayRouter.swift in Sources */,
+				F9D5E17F29A86E8000C9230D /* CPTapBarTop.swift in Sources */,
+				F993FE0629A8459A00081A69 /* CPTapBarView.swift in Sources */,
 				F92B26FA29A6DA7D007E97CD /* CPLoginPresenter.swift in Sources */,
 				F92B26F929A6DA7D007E97CD /* CPLoginRouter.swift in Sources */,
 				F9BE94AC29A7240B00C07F4A /* CPLoginRepositoryHttp.swift in Sources */,
+				F993FE0129A8459A00081A69 /* CPTapBarRouter.swift in Sources */,
 				F9BE94B229A725D900C07F4A /* CPRequestToken.swift in Sources */,
 				F92B272929A6F352007E97CD /* UIView+Extension.swift in Sources */,
+				F993FDBB29A7DC1200081A69 /* CPAiringTodayRemoteDataManager.swift in Sources */,
 				F92B26F829A6DA7D007E97CD /* CPLoginInteractor.swift in Sources */,
 				F9BE94A529A7225400C07F4A /* AppInfo.swift in Sources */,
+				F9D5E18429A8777F00C9230D /* MovieTableViewDelegate.swift in Sources */,
+				F993FE0729A8459A00081A69 /* CPTapBarProtocols.swift in Sources */,
+				F993FE0E29A84B9800081A69 /* UISegmentedControl+Extension.swift in Sources */,
+				F993FD9129A7CC6400081A69 /* CPBackgroundProtocols.swift in Sources */,
+				F993FE0329A8459A00081A69 /* CPTapBarLocalDataManager.swift in Sources */,
 				F92B26AA29A6D9C8007E97CD /* AppDelegate.swift in Sources */,
+				F9D5E17D29A868FA00C9230D /* CTapBar.swift in Sources */,
 				F9D2F71229A7489D00D85132 /* CPLoginView.swift in Sources */,
 				F9BE94B829A72FDD00C07F4A /* CPSession.swift in Sources */,
+				F9D5E19229A8786A00C9230D /* MovieTableViewCell.swift in Sources */,
 				F9BE94B029A7253E00C07F4A /* CPGuestSessionNew.swift in Sources */,
+				F993FDBD29A7DC1200081A69 /* CPAiringTodayPresenter.swift in Sources */,
 				F9BE949F29A720A700C07F4A /* Environment.swift in Sources */,
+				F9D5E18629A8779200C9230D /* MovieCollectionViewDataSource.swift in Sources */,
+				F993FD8F29A7CC6400081A69 /* CPBackgroundView.swift in Sources */,
 				F92B272D29A6F6BD007E97CD /* UIVIewController+Extension.swift in Sources */,
 				F92B272429A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift in Sources */,
 				F9BE94B429A726EE00C07F4A /* CPSesionUser.swift in Sources */,
+				F9D5E18229A8776500C9230D /* MovieTableViewDataSource.swift in Sources */,
+				F9D2F72129A7B4C000D85132 /* CPDeleteSesion.swift in Sources */,
+				F993FDBA29A7DC1200081A69 /* CPAiringTodayInteractor.swift in Sources */,
+				F993FD6E29A7CA7F00081A69 /* UIApplication+Extension.swift in Sources */,
 				F9BE94A729A7238200C07F4A /* Setting.swift in Sources */,
 				F92B270829A6DE71007E97CD /* CPFont.swift in Sources */,
+				F993FE0429A8459A00081A69 /* CPTapBarRemoteDataManager.swift in Sources */,
+				F993FDBC29A7DC1200081A69 /* CPAiringTodayLocalDataManager.swift in Sources */,
 				F92B26F529A6DA7D007E97CD /* CPLoginProtocols.swift in Sources */,
 				F92B272129A6E3A3007E97CD /* CPButton.swift in Sources */,
+				F9D5E18A29A877C800C9230D /* SubCategoryModel.swift in Sources */,
 				F92B270329A6DD11007E97CD /* CPColor.swift in Sources */,
 				F9BE94A129A720BC00C07F4A /* HTTPMethod.swift in Sources */,
 				F92B272B29A6F44C007E97CD /* MyTapGestureRecognizer.swift in Sources */,
+				F993FDB829A7DC1200081A69 /* CPAiringTodayView.swift in Sources */,
 				F92B26AC29A6D9C8007E97CD /* SceneDelegate.swift in Sources */,
+				F993FE0029A8459A00081A69 /* CPTapBarInteractor.swift in Sources */,
+				F9D5E19729A879A100C9230D /* MovieCollectionViewCell.swift in Sources */,
+				F993FE0229A8459A00081A69 /* CPTapBarPresenter.swift in Sources */,
+				F9D5E18C29A8780300C9230D /* MoviesModel.swift in Sources */,
 				F92B270529A6DD23007E97CD /* UIColorExtension.swift in Sources */,
 				F9D2F71F29A7568000D85132 /* CPAlert.swift in Sources */,
+				F9D5E19B29A87A2000C9230D /* MovieHeaderTableViewCell.swift in Sources */,
+				F993FD8E29A7CC6400081A69 /* CPBackgroundInteractor.swift in Sources */,
+				F993FD8D29A7CC6400081A69 /* CPBackgroundPresenter.swift in Sources */,
+				F9D5E18E29A8781600C9230D /* CollectionMoviesModel.swift in Sources */,
 				F9BE94A329A720ED00C07F4A /* InternetConnectionManager.swift in Sources */,
 				F9BE94BA29A730B100C07F4A /* UserDefaults+Extension.swift in Sources */,
+				F993FE1029A84E0000081A69 /* UIImage+Extension.swift in Sources */,
 				F9BE94B629A72A7A00C07F4A /* NSError+Extension.swift in Sources */,
+				F993FDB929A7DC1200081A69 /* CPAiringTodayProtocols.swift in Sources */,
+				F9D5E18829A877A100C9230D /* MovieCollectionViewDelegate.swift in Sources */,
+				F993FD8A29A7CC6400081A69 /* CPBackgroundRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1083,6 +1455,26 @@
 			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9D2F72629A7C84700D85132 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 5.0.0;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9D2F72729A7C84700D85132 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9D2F72629A7C84700D85132 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F92B269E29A6D9C8007E97CD /* Project object */;
 }

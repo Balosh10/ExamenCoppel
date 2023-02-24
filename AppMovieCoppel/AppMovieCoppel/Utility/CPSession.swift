@@ -11,8 +11,9 @@ struct CPSession {
     static var shared: CPSession { return CPSession() }
     private var userData: UserDefaults!
     enum Keys: String {
-        case expires_at
-        case request_token
+        case expiresAt
+        case requestToken
+        case sessionId
     }
     init() {
         self.userData = UserDefaults.standard

@@ -15,7 +15,6 @@ class CPLoginRouter: CPLoginRouterProtocol {
         let view: CPLoginViewProtocol = CPLoginView()
         let presenter: CPLoginPresenterProtocol & CPLoginInteractorOutputProtocol = CPLoginPresenter()
         let interactor: CPLoginInteractorInputProtocol & CPLoginRemoteDataManagerOutputProtocol = CPLoginInteractor()
-        let localDataManager: CPLoginLocalDataManagerInputProtocol = CPLoginLocalDataManager()
         let remoteDataManager: CPLoginRemoteDataManagerInputProtocol = CPLoginRemoteDataManager()
         let router: CPLoginRouterProtocol = CPLoginRouter()
         
@@ -24,7 +23,6 @@ class CPLoginRouter: CPLoginRouterProtocol {
         presenter.router = router
         presenter.interactor = interactor
         interactor.presenter = presenter
-        interactor.localDatamanager = localDataManager
         interactor.remoteDatamanager = remoteDataManager
         remoteDataManager.remoteRequestHandler = interactor
         
@@ -33,4 +31,8 @@ class CPLoginRouter: CPLoginRouterProtocol {
 
     }
     
+    func presentDashboard(from view: CPLoginViewProtocol?) {
+        guard let newView = view as? CPLoginView else { return }
+        newView.sceneDelegate?.showHomeView()
+    }
 }

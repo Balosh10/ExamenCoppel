@@ -9,8 +9,10 @@
 
 "username" = "Username";
 "password" = "Password";
-
+"credentialsRequired" = "credentials are required";
 // Error Services
 "withoutInternet" = "No hay conexión a internet";
 "serviceNotAvailable" = "Servicio no disponible";
 
+// TapBar
+"tvShow" = "TV Shows";
