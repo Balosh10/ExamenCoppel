@@ -13,6 +13,7 @@ protocol CPAiringTodayViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     var presenter: CPAiringTodayPresenterProtocol? { get set }
     func initUI()
+    func loadData()
 }
 
 protocol CPAiringTodayRouterProtocol: AnyObject {

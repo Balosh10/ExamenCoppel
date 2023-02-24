@@ -12,6 +12,7 @@ enum CpImagen: String {
     case logoMovie
     case background
     case icMenu
+    case icStar
 }
 
 struct CPIcon {

@@ -11,7 +11,8 @@ class MovieHeaderTableViewCell: UITableViewCell {
     private lazy var lblTitle: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
-        label.textColor = .CPText100
+        label.textColor = .CPPrincipal
+        label.backgroundColor = .clear
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -22,15 +23,8 @@ class MovieHeaderTableViewCell: UITableViewCell {
         return viewContent
     }()
     
-    var movie: SubCategoryModel? {
-        didSet {
-            lblTitle.text = movie?.title ?? ""
-        }
-    }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = .clear
         addViews()
     }
@@ -38,17 +32,20 @@ class MovieHeaderTableViewCell: UITableViewCell {
         contentView.addSubview(viewContent)
         viewContent.addSubview(lblTitle)
         NSLayoutConstraint.activate([
-            viewContent.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
-            viewContent.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
-            viewContent.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
-            viewContent.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
+            viewContent.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
+            viewContent.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0),
+            viewContent.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -0),
+            viewContent.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -0),
             lblTitle.leadingAnchor.constraint(equalTo: viewContent.leadingAnchor, constant: 8),
-            lblTitle.centerXAnchor.constraint(equalTo: viewContent.centerXAnchor),
-            lblTitle.heightAnchor.constraint(equalToConstant: 44),
-            lblTitle.trailingAnchor.constraint(equalTo: viewContent.trailingAnchor, constant: -8)
+            lblTitle.topAnchor.constraint(equalTo: viewContent.topAnchor, constant: 0),
+            lblTitle.trailingAnchor.constraint(equalTo: viewContent.trailingAnchor, constant: -8),
+            lblTitle.bottomAnchor.constraint(equalTo: viewContent.bottomAnchor, constant: -0)
         ])
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    func setTitle(_ title: String) {
+        lblTitle.text = title
     }
 }

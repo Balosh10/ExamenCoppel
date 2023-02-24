@@ -8,14 +8,6 @@
 import UIKit
 
 extension UIView {
-    func applyGradient(width: CGFloat, height: CGFloat, color: [CGColor])  {
-        let l = CAGradientLayer()
-        l.frame = CGRect(x: 0, y: 0, width: width, height: height)
-        l.colors = color
-        l.startPoint = CGPoint(x: 0, y: 0.5)
-        l.endPoint = CGPoint(x: 1, y: 0.5)
-        layer.insertSublayer(l, at: 0)
-    }
     func gradient(width:CGFloat,
                   height:CGFloat,
                   color: [CGColor]) {

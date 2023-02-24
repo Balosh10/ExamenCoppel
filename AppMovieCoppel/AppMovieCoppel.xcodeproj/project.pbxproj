@@ -97,8 +97,9 @@
 		F9D5E18E29A8781600C9230D /* CollectionMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E18D29A8781600C9230D /* CollectionMoviesModel.swift */; };
 		F9D5E19229A8786A00C9230D /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E19029A8786A00C9230D /* MovieTableViewCell.swift */; };
 		F9D5E19729A879A100C9230D /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E19529A879A100C9230D /* MovieCollectionViewCell.swift */; };
-		F9D5E19829A879A100C9230D /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9D5E19629A879A100C9230D /* MovieCollectionViewCell.xib */; };
 		F9D5E19B29A87A2000C9230D /* MovieHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E19929A87A2000C9230D /* MovieHeaderTableViewCell.swift */; };
+		F9D5E19E29A8990B00C9230D /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9D5E19D29A8990B00C9230D /* MovieCollectionViewCell.xib */; };
+		F9E1B23F29A8A7A5003621A6 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B23E29A8A7A5003621A6 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,8 +213,9 @@
 		F9D5E18D29A8781600C9230D /* CollectionMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMoviesModel.swift; sourceTree = "<group>"; };
 		F9D5E19029A8786A00C9230D /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		F9D5E19529A879A100C9230D /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
-		F9D5E19629A879A100C9230D /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
 		F9D5E19929A87A2000C9230D /* MovieHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		F9D5E19D29A8990B00C9230D /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		F9E1B23E29A8A7A5003621A6 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,6 +460,7 @@
 				F993FD6D29A7CA7F00081A69 /* UIApplication+Extension.swift */,
 				F993FE0D29A84B9800081A69 /* UISegmentedControl+Extension.swift */,
 				F993FE0F29A84E0000081A69 /* UIImage+Extension.swift */,
+				F9E1B23E29A8A7A5003621A6 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -761,8 +764,8 @@
 		F9D5E19429A8798B00C9230D /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				F9D5E19D29A8990B00C9230D /* MovieCollectionViewCell.xib */,
 				F9D5E19529A879A100C9230D /* MovieCollectionViewCell.swift */,
-				F9D5E19629A879A100C9230D /* MovieCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -880,7 +883,7 @@
 				F92B271729A6DF49007E97CD /* RobotoCondensed-LightItalic.ttf in Resources */,
 				F92B271A29A6DF49007E97CD /* RobotoCondensed-Light.ttf in Resources */,
 				F993FD9329A7CE7C00081A69 /* loader_d.json in Resources */,
-				F9D5E19829A879A100C9230D /* MovieCollectionViewCell.xib in Resources */,
+				F9D5E19E29A8990B00C9230D /* MovieCollectionViewCell.xib in Resources */,
 				F92B271D29A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				F9BE949929A71BDB00C07F4A /* Localizable.strings in Resources */,
 				F92B26B629A6D9CA007E97CD /* LaunchScreen.storyboard in Resources */,
@@ -984,6 +987,7 @@
 				F9D5E18E29A8781600C9230D /* CollectionMoviesModel.swift in Sources */,
 				F9BE94A329A720ED00C07F4A /* InternetConnectionManager.swift in Sources */,
 				F9BE94BA29A730B100C07F4A /* UserDefaults+Extension.swift in Sources */,
+				F9E1B23F29A8A7A5003621A6 /* UIImageView+Extension.swift in Sources */,
 				F993FE1029A84E0000081A69 /* UIImage+Extension.swift in Sources */,
 				F9BE94B629A72A7A00C07F4A /* NSError+Extension.swift in Sources */,
 				F993FDB929A7DC1200081A69 /* CPAiringTodayProtocols.swift in Sources */,

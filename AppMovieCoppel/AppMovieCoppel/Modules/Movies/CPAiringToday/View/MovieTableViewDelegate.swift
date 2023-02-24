@@ -13,47 +13,44 @@ class MovieTableViewDelegate<CELL:UITableViewCell,T> : NSObject, UITableViewDele
     private var storedOffsets = [Int: CGFloat]()
     private var cellIdentifier : String!
     private var items : [T]!
-    var configureCell : (CELL, T) -> () = {_,_ in }
+    var configureCell : (CELL, T) -> Void = {_,_ in }
     
-    init(cellIdentifier : String, items : [T], configureCell : @escaping (CELL, T) -> ()) {
+    init(cellIdentifier: String, items: [T], configureCell: @escaping (CELL, T) -> Void) {
         self.cellIdentifier = cellIdentifier
         self.items =  items
         self.configureCell = configureCell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return self.items.count
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView()
-        let header = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier) as! CELL
-        let item = self.items[section]
-        self.configureCell(header, item)
-        view.addSubview(header)
-        view.backgroundColor = .clear
-        return view
+        let headerView = UIView(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 26))
+        let headerCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! CELL
+        let item = items[section]
+        headerCell.frame = headerView.frame
+        headerView.addSubview(headerCell)
+        configureCell(headerCell, item)
+        return headerView
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        150
+        300
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        150
+        300
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-
        guard let tableViewCell = cell as? MovieTableViewCell else { return }
        tableViewCell.collectionViewOffset = storedOffsets[indexPath.row] ?? 0
-   }
+    }
     
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-
         guard let tableViewCell = cell as? MovieTableViewCell else { return }
-        self.storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
-        
+        storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
     }
 }
 

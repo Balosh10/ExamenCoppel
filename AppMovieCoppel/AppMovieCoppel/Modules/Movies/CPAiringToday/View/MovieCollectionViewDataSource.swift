@@ -17,7 +17,7 @@ class MovieCollectionViewDataSource<CELL : UICollectionViewCell,T> : NSObject, U
     
     init(cellIdentifier : String, items : [T]?, configureCell : @escaping (CELL, T?) -> ()) {
         self.cellIdentifier = cellIdentifier
-        self.items =  items
+        self.items = items
         self.configureCell = configureCell
     }
     
@@ -31,7 +31,7 @@ class MovieCollectionViewDataSource<CELL : UICollectionViewCell,T> : NSObject, U
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CELL
         let item = self.items?[indexPath.row]
         self.configureCell(cell, item)
-        cell.backgroundColor = .black
+        cell.backgroundColor = .clear
         return cell
     }
 }

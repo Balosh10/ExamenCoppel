@@ -21,7 +21,11 @@ extension CPAiringTodayPresenter: CPAiringTodayPresenterProtocol {
     // TODO: implement presenter methods
     func viewDidLoad() {
         view?.initUI()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.view?.loadData()
+        }
     }
+    
 }
 
 extension CPAiringTodayPresenter: CPAiringTodayInteractorOutputProtocol {

@@ -12,7 +12,7 @@ enum colorType: String {
     case secundary = "#05771A"
     case text100 = "#9F9F9F"
     case white100 = "#FFFFFF"
-    case base100 = "#FBFBFB"
+    case base100 = "#0B0B0B"
     case base200 = "#2A2A2A"
     case red100 = "#D14722"
     case gray100 = "#C6C6C6"
