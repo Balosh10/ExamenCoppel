@@ -146,14 +146,20 @@ internal class CPMovieImageView: UIView {
         ])
     }
     
-    func loadInfoMovie(item: CPMovieDetail) {
-        lbTitle.text = item.title
-        if let genres = item.genres?.first {
+    func loadInfoMovie(movieDatailData: CPMovieDetailData) {
+        let movie = movieDatailData.movie
+        switch movieDatailData.type {
+            case .movie:
+                lbTitle.text = movie.title
+            case .tv:
+                lbTitle.text = movie.name
+        }
+        if let genres = movie.genres?.first {
             lbGenres.text = "  \(genres.name ?? "")  "
         } else {
             lbGenres.isHidden = true
         }
-        if let runtime = item.runtime {
+        if let runtime = movie.runtime {
             let divide: Double = Double(runtime / 60)
             let hours = Int(divide)
             let minute = divide.truncatingRemainder(dividingBy: 1) * 60
@@ -162,7 +168,7 @@ internal class CPMovieImageView: UIView {
             lbHours.isHidden = true
         }
         
-        if let voteAverage = item.voteAverage?.toString(toPlaces: 1) {
+        if let voteAverage = movie.voteAverage?.toString(toPlaces: 1) {
             let fullString = NSMutableAttributedString(string: "  " + voteAverage + " ")
             let icStar = NSTextAttachment()
             let imageIcon = UIImage(systemName: "star.fill")?.withTintColor(.CPWhite100, renderingMode: .alwaysOriginal)
@@ -176,7 +182,7 @@ internal class CPMovieImageView: UIView {
             lbVoteAverage.isHidden = true
         }
         
-        if let posterPath = item.posterPath,
+        if let posterPath = movieDatailData.movie.posterPath,
            let url:URL = URL(string: CPSetting.imageBase + posterPath) {
             self.imageMovie.load(url: url)
         }

@@ -31,4 +31,8 @@ class CPProfileRouter: CPProfileRouterProtocol {
 
     }
     
+    func presentBackground(from view: CPProfileViewProtocol?, message: String) {
+        guard let newView = view as? CPProfileView else { return }
+        newView.sceneDelegate?.showBackgroundView(message: message)
+    }
 }

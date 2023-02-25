@@ -64,9 +64,12 @@ extension SceneDelegate {
             self.window?.makeKeyAndVisible()
         }
     }
-    func showBackgroundView() {
+    func showBackgroundView(message: String) {
         DispatchQueue.main.async {
-            let backgroundView = CPBackgroundRouter.createCPBackgroundModule()
+            var data = CPDataBackground()
+            data.type = .logOut
+            data.message = message
+            let backgroundView = CPBackgroundRouter.createCPBackgroundModule(from: data)
             self.window?.rootViewController = backgroundView
             self.window?.makeKeyAndVisible()
         }

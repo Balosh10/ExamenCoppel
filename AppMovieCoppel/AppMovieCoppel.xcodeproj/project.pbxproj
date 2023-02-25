@@ -101,6 +101,7 @@
 		F9BE94B629A72A7A00C07F4A /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94B529A72A7A00C07F4A /* NSError+Extension.swift */; };
 		F9BE94B829A72FDD00C07F4A /* CPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94B729A72FDD00C07F4A /* CPSession.swift */; };
 		F9BE94BA29A730B100C07F4A /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94B929A730B100C07F4A /* UserDefaults+Extension.swift */; };
+		F9D0075B29AAC66300079864 /* CPBackgroundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D0075A29AAC66300079864 /* CPBackgroundType.swift */; };
 		F9D2F71229A7489D00D85132 /* CPLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F71129A7489D00D85132 /* CPLoginView.swift */; };
 		F9D2F71C29A752DA00D85132 /* CPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F71B29A752DA00D85132 /* CPError.swift */; };
 		F9D2F71F29A7568000D85132 /* CPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F71E29A7568000D85132 /* CPAlert.swift */; };
@@ -245,6 +246,7 @@
 		F9BE94B529A72A7A00C07F4A /* NSError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Extension.swift"; sourceTree = "<group>"; };
 		F9BE94B729A72FDD00C07F4A /* CPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPSession.swift; sourceTree = "<group>"; };
 		F9BE94B929A730B100C07F4A /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		F9D0075A29AAC66300079864 /* CPBackgroundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPBackgroundType.swift; sourceTree = "<group>"; };
 		F9D2F71129A7489D00D85132 /* CPLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLoginView.swift; sourceTree = "<group>"; };
 		F9D2F71B29A752DA00D85132 /* CPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPError.swift; sourceTree = "<group>"; };
 		F9D2F71E29A7568000D85132 /* CPAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPAlert.swift; sourceTree = "<group>"; };
@@ -638,6 +640,7 @@
 		F993FD6F29A7CBD500081A69 /* CPBackground */ = {
 			isa = PBXGroup;
 			children = (
+				F9D0075929AAC65500079864 /* Entity */,
 				F993FD8329A7CC6400081A69 /* Interactor */,
 				F993FD8129A7CC6400081A69 /* Presenter */,
 				F993FD8829A7CC6400081A69 /* Protocols */,
@@ -855,6 +858,14 @@
 				F9BE94AD29A7242E00C07F4A /* CPLoginService.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		F9D0075929AAC65500079864 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F9D0075A29AAC66300079864 /* CPBackgroundType.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		F9D2F71D29A7566F00D85132 /* CPAlert */ = {
@@ -1183,6 +1194,7 @@
 				F9BE949F29A720A700C07F4A /* Environment.swift in Sources */,
 				F9D5E18629A8779200C9230D /* CPCollectionViewDataSource.swift in Sources */,
 				F993FD8F29A7CC6400081A69 /* CPBackgroundView.swift in Sources */,
+				F9D0075B29AAC66300079864 /* CPBackgroundType.swift in Sources */,
 				F92B272D29A6F6BD007E97CD /* UIVIewController+Extension.swift in Sources */,
 				F90F4C2729A9770300E4891E /* CPMovieService.swift in Sources */,
 				F92B272429A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift in Sources */,

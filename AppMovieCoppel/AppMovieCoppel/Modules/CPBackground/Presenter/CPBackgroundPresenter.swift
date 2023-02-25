@@ -14,17 +14,20 @@ class CPBackgroundPresenter  {
     weak var view: CPBackgroundViewProtocol?
     var interactor: CPBackgroundInteractorInputProtocol?
     var router: CPBackgroundRouterProtocol?
-    
 }
 
 extension CPBackgroundPresenter: CPBackgroundPresenterProtocol {
     func viewDidLoad() {
         view?.initUI()
-        interactor?.validCredencial()
+        interactor?.validCredencialUser()
     }
 }
 
 extension CPBackgroundPresenter: CPBackgroundInteractorOutputProtocol {
+    func showInfo(message: String) {
+        view?.showInfo(message: message)
+    }
+    
     func presentDasboard() {
         CPLoader.hide()
         router?.presentDashboard(from: view)

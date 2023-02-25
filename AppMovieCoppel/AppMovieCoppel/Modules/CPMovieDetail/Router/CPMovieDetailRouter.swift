@@ -11,7 +11,7 @@ import UIKit
 
 class CPMovieDetailRouter: CPMovieDetailRouterProtocol {
 
-    class func createCPMovieDetailModule(_ movies: CPMovieDetail) -> UIViewController {
+    class func createCPMovieDetailModule(_ movieDatailData: CPMovieDetailData) -> UIViewController {
         let view: CPMovieDetailViewProtocol = CPMovieDetailView()
         let presenter: CPMovieDetailPresenterProtocol & CPMovieDetailInteractorOutputProtocol = CPMovieDetailPresenter()
         let interactor: CPMovieDetailInteractorInputProtocol = CPMovieDetailInteractor()
@@ -22,7 +22,7 @@ class CPMovieDetailRouter: CPMovieDetailRouterProtocol {
         presenter.router = router
         presenter.interactor = interactor
         interactor.presenter = presenter
-        interactor.movies = movies
+        interactor.movieDatailData = movieDatailData
         
         guard let view = view as? UIViewController else { return UIViewController() }
         return view

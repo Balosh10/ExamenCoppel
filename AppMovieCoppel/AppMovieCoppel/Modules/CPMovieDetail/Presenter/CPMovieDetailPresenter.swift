@@ -26,7 +26,7 @@ extension CPMovieDetailPresenter: CPMovieDetailPresenterProtocol {
 }
 
 extension CPMovieDetailPresenter: CPMovieDetailInteractorOutputProtocol {
-    func loadInfoMovie(item: CPMovieDetail) {
-        view?.loadInfoMovie(item: item)
+    func loadInfoMovie(movieDatailData: CPMovieDetailData) {
+        view?.loadInfoMovie(movieDatailData: movieDatailData)
     }
 }

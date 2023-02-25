@@ -12,11 +12,11 @@ import UIKit
 protocol CPMovieDetailViewProtocol: AnyObject {
     var presenter: CPMovieDetailPresenterProtocol? { get set }
     func initUI()
-    func loadInfoMovie(item: CPMovieDetail)
+    func loadInfoMovie(movieDatailData: CPMovieDetailData)
 }
 
 protocol CPMovieDetailRouterProtocol: AnyObject {
-    static func createCPMovieDetailModule(_ movies: CPMovieDetail) -> UIViewController
+    static func createCPMovieDetailModule(_ movieDatailData: CPMovieDetailData) -> UIViewController
 }
 
 protocol CPMovieDetailPresenterProtocol: AnyObject {
@@ -28,11 +28,11 @@ protocol CPMovieDetailPresenterProtocol: AnyObject {
 }
 
 protocol CPMovieDetailInteractorOutputProtocol: AnyObject {
-    func loadInfoMovie(item: CPMovieDetail)
+    func loadInfoMovie(movieDatailData: CPMovieDetailData)
 }
 
 protocol CPMovieDetailInteractorInputProtocol: AnyObject {
     var presenter: CPMovieDetailInteractorOutputProtocol? { get set }
-    var movies: CPMovieDetail? { get set }
+    var movieDatailData: CPMovieDetailData? { get set }
     func getMovieData()
 }

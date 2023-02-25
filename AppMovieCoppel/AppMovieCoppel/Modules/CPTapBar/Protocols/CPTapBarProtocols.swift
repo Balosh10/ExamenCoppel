@@ -20,7 +20,7 @@ protocol CPTapBarRouterProtocol: AnyObject {
     func presentLogin(from view: CPTapBarViewProtocol?)
     func presentProfile(from view: CPTapBarViewProtocol?)
     func presentMovies(from view: CPTapBarViewProtocol?, dataMovie: CPMovieData)
-    func presentBackground(from view: CPTapBarViewProtocol?)
+    func presentBackground(from view: CPTapBarViewProtocol?, message: String)
 }
 
 protocol CPTapBarPresenterProtocol: AnyObject {

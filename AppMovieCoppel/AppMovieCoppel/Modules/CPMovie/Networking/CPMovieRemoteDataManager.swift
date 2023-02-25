@@ -21,7 +21,11 @@ class CPMovieRemoteDataManager:CPMovieRemoteDataManagerInputProtocol {
                 case .success(let result):
                     self.remoteRequestHandler?.loadData(movies: result)
                 case .failure(let failure):
-                    self.remoteRequestHandler?.showError(message: failure.localizedDescription)
+                    if failure.code == 401 {
+                        self.remoteRequestHandler?.backgroundView(message: failure.localizedDescription)
+                    } else {
+                        self.remoteRequestHandler?.showError(message: failure.localizedDescription)
+                    }
             }
             self.movieService = nil
         }
@@ -32,7 +36,8 @@ class CPMovieRemoteDataManager:CPMovieRemoteDataManagerInputProtocol {
             guard let self = self else { return }
             switch result {
                 case .success(let result):
-                    self.remoteRequestHandler?.loadMovieDetail(movies: result)
+                    let movieDetailData = CPMovieDetailData(movie: result, type: list)
+                    self.remoteRequestHandler?.loadMovieDetail(movieDatailData: movieDetailData)
                 case .failure(let failure):
                     self.remoteRequestHandler?.showError(message: failure.localizedDescription)
             }

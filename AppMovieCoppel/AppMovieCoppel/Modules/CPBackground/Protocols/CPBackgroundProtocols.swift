@@ -16,7 +16,7 @@ protocol CPBackgroundViewProtocol: AnyObject {
 }
 
 protocol CPBackgroundRouterProtocol: AnyObject {
-    static func createCPBackgroundModule() -> UIViewController
+    static func createCPBackgroundModule(from dataBackground: CPDataBackground) -> UIViewController
     func presentDashboard(from view: CPBackgroundViewProtocol?)
     func presentLogin(from view: CPBackgroundViewProtocol?)
 }
@@ -27,14 +27,18 @@ protocol CPBackgroundPresenterProtocol: AnyObject {
     var router: CPBackgroundRouterProtocol? { get set }
     
     func viewDidLoad()
+    func presentLogin()
 }
 
 protocol CPBackgroundInteractorOutputProtocol: AnyObject {
     func presentDasboard()
     func presentLogin()
+    func showInfo(message: String) 
 }
 
 protocol CPBackgroundInteractorInputProtocol: AnyObject {
     var presenter: CPBackgroundInteractorOutputProtocol? { get set }
-    func validCredencial()
+    var dataBackground: CPDataBackground? { get set }
+    
+    func validCredencialUser()
 }

@@ -19,7 +19,7 @@ protocol CPProfileViewProtocol: AnyObject {
 
 protocol CPProfileRouterProtocol: AnyObject {
     static func createCPProfileModule() -> UIViewController
-    func presentBackground(from view: CPProfileViewProtocol?)
+    func presentBackground(from view: CPProfileViewProtocol?, message: String)
 }
 
 protocol CPProfilePresenterProtocol: AnyObject {

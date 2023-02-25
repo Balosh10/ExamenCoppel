@@ -38,6 +38,6 @@ extension CPProfilePresenter: CPProfileInteractorOutputProtocol {
         view?.showError(message: message)
     }
     func backgroundView(message: String) {
-        router?.presentBackground(from: view)
+        router?.presentBackground(from: view, message: message)
     }
 }

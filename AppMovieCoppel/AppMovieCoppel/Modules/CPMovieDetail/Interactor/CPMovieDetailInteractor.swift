@@ -11,11 +11,11 @@ import Foundation
 class CPMovieDetailInteractor: CPMovieDetailInteractorInputProtocol {
     // MARK: Properties
     weak var presenter: CPMovieDetailInteractorOutputProtocol?
-    var movies: CPMovieDetail?
+    var movieDatailData: CPMovieDetailData?
 
     func getMovieData() {
-        guard let movies = movies else { return }
-        presenter?.loadInfoMovie(item: movies)
+        guard let movies = movieDatailData else { return }
+        presenter?.loadInfoMovie(movieDatailData: movies)
     }
 
 }

@@ -121,23 +121,34 @@ extension CPMovieDetailView: CPMovieDetailViewProtocol {
             productionCompaniesView.heightAnchor.constraint(equalToConstant: 300)
         ])
     }
-    func loadInfoMovie(item: CPMovieDetail) {
-        movieImageView.loadInfoMovie(item: item)
-        if let overview = item.overview {
-            if let releaseDate = item.releaseDate,
-               let release = releaseDate.formatter(.yyyyMMdd) {
-                let info = NSMutableAttributedString().boldText(release.formatter(.ddMMMyyyy)?.capitalized ?? "",
-                                                                .CPPrincipal,
-                                                                .left,
-                                                                .medium)
-                info.append(NSMutableAttributedString().normalText("\n\n\(overview)",
+    func loadInfoMovie(movieDatailData: CPMovieDetailData) {
+        movieImageView.loadInfoMovie(movieDatailData: movieDatailData)
+        var date: Date = Date()
+        let info = NSMutableAttributedString()
+        switch movieDatailData.type {
+            case .movie:
+                if let releaseDate = movieDatailData.movie.releaseDate,
+                   let release = releaseDate.formatter(.yyyyMMdd) {
+                    date = release
+                }
+            case .tv:
+                if let firstAirDate = movieDatailData.movie.firstAirDate,
+                   let release = firstAirDate.formatter(.yyyyMMdd) {
+                    date = release
+                }
+        }
+        info.append(NSMutableAttributedString().boldText(date.formatter(.ddMMMyyyy)?.capitalized ?? "",
+                                                         .CPPrincipal,
+                                                         .left,
+                                                         .medium))
+        if let overview = movieDatailData.movie.overview {
+            info.append(NSMutableAttributedString().normalText("\n\n\(overview)",
                                                                .CPWhite100,
                                                                .left,
                                                                .medium))
-                lbOverview.attributedText = info
-            }
         }
-        productionCompaniesView.loadData(movies: item.productionCompanies)
+        lbOverview.attributedText = info
+        productionCompaniesView.loadData(movies: movieDatailData.movie.productionCompanies)
     }
     
 }

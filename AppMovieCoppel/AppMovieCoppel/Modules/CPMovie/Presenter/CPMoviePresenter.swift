@@ -31,9 +31,9 @@ extension CPMoviePresenter: CPMoviePresenterProtocol {
 }
 
 extension CPMoviePresenter: CPMovieInteractorOutputProtocol {
-    func loadMovieDetail(movies: CPMovieDetail) {
+    func loadMovieDetail(movieDatailData: CPMovieDetailData) {
         CPLoader.hide()
-        router?.presentMovieDetail(from: view, movies: movies)
+        router?.presentMovieDetail(from: view, movieDatailData: movieDatailData)
     }
     
     func showInfo(message: String) {
@@ -47,6 +47,6 @@ extension CPMoviePresenter: CPMovieInteractorOutputProtocol {
     }
     
     func backgroundView(message: String) {
-        router?.presentBackground(from: view)
+        router?.presentBackground(from: view, message: message)
     }
 }

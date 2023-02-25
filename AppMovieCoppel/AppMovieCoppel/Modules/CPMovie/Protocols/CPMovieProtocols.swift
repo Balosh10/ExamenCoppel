@@ -18,8 +18,8 @@ protocol CPMovieViewProtocol: AnyObject {
 
 protocol CPMovieRouterProtocol: AnyObject {
     static func createCPMovieModule(dataMovie: CPMovieData) -> UIViewController
-    func presentMovieDetail(from view: CPMovieViewProtocol?, movies: CPMovieDetail)
-    func presentBackground(from view: CPMovieViewProtocol?)
+    func presentMovieDetail(from view: CPMovieViewProtocol?, movieDatailData: CPMovieDetailData)
+    func presentBackground(from view: CPMovieViewProtocol?, message: String)
 }
 
 protocol CPMoviePresenterProtocol: AnyObject {
@@ -34,7 +34,7 @@ protocol CPMoviePresenterProtocol: AnyObject {
 protocol CPMovieInteractorOutputProtocol: AnyObject {
     func showInfo(message: String)
     func loadData(movies: [CPCollectionMovies], type: CPList)
-    func loadMovieDetail(movies: CPMovieDetail)
+    func loadMovieDetail(movieDatailData: CPMovieDetailData)
     func backgroundView(message: String)
 }
 
@@ -56,7 +56,7 @@ protocol CPMovieRemoteDataManagerInputProtocol: AnyObject {
 
 protocol CPMovieRemoteDataManagerOutputProtocol: AnyObject {
     func loadData(movies: CPMovies)
-    func loadMovieDetail(movies: CPMovieDetail)
+    func loadMovieDetail(movieDatailData: CPMovieDetailData)
     func backgroundView(message: String)
     func showError(message: String)
 }

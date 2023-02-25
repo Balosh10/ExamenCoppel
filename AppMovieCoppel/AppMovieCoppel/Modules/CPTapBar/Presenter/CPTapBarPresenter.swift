@@ -45,7 +45,7 @@ extension CPTapBarPresenter: CPTapBarInteractorOutputProtocol {
         view?.showInfo(message: message)
     }
     func backgroundView(message: String) {
-        router?.presentBackground(from: view)
+        router?.presentBackground(from: view, message: message)
     }
 }
 

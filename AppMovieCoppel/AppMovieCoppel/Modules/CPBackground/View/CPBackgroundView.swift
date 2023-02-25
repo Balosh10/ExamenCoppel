@@ -90,7 +90,10 @@ extension CPBackgroundView: CPBackgroundViewProtocol {
     
     func showInfo(message: String) {
         DispatchQueue.main.async {
-            CPAlert.shared.alertShow(self, message: message)
+            CPAlert.shared.alertShow(self, message: message) { [weak self] in
+                guard let self = self else { return }
+                self.presenter?.presentLogin()
+            }
         }
     }
 }

@@ -26,7 +26,11 @@ class CPTapBarRemoteDataManager:CPTapBarRemoteDataManagerInputProtocol {
                         self.remoteRequestHandler?.showInfo(message: Localizable.text(.serviceNotAvailable))
                     }
                 case .failure(let failure):
-                    self.remoteRequestHandler?.showInfo(message: failure.localizedDescription)
+                    if failure.code == 401 {
+                        self.remoteRequestHandler?.backgroundView(message: failure.localizedDescription)
+                    } else {
+                        self.remoteRequestHandler?.showInfo(message: failure.localizedDescription)
+                    }
             }
             self.logOutService = nil
         }

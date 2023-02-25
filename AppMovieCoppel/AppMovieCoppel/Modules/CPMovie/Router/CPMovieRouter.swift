@@ -31,12 +31,18 @@ class CPMovieRouter: CPMovieRouterProtocol {
         return view
     }
     
-    func presentMovieDetail(from view: CPMovieViewProtocol?, movies: CPMovieDetail) {
+    func presentMovieDetail(from view: CPMovieViewProtocol?, movieDatailData: CPMovieDetailData) {
         guard let newView = view as? CPMoviesView else { return }
-        let movieDetail = CPMovieDetailRouter.createCPMovieDetailModule(movies)
+        let movieDetail = CPMovieDetailRouter.createCPMovieDetailModule(movieDatailData)
         DispatchQueue.main.async {
             movieDetail.modalPresentationStyle = .overFullScreen
             newView.present(movieDetail, animated: true)
         }
     }
+    
+    func presentBackground(from view: CPMovieViewProtocol?, message: String) {
+        guard let newView = view as? CPMoviesView else { return }
+        newView.sceneDelegate?.showBackgroundView(message: message)
+    }
+    
 }

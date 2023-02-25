@@ -35,8 +35,8 @@ class CPMovieInteractor: CPMovieInteractorInputProtocol {
 
 extension CPMovieInteractor: CPMovieRemoteDataManagerOutputProtocol {
     
-    func loadMovieDetail(movies: CPMovieDetail) {
-        presenter?.loadMovieDetail(movies: movies)
+    func loadMovieDetail(movieDatailData: CPMovieDetailData) {
+        presenter?.loadMovieDetail(movieDatailData: movieDatailData)
     }
     
     func showError(message: String) {
@@ -45,7 +45,7 @@ extension CPMovieInteractor: CPMovieRemoteDataManagerOutputProtocol {
     
     func loadData(movies: CPMovies) {
         guard let dataMovie = dataMovie,
-              let result = movies.results else {
+              let result = movies.results?.sorted(by: { $0.voteCount ?? 0 > $1.voteCount ?? 0 }) else {
             return
         }
         presenter?.loadData(movies: result, type: dataMovie.list)

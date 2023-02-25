@@ -22,8 +22,12 @@ class CPProfileRemoteDataManager:CPProfileRemoteDataManagerInputProtocol {
                     CPSession.shared.saveValue(.userId, value: result.id)
                     self.fechtFavoriteMovie()
                     self.remoteRequestHandler?.loadData(data: result)
-                case .failure(let failure):
-                    self.remoteRequestHandler?.showError(message: failure.localizedDescription)
+                case .failure(let failure):                    
+                    if failure.code == 401 {
+                        self.remoteRequestHandler?.backgroundView(message: failure.localizedDescription)
+                    } else {
+                        self.remoteRequestHandler?.showError(message: failure.localizedDescription)
+                    }
             }
             self.profileService = nil
         }

@@ -46,4 +46,8 @@ class CPTapBarRouter: CPTapBarRouterProtocol {
         newView.showVC(asChildViewController: airingTodayView)
         newView.showMenu(asChildViewController: menuTop)
     }
+    func presentBackground(from view: CPTapBarViewProtocol?, message: String) {
+        guard let newView = view as? CPTapBarView else { return }
+        newView.sceneDelegate?.showBackgroundView(message: message)
+    }
 }

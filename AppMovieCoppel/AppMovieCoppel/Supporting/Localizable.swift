@@ -27,6 +27,7 @@ enum Localizable {
         case username
         case password
         case credentialsRequired
+        case authenticationFailed
     }
     enum TapBar: String, LocalizableDelegate {
         case tvShow
