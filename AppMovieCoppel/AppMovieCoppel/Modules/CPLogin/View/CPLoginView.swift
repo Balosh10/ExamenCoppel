@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 internal class CPLoginView: UIViewController {
+    
     var presenter: CPLoginPresenterProtocol?
     
     private lazy var bakcgroundImage: UIImageView = {
@@ -162,9 +163,11 @@ extension CPLoginView: CPLoginViewProtocol {
             contentViewDegradate.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         let bounds = UIScreen.main.bounds
-        contentViewDegradate.gradient(width: bounds.width, height: bounds.height, color: [UIColor.black.withAlphaComponent(0.2).cgColor,
-                                                                                          UIColor.black.withAlphaComponent(0.5).cgColor,
-                                                                                          UIColor.black.withAlphaComponent(1).cgColor])
+        contentViewDegradate.gradient(width: bounds.width,
+                                      height: bounds.height,
+                                      color: [UIColor.black.withAlphaComponent(0.2).cgColor,
+                                              UIColor.black.withAlphaComponent(0.5).cgColor,
+                                              UIColor.black.withAlphaComponent(1).cgColor])
     }
     func showError(text: String) {
         DispatchQueue.main.async {
@@ -174,7 +177,9 @@ extension CPLoginView: CPLoginViewProtocol {
 }
 
 extension CPLoginView: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
         if !textName.text!.isEmpty && !textPassword.text!.isEmpty {
             btnLogin.styleButton = .primary
             btnLogin.isEnabled = true

@@ -60,7 +60,7 @@ extension SceneDelegate {
     func showLoginView() {
         DispatchQueue.main.async {
             let loginView = CPLoginRouter.createCPLoginModule()
-            self.window?.rootViewController = UINavigationController(rootViewController: loginView)
+            self.window?.rootViewController = loginView
             self.window?.makeKeyAndVisible()
         }
     }

@@ -45,9 +45,9 @@ public class CPLoader {
             if let tagView = UIApplication.shared.currentWindow?.viewWithTag(tagLoader)  {
                 tagView.removeFromSuperview()
             }
+            lottieAnimationLoader?.stop()
+            lottieAnimationLoader?.removeFromSuperview()
+            lottieAnimationLoader = nil
         }
-        lottieAnimationLoader?.stop()
-        lottieAnimationLoader?.removeFromSuperview()
-        lottieAnimationLoader = nil
     }
 }

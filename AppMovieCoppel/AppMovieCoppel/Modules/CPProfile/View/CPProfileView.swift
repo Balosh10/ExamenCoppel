@@ -105,4 +105,16 @@ extension CPProfileView: CPProfileViewProtocol {
             movieView.heightAnchor.constraint(equalToConstant: 400),
         ])
     }
+    
+    func loadData(data: CPAccount) {
+        profileView.loadData(item: data)
+    }
+    func loadDataMovie(data: CPMovies) {
+        movieView.loadData(movies: data.results, type: .movie)
+    }
+    func showError(message: String) {
+        DispatchQueue.main.async {
+            CPAlert.shared.alertShow(self, message: message)
+        }
+    }
 }

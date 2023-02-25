@@ -10,18 +10,18 @@ import Foundation
 import UIKit
 
 protocol CPProfileViewProtocol: AnyObject {
-    // PRESENTER -> VIEW
     var presenter: CPProfilePresenterProtocol? { get set }
     func initUI()
+    func loadData(data: CPAccount)
+    func loadDataMovie(data: CPMovies)
+    func showError(message: String)
 }
 
 protocol CPProfileRouterProtocol: AnyObject {
-    // PRESENTER -> Router
     static func createCPProfileModule() -> UIViewController
 }
 
 protocol CPProfilePresenterProtocol: AnyObject {
-    // VIEW -> PRESENTER
     var view: CPProfileViewProtocol? { get set }
     var interactor: CPProfileInteractorInputProtocol? { get set }
     var router: CPProfileRouterProtocol? { get set }
@@ -30,29 +30,27 @@ protocol CPProfilePresenterProtocol: AnyObject {
 }
 
 protocol CPProfileInteractorOutputProtocol: AnyObject {
-// INTERACTOR -> PRESENTER
+    func loadData(data: CPAccount)
+    func loadDataMovie(data: CPMovies)
+    func showError(message: String)
 }
 
 protocol CPProfileInteractorInputProtocol: AnyObject {
-    // PRESENTER -> INTERACTOR
     var presenter: CPProfileInteractorOutputProtocol? { get set }
-    var localDatamanager: CPProfileLocalDataManagerInputProtocol? { get set }
     var remoteDatamanager: CPProfileRemoteDataManagerInputProtocol? { get set }
+    func fechtAccount()
 }
 
 protocol CPProfileDataManagerInputProtocol: AnyObject {
-    // INTERACTOR -> DATAMANAGER
 }
 
 protocol CPProfileRemoteDataManagerInputProtocol: AnyObject {
-    // INTERACTOR -> REMOTEDATAMANAGER
     var remoteRequestHandler: CPProfileRemoteDataManagerOutputProtocol? { get set }
+    func fechtAccount()
 }
 
 protocol CPProfileRemoteDataManagerOutputProtocol: AnyObject {
-    // REMOTEDATAMANAGER -> INTERACTOR
-}
-
-protocol CPProfileLocalDataManagerInputProtocol: AnyObject {
-    // INTERACTOR -> LOCALDATAMANAGER
+    func loadData(data: CPAccount)
+    func loadDataMovie(data: CPMovies)
+    func showError(message: String)
 }

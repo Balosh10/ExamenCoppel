@@ -32,5 +32,20 @@ class CPTapBarRouter: CPTapBarRouterProtocol {
         return view
 
     }
-
+    func presentLogin(from view: CPTapBarViewProtocol?) {
+        guard let newView = view as? CPTapBarView else { return }
+        newView.sceneDelegate?.showLoginView()
+    }
+    func presentProfile(from view: CPTapBarViewProtocol?) {
+        guard let newView = view as? CPTapBarView else { return }
+        let profileView = CPProfileRouter.createCPProfileModule()
+        newView.present(profileView, animated: true)
+    }
+    func presentMovies(from view: CPTapBarViewProtocol?, dataMovie: CPMovieData) {
+        guard let newView = view as? CPTapBarView else { return }
+        let airingTodayView = CPAiringTodayRouter.createCPAiringTodayModule(dataMovie: dataMovie)
+        let menuTop = CPTapBarTop()
+        newView.showVC(asChildViewController: airingTodayView)
+        newView.showMenu(asChildViewController: menuTop)
+    }
 }

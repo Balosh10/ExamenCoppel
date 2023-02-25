@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class CPBackgroundView: UIViewController {
-
+    
     // MARK: Properties
     var presenter: CPBackgroundPresenterProtocol?
     
@@ -82,8 +82,10 @@ extension CPBackgroundView: CPBackgroundViewProtocol {
             contentViewDegradate.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         let bounds = UIScreen.main.bounds
-        contentViewDegradate.gradient(width: bounds.width, height: bounds.height, color: [UIColor.black.withAlphaComponent(0.2).cgColor,
-                                                                                          UIColor.black.withAlphaComponent(1).cgColor])
+        contentViewDegradate.gradient(width: bounds.width,
+                                      height: bounds.height,
+                                      color: [UIColor.black.withAlphaComponent(0.2).cgColor,
+                                              UIColor.black.withAlphaComponent(1).cgColor])
     }
     
     func showInfo(message: String) {

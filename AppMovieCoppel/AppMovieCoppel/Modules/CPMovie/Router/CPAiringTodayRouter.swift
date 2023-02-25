@@ -11,11 +11,16 @@ import UIKit
 
 class CPAiringTodayRouter: CPAiringTodayRouterProtocol {
 
-    class func createCPAiringTodayModule() -> UIViewController {
+    
+    func presentMovieDetail(from view: CPAiringTodayViewProtocol?) {
+        
+    }
+    
+
+    class func createCPAiringTodayModule(dataMovie: CPMovieData) -> UIViewController {
         let view: CPAiringTodayViewProtocol = CPAiringTodayView()
         let presenter: CPAiringTodayPresenterProtocol & CPAiringTodayInteractorOutputProtocol = CPAiringTodayPresenter()
         let interactor: CPAiringTodayInteractorInputProtocol & CPDashboardRemoteDataManagerOutputProtocol = CPAiringTodayInteractor()
-        let localDataManager: CPAiringTodayLocalDataManagerInputProtocol = CPAiringTodayLocalDataManager()
         let remoteDataManager: CPAiringTodayRemoteDataManagerInputProtocol = CPAiringTodayRemoteDataManager()
         let router: CPAiringTodayRouterProtocol = CPAiringTodayRouter()
         
@@ -24,7 +29,7 @@ class CPAiringTodayRouter: CPAiringTodayRouterProtocol {
         presenter.router = router
         presenter.interactor = interactor
         interactor.presenter = presenter
-        interactor.localDatamanager = localDataManager
+        interactor.dataMovie = dataMovie
         interactor.remoteDatamanager = remoteDataManager
         remoteDataManager.remoteRequestHandler = interactor
         

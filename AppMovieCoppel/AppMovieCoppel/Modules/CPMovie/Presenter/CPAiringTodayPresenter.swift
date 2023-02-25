@@ -18,16 +18,23 @@ class CPAiringTodayPresenter  {
 }
 
 extension CPAiringTodayPresenter: CPAiringTodayPresenterProtocol {
-    // TODO: implement presenter methods
     func viewDidLoad() {
         view?.initUI()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.view?.loadData()
-        }
+        interactor?.fechtMovie()
     }
     
 }
 
 extension CPAiringTodayPresenter: CPAiringTodayInteractorOutputProtocol {
-    // TODO: implement interactor output methods
+    
+    func showInfo(message: String) {
+        CPLoader.hide()
+        view?.showError(message: message)
+    }
+    
+    func loadData(movies: [CPCollectionMovies], type: CPList) {
+        CPLoader.hide()
+        view?.loadData(movies: movies, type: type)
+    }
+    
 }

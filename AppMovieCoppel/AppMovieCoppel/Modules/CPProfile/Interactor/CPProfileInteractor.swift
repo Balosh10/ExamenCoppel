@@ -12,11 +12,21 @@ class CPProfileInteractor: CPProfileInteractorInputProtocol {
 
     // MARK: Properties
     weak var presenter: CPProfileInteractorOutputProtocol?
-    var localDatamanager: CPProfileLocalDataManagerInputProtocol?
     var remoteDatamanager: CPProfileRemoteDataManagerInputProtocol?
 
+    func fechtAccount() {
+        remoteDatamanager?.fechtAccount()
+    }
 }
 
 extension CPProfileInteractor: CPProfileRemoteDataManagerOutputProtocol {
-    // TODO: Implement use case methods
+    func loadData(data: CPAccount) {
+        presenter?.loadData(data: data)
+    }
+    func loadDataMovie(data: CPMovies) {
+        presenter?.loadDataMovie(data: data)
+    }
+    func showError(message: String) {
+        presenter?.showError(message: message)
+    }
 }

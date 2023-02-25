@@ -15,8 +15,16 @@ class CPTapBarInteractor: CPTapBarInteractorInputProtocol {
     var localDatamanager: CPTapBarLocalDataManagerInputProtocol?
     var remoteDatamanager: CPTapBarRemoteDataManagerInputProtocol?
 
+    func logOut() {
+        remoteDatamanager?.logOut()
+    }
 }
 
 extension CPTapBarInteractor: CPTapBarRemoteDataManagerOutputProtocol {
-    // TODO: Implement use case methods
+    func showInfo(message: String) {
+        presenter?.showInfo(message: message)
+    }
+    func presentLogin() {
+        presenter?.presentLogin()
+    }
 }

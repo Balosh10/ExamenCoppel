@@ -14,6 +14,7 @@ struct CPSession {
         case expiresAt
         case requestToken
         case sessionId
+        case userId
     }
     init() {
         self.userData = UserDefaults.standard

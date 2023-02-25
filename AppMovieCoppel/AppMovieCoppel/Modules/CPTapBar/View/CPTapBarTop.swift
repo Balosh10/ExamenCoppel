@@ -9,5 +9,8 @@ import UIKit
 class CPTapBarTop: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.isHidden = true
+        view.isUserInteractionEnabled = true
+        view.backgroundColor = .clear
     }
 }

@@ -19,10 +19,11 @@ internal class CPProfileDataView: UIView {
     }()
     private lazy var imageUser: UIImageView = {
         var logo = UIImageView()
-        logo.image = CPIcon.of(.logoMovie)
-        logo.contentMode = .scaleToFill
-        logo.layer.cornerRadius = 16
+        logo.contentMode = .scaleAspectFill
+        logo.layer.cornerRadius = 39
         logo.clipsToBounds = true
+        logo.layer.borderWidth = 2.0
+        logo.layer.borderColor = UIColor.white.cgColor
         logo.translatesAutoresizingMaskIntoConstraints = false
         return logo
     }()
@@ -30,7 +31,6 @@ internal class CPProfileDataView: UIView {
         var lbName = UILabel()
         lbName.translatesAutoresizingMaskIntoConstraints = false
         lbName.numberOfLines = 0
-        lbName.text = AppInfo.shared.developer
         lbName.textColor = UIColor.CPPrincipal
         lbName.font = CPFont.gothamMedium.size(.medium)
         return lbName
@@ -69,9 +69,18 @@ internal class CPProfileDataView: UIView {
             imageUser.widthAnchor.constraint(equalToConstant: 78),
             lbName.leadingAnchor.constraint(equalTo: imageUser.trailingAnchor, constant: 16),
             lbName.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            lbName.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 44),
-            lbName.heightAnchor.constraint(equalToConstant: 24),
+            lbName.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 44)
         ])
-        imageUser.radiusCircle()
+    }
+    func loadData(item: CPAccount) {
+        DispatchQueue.main.async {
+            let info = NSMutableAttributedString().normal("Developer", .CPPrincipal, .left, .medium)
+            info.append(NSMutableAttributedString().normal("\n\(item.username)", .CPPrincipal, .left, .medium))
+            self.lbName.attributedText = info
+            if let avatar = item.avatar.tmdb?.avatarPath,
+               let url = URL(string: Setting.imageBase + avatar)  {
+                self.imageUser.load(url: url)
+            }
+        }
     }
 }

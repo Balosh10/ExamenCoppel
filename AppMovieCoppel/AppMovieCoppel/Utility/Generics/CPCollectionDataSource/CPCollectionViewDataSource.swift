@@ -23,14 +23,14 @@ class CPCollectionViewDataSource<CELL : UICollectionViewCell,T> : NSObject, UICo
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        self.items?.count ?? 0
+        items?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CELL
         let item = self.items?[indexPath.row]
-        self.configureCell(cell, item)
+        configureCell(cell, item)
         cell.backgroundColor = .clear
         return cell
     }

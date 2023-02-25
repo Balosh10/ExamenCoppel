@@ -13,34 +13,6 @@ struct AppInfo {
     static var shared:AppInfo {
         return AppInfo()
     }
-    
-    var UIID: String {
-        return UIDevice.current.identifierForVendor!.uuidString
-    }
-    
-    var appName: String {
-        return readFromInfoPlist(withKey: "CFBundleName") ?? "(unknown app name)"
-    }
-
-    var version: String {
-        return (readFromInfoPlist(withKey: "CFBundleShortVersionString") ?? "(unknown app version)")
-    }
-
-    var build: String {
-        return readFromInfoPlist(withKey: "CFBundleVersion") ?? "(unknown build number)"
-    }
-
-    var minimumOSVersion: String {
-        return readFromInfoPlist(withKey: "MinimumOSVersion") ?? "(unknown minimum OSVersion)"
-    }
-
-    var copyrightNotice: String {
-        return readFromInfoPlist(withKey: "NSHumanReadableCopyright") ?? "(unknown copyright notice)"
-    }
-
-    var bundleIdentifier: String {
-        return readFromInfoPlist(withKey: "CFBundleIdentifier") ?? "(unknown bundle identifier)"
-    }
 
     var environment: String  {
         return readFromInfoPlist(withKey: "Configuration") ?? ""

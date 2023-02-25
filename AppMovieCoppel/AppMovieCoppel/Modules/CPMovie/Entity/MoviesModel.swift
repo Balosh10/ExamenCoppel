@@ -9,5 +9,5 @@ import Foundation
 struct MoviesModel: Codable {
     var title: String?
     var type: String?
-    var results: [CollectionMoviesModel]?
+    var results: [CPCollectionMovies]?
 }

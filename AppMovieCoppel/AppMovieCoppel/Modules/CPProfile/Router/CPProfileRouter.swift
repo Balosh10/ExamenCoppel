@@ -15,7 +15,6 @@ class CPProfileRouter: CPProfileRouterProtocol {
         let view: CPProfileViewProtocol = CPProfileView()
         let presenter: CPProfilePresenterProtocol & CPProfileInteractorOutputProtocol = CPProfilePresenter()
         let interactor: CPProfileInteractorInputProtocol & CPProfileRemoteDataManagerOutputProtocol = CPProfileInteractor()
-        let localDataManager: CPProfileLocalDataManagerInputProtocol = CPProfileLocalDataManager()
         let remoteDataManager: CPProfileRemoteDataManagerInputProtocol = CPProfileRemoteDataManager()
         let router: CPProfileRouterProtocol = CPProfileRouter()
         
@@ -24,7 +23,6 @@ class CPProfileRouter: CPProfileRouterProtocol {
         presenter.router = router
         presenter.interactor = interactor
         interactor.presenter = presenter
-        interactor.localDatamanager = localDataManager
         interactor.remoteDatamanager = remoteDataManager
         remoteDataManager.remoteRequestHandler = interactor
         

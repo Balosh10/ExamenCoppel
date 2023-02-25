@@ -21,14 +21,7 @@ class CPTapBarView: UIViewController {
         uiSegmentedControl.backgroundColor = UIColor.clear
         return uiSegmentedControl
     }()
-    private lazy var menuTop: CPTapBarTop = {
-        let mn = CPTapBarTop()
-        mn.view.isHidden = true
-        mn.view.translatesAutoresizingMaskIntoConstraints = false
-        mn.view.isUserInteractionEnabled = true
-        mn.view.backgroundColor = .clear
-        return mn
-    }()
+   
     var presenter: CPTapBarPresenterProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,48 +52,29 @@ extension CPTapBarView: CPTapBarViewProtocol {
         uiSegmentedControl.insertSegment(withTitle: CPTapsName.topRated.rawValue, at: CPTaps.topRated.rawValue, animated: true)
         uiSegmentedControl.insertSegment(withTitle: CPTapsName.onTV.rawValue, at: CPTaps.onTV.rawValue, animated: true)
         uiSegmentedControl.insertSegment(withTitle: CPTapsName.airingToday.rawValue, at: CPTaps.airingToday.rawValue, animated: true)
-        uiSegmentedControl.addTarget(self, action: #selector(selectionAforeDidChange), for: .valueChanged)
+        uiSegmentedControl.addTarget(self, action: #selector(selectionDidChange), for: .valueChanged)
         uiSegmentedControl.selectedSegmentIndex = CPTaps.popular.rawValue
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: CPIcon.of(.icMenu),
                                                             style: .plain,
                                                             target: self,
                                                             action: #selector(didTapMenu))
         statusBarView(color: UIColor.CPGray200)
+        selectionDidChange()
+    }
+    @objc func selectionDidChange() {
+        guard let type = CPTaps.init(rawValue: uiSegmentedControl.selectedSegmentIndex) else { return }
+        presenter?.selectionDidChange(type: type)
+    }
 
-    }
-    @objc func selectionAforeDidChange(_ sender: UISegmentedControl) {
-        switch CPTaps.init(rawValue: uiSegmentedControl.selectedSegmentIndex) {
-            case .airingToday:
-                print(CPTapsName.airingToday.rawValue)
-                let airingTodayView = CPAiringTodayRouter.createCPAiringTodayModule()
-                showVC(asChildViewController: airingTodayView)
-            case .onTV:
-                print(CPTapsName.onTV.rawValue)
-                let airingTodayView = CPAiringTodayRouter.createCPAiringTodayModule()
-                showVC(asChildViewController: airingTodayView)
-            case .topRated:
-                print(CPTapsName.topRated.rawValue)
-                let airingTodayView = CPAiringTodayRouter.createCPAiringTodayModule()
-                showVC(asChildViewController: airingTodayView)
-            case .popular:
-                print(CPTapsName.popular.rawValue)
-                let airingTodayView = CPAiringTodayRouter.createCPAiringTodayModule()
-                showVC(asChildViewController: airingTodayView)
-            default:
-                break
-        }
-        showMenu(asChildViewController: menuTop)
-    }
     @objc func didTapMenu() {
-        CPAlert.shared.actionSheet(targetVC: self) { response in
-            switch response {
-                case .viewProfile:
-                    print("viewProfile")
-                    let profileView = CPProfileRouter.createCPProfileModule()
-                    self.present(profileView, animated: true)
-                case .logOut:
-                    print("logOut")
-            }
+        CPAlert.shared.actionSheet(targetVC: self) { [weak self] typeTap in
+            guard let self = self else { return }
+            self.presenter?.selecTap(type: typeTap)
+        }
+    }
+    func showInfo(message: String) {
+        DispatchQueue.main.async {
+            CPAlert.shared.alertShow(self, message: message)
         }
     }
 }

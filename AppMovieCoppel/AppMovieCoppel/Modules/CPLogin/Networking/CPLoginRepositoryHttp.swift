@@ -25,7 +25,9 @@ class CPLoginRepositoryHttp: CPLoginRepository {
         }
     }
     
-    func createSesionWithLogin(_ userName: String, _ password: String, _ completion: @escaping (Result<CPSesionUser, NSError>) -> Void) {
+    func createSesionWithLogin(_ userName: String,
+                               _ password: String,
+                               _ completion: @escaping (Result<CPSesionUser, NSError>) -> Void) {
         services = APIService()
         services?.apiRequest("authentication/token/validate_with_login?api_key=\(Setting.apiKey)",
                              CPSesionUser.self,

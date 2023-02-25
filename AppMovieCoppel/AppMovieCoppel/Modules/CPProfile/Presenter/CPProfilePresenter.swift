@@ -21,9 +21,22 @@ extension CPProfilePresenter: CPProfilePresenterProtocol {
     // TODO: implement presenter methods
     func viewDidLoad() {
         view?.initUI()
+        CPLoader.show()
+        interactor?.fechtAccount()
     }
 }
 
 extension CPProfilePresenter: CPProfileInteractorOutputProtocol {
-    // TODO: implement interactor output methods
+
+    func loadData(data: CPAccount) {
+        CPLoader.hide()
+        view?.loadData(data: data)
+    }
+    func loadDataMovie(data: CPMovies) {
+        view?.loadDataMovie(data: data)
+    }
+    func showError(message: String) {
+        CPLoader.hide()
+        view?.showError(message: message)
+    }
 }

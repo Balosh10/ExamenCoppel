@@ -25,7 +25,7 @@ internal class CPProfileMoviewFavoriteView: UIView {
     
     private var movieCollectioView: UICollectionView?
     private var cellCollectionViewIdentifier = "MovieCollectionViewCell"
-    private var collectiondataSource: CPCollectionViewDataSource<MovieCollectionViewCell, CollectionMoviesModel>!
+    private var collectiondataSource: CPCollectionViewDataSource<MovieCollectionViewCell, CPCollectionMovies>!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -71,49 +71,25 @@ internal class CPProfileMoviewFavoriteView: UIView {
             collection.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0),
             collection.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0)
         ])
-        loadData()
     }
-    func loadData() {
-        var moview = MoviesModel()
-        moview.title = "hdd"
-        var dd = CollectionMoviesModel()
-        dd.title = "aa"
-        dd.type = "aaasdd"
-        moview.results = [dd, dd, dd, dd, dd, dd, dd, dd, dd, dd, dd]
-        moview.type = "sss"
-        updateCellWith(row: moview.results)
-    }
-    var collectionViewOffset: CGFloat {
-        set { movieCollectioView?.contentOffset.x = newValue }
-        get { return movieCollectioView?.contentOffset.x ?? 0}
-    }
-    func updateCellWith(row: [CollectionMoviesModel]?) {
-        self.collectiondataSource = CPCollectionViewDataSource(cellIdentifier: cellCollectionViewIdentifier,
-                                                                  items: row,
-                                                                  configureCell: { (cellCollection, itemMovie) in
-            //cellCollection.movieImage.setRadiusProfile()
-            cellCollection.movie = itemMovie
-            /*let posterPathDesencryp =  EncryptionTool.share.decrypString(string64: (itemMovie?.posterPath ?? ""))  ?? ""
-             guard let url:URL = URL(string: APIService.shared.imageBase + posterPathDesencryp)  else { return }
-             cellCollection.movieImage.load(url: url)*/
-            
+    func loadData(movies: [CPCollectionMovies]?, type: CPList) {
+        guard let movies = movies else { return }
+        collectiondataSource = CPCollectionViewDataSource(cellIdentifier: cellCollectionViewIdentifier,
+                                                               items: movies,
+                                                               configureCell: { (cellCollection, itemMovie) in
+            guard let data = itemMovie else { return }
+            cellCollection.loadView(movie: data, type: type)
         })
-        
-        /*self.collectionDelegate = MovieCollectionViewDelegate(cellIdentifier: cellCollectionViewIdentifier,
-                                                              items: row,
-                                                              configureCell: { (cellCollection, itemMovie) in
-            //self.cellDelegate?.collectionView(collectionviewcell: cellCollection,
-              //                                selectMovie: itemMovie,
-                //                              didTappedInTableViewCell: self)
-        })*/
-        
         DispatchQueue.main.async {
-            //self.movieCollectioView?.delegate = self.collectionDelegate
             self.movieCollectioView?.dataSource = self.collectiondataSource
             self.movieCollectioView?.register(UINib(nibName: self.cellCollectionViewIdentifier, bundle: nil),
                                               forCellWithReuseIdentifier: self.cellCollectionViewIdentifier)
             self.movieCollectioView?.reloadData()
         }
+    }
+    var collectionViewOffset: CGFloat {
+        set { movieCollectioView?.contentOffset.x = newValue }
+        get { return movieCollectioView?.contentOffset.x ?? 0}
     }
 
 }

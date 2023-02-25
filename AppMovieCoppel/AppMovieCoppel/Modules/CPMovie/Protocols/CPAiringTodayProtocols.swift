@@ -10,50 +10,51 @@ import Foundation
 import UIKit
 
 protocol CPAiringTodayViewProtocol: AnyObject {
-    // PRESENTER -> VIEW
     var presenter: CPAiringTodayPresenterProtocol? { get set }
     func initUI()
-    func loadData()
+    func loadData(movies: [CPCollectionMovies], type: CPList)
+    func showError(message: String)
 }
 
 protocol CPAiringTodayRouterProtocol: AnyObject {
-    // PRESENTER -> Router
-    static func createCPAiringTodayModule() -> UIViewController
+    static func createCPAiringTodayModule(dataMovie: CPMovieData) -> UIViewController
+    func presentMovieDetail(from view: CPAiringTodayViewProtocol?)
 }
 
 protocol CPAiringTodayPresenterProtocol: AnyObject {
-    // VIEW -> PRESENTER
     var view: CPAiringTodayViewProtocol? { get set }
     var interactor: CPAiringTodayInteractorInputProtocol? { get set }
     var router: CPAiringTodayRouterProtocol? { get set }
     
     func viewDidLoad()
+    
 }
 
 protocol CPAiringTodayInteractorOutputProtocol: AnyObject {
-// INTERACTOR -> PRESENTER
+    func showInfo(message: String)
+    func loadData(movies: [CPCollectionMovies], type: CPList)
 }
 
 protocol CPAiringTodayInteractorInputProtocol: AnyObject {
-    // PRESENTER -> INTERACTOR
     var presenter: CPAiringTodayInteractorOutputProtocol? { get set }
-    var localDatamanager: CPAiringTodayLocalDataManagerInputProtocol? { get set }
     var remoteDatamanager: CPAiringTodayRemoteDataManagerInputProtocol? { get set }
+    var dataMovie: CPMovieData? { get set }
+    
+    func fechtMovie()
+
 }
 
 protocol CPDashboardDataManagerInputProtocol: AnyObject {
-    // INTERACTOR -> DATAMANAGER
 }
 
 protocol CPAiringTodayRemoteDataManagerInputProtocol: AnyObject {
-    // INTERACTOR -> REMOTEDATAMANAGER
     var remoteRequestHandler: CPDashboardRemoteDataManagerOutputProtocol? { get set }
+    func fechtMovie(_ list: CPList, _ result: CPResult)
+
 }
 
 protocol CPDashboardRemoteDataManagerOutputProtocol: AnyObject {
-    // REMOTEDATAMANAGER -> INTERACTOR
+    func loadData(movies: CPMovies)
+    func showError(message: String)
 }
 
-protocol CPAiringTodayLocalDataManagerInputProtocol: AnyObject {
-    // INTERACTOR -> LOCALDATAMANAGER
-}
