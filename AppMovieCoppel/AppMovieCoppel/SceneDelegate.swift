@@ -7,16 +7,22 @@
 
 import UIKit
 
+var currentScene: UIScene?
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        currentScene = scene
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
+        let backgroundView = CPBackgroundRouter.createCPBackgroundModule()
+        window?.rootViewController = UINavigationController(rootViewController: backgroundView)
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -50,3 +56,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+extension SceneDelegate {
+    func showLoginView() {
+        DispatchQueue.main.async {
+            let loginView = CPLoginRouter.createCPLoginModule()
+            self.window?.rootViewController = loginView
+            self.window?.makeKeyAndVisible()
+        }
+    }
+    func showBackgroundView(message: String) {
+        DispatchQueue.main.async {
+            var data = CPDataBackground()
+            data.type = .logOut
+            data.message = message
+            let backgroundView = CPBackgroundRouter.createCPBackgroundModule(from: data)
+            self.window?.rootViewController = backgroundView
+            self.window?.makeKeyAndVisible()
+        }
+    }
+    func showHomeView() {
+        DispatchQueue.main.async {
+            let dashboardView = CPTapBarRouter.createCPTapBarModule()
+            self.window?.rootViewController = UINavigationController(rootViewController: dashboardView)
+            self.window?.makeKeyAndVisible()
+        }
+    }
+}

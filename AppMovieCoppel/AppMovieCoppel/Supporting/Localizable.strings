@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  AppMovieCoppel
+
+  Created by osvaldo cespedes on 22/02/23.
+  
+*/
+// Login View
+
+"username" = "Username";
+"password" = "Password";
+"credentialsRequired" = "credentials are required";
+"authenticationFailed" = "Authentication failed: You do not have permissions to access the service";
+
+// Error Services
+"withoutInternet" = "No hay conexión a internet";
+"serviceNotAvailable" = "Servicio no disponible";
+
+// TapBar
+"tvShow" = "TV Shows";
+
+//Detail Movie
+"companies" = "Compañías de producción";
+
+//Profile
+"profile" = "Profile";
+"favoriteShows" = "Favorite Shows";

@@ -7,15 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F90F4C1A29A9403400E4891E /* CPLogOutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C1929A9403400E4891E /* CPLogOutRepository.swift */; };
+		F90F4C1C29A9404C00E4891E /* CPLogOutRepositoryHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C1B29A9404C00E4891E /* CPLogOutRepositoryHttp.swift */; };
+		F90F4C1E29A9405900E4891E /* CPLogOutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C1D29A9405900E4891E /* CPLogOutService.swift */; };
+		F90F4C2529A9770300E4891E /* CPMovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C2229A9770300E4891E /* CPMovieRepository.swift */; };
+		F90F4C2629A9770300E4891E /* CPMovieRepositoryHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C2329A9770300E4891E /* CPMovieRepositoryHttp.swift */; };
+		F90F4C2729A9770300E4891E /* CPMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C2429A9770300E4891E /* CPMovieService.swift */; };
+		F90F4C2A29A977FA00E4891E /* CPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C2929A977FA00E4891E /* CPResult.swift */; };
+		F90F4C2C29A9780C00E4891E /* CPList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C2B29A9780C00E4891E /* CPList.swift */; };
+		F90F4C2E29A9786200E4891E /* CPMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C2D29A9786200E4891E /* CPMovies.swift */; };
+		F90F4C3029A97E3F00E4891E /* CPMovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C2F29A97E3F00E4891E /* CPMovieData.swift */; };
+		F90F4C3529A993C300E4891E /* CPProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C3229A993C300E4891E /* CPProfileRepository.swift */; };
+		F90F4C3629A993C300E4891E /* CPProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C3329A993C300E4891E /* CPProfileService.swift */; };
+		F90F4C3729A993C300E4891E /* CPProfileRepositoryHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C3429A993C300E4891E /* CPProfileRepositoryHttp.swift */; };
+		F90F4C3929A9992500E4891E /* CPAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C3829A9992500E4891E /* CPAccount.swift */; };
+		F90F4C3C29A9B8BF00E4891E /* CPRoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C3B29A9B8BF00E4891E /* CPRoundedImageView.swift */; };
+		F90F4C3F29A9BF0300E4891E /* CPFormatDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C3E29A9BF0300E4891E /* CPFormatDate.swift */; };
+		F90F4C6129A9C4F100E4891E /* CPMovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C5429A9C4F100E4891E /* CPMovieDetailPresenter.swift */; };
+		F90F4C6329A9C4F100E4891E /* CPMovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C5729A9C4F100E4891E /* CPMovieDetailView.swift */; };
+		F90F4C6429A9C4F100E4891E /* CPMovieDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C5A29A9C4F100E4891E /* CPMovieDetailProtocols.swift */; };
+		F90F4C6529A9C4F100E4891E /* CPMovieDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C5C29A9C4F100E4891E /* CPMovieDetailInteractor.swift */; };
+		F90F4C6629A9C4F100E4891E /* CPMovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C5E29A9C4F100E4891E /* CPMovieDetailRouter.swift */; };
+		F90F4C6829A9C67500E4891E /* CPMovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C6729A9C67500E4891E /* CPMovieDetail.swift */; };
+		F90F4C6A29A9E69100E4891E /* CPMovieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C6929A9E69100E4891E /* CPMovieImageView.swift */; };
+		F90F4C6C29AA003E00E4891E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C6B29AA003E00E4891E /* Double+Extension.swift */; };
 		F92B26AA29A6D9C8007E97CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26A929A6D9C8007E97CD /* AppDelegate.swift */; };
 		F92B26AC29A6D9C8007E97CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26AB29A6D9C8007E97CD /* SceneDelegate.swift */; };
-		F92B26AE29A6D9C8007E97CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26AD29A6D9C8007E97CD /* ViewController.swift */; };
-		F92B26B129A6D9C8007E97CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92B26AF29A6D9C8007E97CD /* Main.storyboard */; };
 		F92B26B329A6D9CA007E97CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92B26B229A6D9CA007E97CD /* Assets.xcassets */; };
 		F92B26B629A6D9CA007E97CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92B26B429A6D9CA007E97CD /* LaunchScreen.storyboard */; };
 		F92B26C129A6D9CA007E97CD /* AppMovieCoppelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26C029A6D9CA007E97CD /* AppMovieCoppelTests.swift */; };
 		F92B26CB29A6D9CA007E97CD /* AppMovieCoppelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26CA29A6D9CA007E97CD /* AppMovieCoppelUITests.swift */; };
 		F92B26CD29A6D9CA007E97CD /* AppMovieCoppelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26CC29A6D9CA007E97CD /* AppMovieCoppelUITestsLaunchTests.swift */; };
+		F92B26F529A6DA7D007E97CD /* CPLoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26E829A6DA7D007E97CD /* CPLoginProtocols.swift */; };
+		F92B26F629A6DA7D007E97CD /* CPLoginRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26EA29A6DA7D007E97CD /* CPLoginRemoteDataManager.swift */; };
+		F92B26F829A6DA7D007E97CD /* CPLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26ED29A6DA7D007E97CD /* CPLoginInteractor.swift */; };
+		F92B26F929A6DA7D007E97CD /* CPLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26EF29A6DA7D007E97CD /* CPLoginRouter.swift */; };
+		F92B26FA29A6DA7D007E97CD /* CPLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26F129A6DA7D007E97CD /* CPLoginPresenter.swift */; };
+		F92B26FF29A6DBFA007E97CD /* CPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26FE29A6DBFA007E97CD /* CPTextField.swift */; };
+		F92B270329A6DD11007E97CD /* CPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B270229A6DD11007E97CD /* CPColor.swift */; };
+		F92B270529A6DD23007E97CD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B270429A6DD23007E97CD /* UIColorExtension.swift */; };
+		F92B270829A6DE71007E97CD /* CPFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B270729A6DE71007E97CD /* CPFont.swift */; };
+		F92B271529A6DF49007E97CD /* ufonts.com_gotham-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B270B29A6DF48007E97CD /* ufonts.com_gotham-bold.ttf */; };
+		F92B271629A6DF49007E97CD /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B270C29A6DF48007E97CD /* RobotoCondensed-Italic.ttf */; };
+		F92B271729A6DF49007E97CD /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B270D29A6DF48007E97CD /* RobotoCondensed-LightItalic.ttf */; };
+		F92B271829A6DF49007E97CD /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B270E29A6DF48007E97CD /* RobotoCondensed-Regular.ttf */; };
+		F92B271929A6DF49007E97CD /* ufonts.com_gotham-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B270F29A6DF49007E97CD /* ufonts.com_gotham-light.ttf */; };
+		F92B271A29A6DF49007E97CD /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B271029A6DF49007E97CD /* RobotoCondensed-Light.ttf */; };
+		F92B271B29A6DF49007E97CD /* ufonts.com_gotham-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B271129A6DF49007E97CD /* ufonts.com_gotham-medium.ttf */; };
+		F92B271C29A6DF49007E97CD /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B271229A6DF49007E97CD /* RobotoCondensed-Bold.ttf */; };
+		F92B271D29A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B271329A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf */; };
+		F92B271E29A6DF49007E97CD /* ufonts.com_gotham-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92B271429A6DF49007E97CD /* ufonts.com_gotham-book.ttf */; };
+		F92B272129A6E3A3007E97CD /* CPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272029A6E3A3007E97CD /* CPButton.swift */; };
+		F92B272429A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272329A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift */; };
+		F92B272729A6F07B007E97CD /* CPIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272629A6F07B007E97CD /* CPIcon.swift */; };
+		F92B272929A6F352007E97CD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272829A6F352007E97CD /* UIView+Extension.swift */; };
+		F92B272B29A6F44C007E97CD /* MyTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272A29A6F44C007E97CD /* MyTapGestureRecognizer.swift */; };
+		F92B272D29A6F6BD007E97CD /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B272C29A6F6BD007E97CD /* UIVIewController+Extension.swift */; };
+		F993FD6E29A7CA7F00081A69 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD6D29A7CA7F00081A69 /* UIApplication+Extension.swift */; };
+		F993FD8A29A7CC6400081A69 /* CPBackgroundRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD7D29A7CC6400081A69 /* CPBackgroundRouter.swift */; };
+		F993FD8D29A7CC6400081A69 /* CPBackgroundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD8229A7CC6400081A69 /* CPBackgroundPresenter.swift */; };
+		F993FD8E29A7CC6400081A69 /* CPBackgroundInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD8429A7CC6400081A69 /* CPBackgroundInteractor.swift */; };
+		F993FD8F29A7CC6400081A69 /* CPBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD8629A7CC6400081A69 /* CPBackgroundView.swift */; };
+		F993FD9129A7CC6400081A69 /* CPBackgroundProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FD8929A7CC6400081A69 /* CPBackgroundProtocols.swift */; };
+		F993FD9329A7CE7C00081A69 /* loader_d.json in Resources */ = {isa = PBXBuildFile; fileRef = F993FD9229A7CE7C00081A69 /* loader_d.json */; };
+		F993FDB629A7DC1200081A69 /* CPMovieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDA929A7DC1200081A69 /* CPMovieRouter.swift */; };
+		F993FDB829A7DC1200081A69 /* CPMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDAC29A7DC1200081A69 /* CPMoviesView.swift */; };
+		F993FDB929A7DC1200081A69 /* CPMovieProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDAE29A7DC1200081A69 /* CPMovieProtocols.swift */; };
+		F993FDBA29A7DC1200081A69 /* CPMovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDB029A7DC1200081A69 /* CPMovieInteractor.swift */; };
+		F993FDBB29A7DC1200081A69 /* CPMovieRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDB229A7DC1200081A69 /* CPMovieRemoteDataManager.swift */; };
+		F993FDBD29A7DC1200081A69 /* CPMoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDB529A7DC1200081A69 /* CPMoviePresenter.swift */; };
+		F993FE0029A8459A00081A69 /* CPTapBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDF329A8459A00081A69 /* CPTapBarInteractor.swift */; };
+		F993FE0129A8459A00081A69 /* CPTapBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDF529A8459A00081A69 /* CPTapBarRouter.swift */; };
+		F993FE0229A8459A00081A69 /* CPTapBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDF729A8459A00081A69 /* CPTapBarPresenter.swift */; };
+		F993FE0429A8459A00081A69 /* CPTapBarRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDFA29A8459A00081A69 /* CPTapBarRemoteDataManager.swift */; };
+		F993FE0629A8459A00081A69 /* CPTapBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDFD29A8459A00081A69 /* CPTapBarView.swift */; };
+		F993FE0729A8459A00081A69 /* CPTapBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDFF29A8459A00081A69 /* CPTapBarProtocols.swift */; };
+		F993FE0E29A84B9800081A69 /* UISegmentedControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FE0D29A84B9800081A69 /* UISegmentedControl+Extension.swift */; };
+		F993FE1029A84E0000081A69 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FE0F29A84E0000081A69 /* UIImage+Extension.swift */; };
+		F9BE949729A71BCC00C07F4A /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE949629A71BCC00C07F4A /* Localizable.swift */; };
+		F9BE949929A71BDB00C07F4A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9BE949829A71BDB00C07F4A /* Localizable.strings */; };
+		F9BE949C29A7206C00C07F4A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE949B29A7206C00C07F4A /* APIService.swift */; };
+		F9BE949F29A720A700C07F4A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE949E29A720A700C07F4A /* Environment.swift */; };
+		F9BE94A129A720BC00C07F4A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94A029A720BC00C07F4A /* HTTPMethod.swift */; };
+		F9BE94A329A720ED00C07F4A /* InternetConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94A229A720ED00C07F4A /* InternetConnectionManager.swift */; };
+		F9BE94A529A7225400C07F4A /* CPAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94A429A7225400C07F4A /* CPAppInfo.swift */; };
+		F9BE94A729A7238200C07F4A /* CPSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94A629A7238200C07F4A /* CPSetting.swift */; };
+		F9BE94AA29A723EE00C07F4A /* CPLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94A929A723EE00C07F4A /* CPLoginRepository.swift */; };
+		F9BE94AC29A7240B00C07F4A /* CPLoginRepositoryHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94AB29A7240B00C07F4A /* CPLoginRepositoryHttp.swift */; };
+		F9BE94AE29A7242E00C07F4A /* CPLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94AD29A7242E00C07F4A /* CPLoginService.swift */; };
+		F9BE94B029A7253E00C07F4A /* CPGuestSessionNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94AF29A7253E00C07F4A /* CPGuestSessionNew.swift */; };
+		F9BE94B229A725D900C07F4A /* CPRequestToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94B129A725D900C07F4A /* CPRequestToken.swift */; };
+		F9BE94B429A726EE00C07F4A /* CPSesionUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94B329A726EE00C07F4A /* CPSesionUser.swift */; };
+		F9BE94B629A72A7A00C07F4A /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94B529A72A7A00C07F4A /* NSError+Extension.swift */; };
+		F9BE94B829A72FDD00C07F4A /* CPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94B729A72FDD00C07F4A /* CPSession.swift */; };
+		F9BE94BA29A730B100C07F4A /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BE94B929A730B100C07F4A /* UserDefaults+Extension.swift */; };
+		F9D0075B29AAC66300079864 /* CPBackgroundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D0075A29AAC66300079864 /* CPBackgroundType.swift */; };
+		F9D2F71229A7489D00D85132 /* CPLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F71129A7489D00D85132 /* CPLoginView.swift */; };
+		F9D2F71C29A752DA00D85132 /* CPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F71B29A752DA00D85132 /* CPError.swift */; };
+		F9D2F71F29A7568000D85132 /* CPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F71E29A7568000D85132 /* CPAlert.swift */; };
+		F9D2F72129A7B4C000D85132 /* CPDeleteSesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F72029A7B4C000D85132 /* CPDeleteSesion.swift */; };
+		F9D2F72529A7C72800D85132 /* CPLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2F72429A7C72800D85132 /* CPLoader.swift */; };
+		F9D2F72829A7C84700D85132 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F9D2F72729A7C84700D85132 /* Lottie */; };
+		F9D5E17D29A868FA00C9230D /* CTapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E17C29A868FA00C9230D /* CTapBar.swift */; };
+		F9D5E17F29A86E8000C9230D /* CPTapBarTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E17E29A86E8000C9230D /* CPTapBarTop.swift */; };
+		F9D5E18629A8779200C9230D /* CPCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E18529A8779200C9230D /* CPCollectionViewDataSource.swift */; };
+		F9D5E18829A877A100C9230D /* CPCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E18729A877A100C9230D /* CPCollectionViewDelegate.swift */; };
+		F9D5E18E29A8781600C9230D /* CPCollectionMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E18D29A8781600C9230D /* CPCollectionMovies.swift */; };
+		F9D5E19729A879A100C9230D /* CPMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5E19529A879A100C9230D /* CPMovieCollectionViewCell.swift */; };
+		F9E1B23F29A8A7A5003621A6 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B23E29A8A7A5003621A6 /* UIImageView+Extension.swift */; };
+		F9E1B24329A8B1D5003621A6 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B24229A8B1D5003621A6 /* UIDevice+Extension.swift */; };
+		F9E1B25E29A8B39B003621A6 /* CPProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B25129A8B39B003621A6 /* CPProfileRouter.swift */; };
+		F9E1B25F29A8B39B003621A6 /* CPProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B25329A8B39B003621A6 /* CPProfileProtocols.swift */; };
+		F9E1B26029A8B39B003621A6 /* CPProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B25529A8B39B003621A6 /* CPProfileInteractor.swift */; };
+		F9E1B26229A8B39B003621A6 /* CPProfileRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B25829A8B39B003621A6 /* CPProfileRemoteDataManager.swift */; };
+		F9E1B26429A8B39B003621A6 /* CPProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B25B29A8B39B003621A6 /* CPProfileView.swift */; };
+		F9E1B26529A8B39B003621A6 /* CPProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B25D29A8B39B003621A6 /* CPProfilePresenter.swift */; };
+		F9E1B26729A8B769003621A6 /* CPProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B26629A8B769003621A6 /* CPProfileDataView.swift */; };
+		F9E1B26929A8BE7B003621A6 /* CPProfileMoviewFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B26829A8BE7B003621A6 /* CPProfileMoviewFavoriteView.swift */; };
+		F9ED69D729AA11230070F569 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ED69D629AA11230070F569 /* String+Extension.swift */; };
+		F9ED69D929AA11940070F569 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ED69D829AA11940070F569 /* Date+Extension.swift */; };
+		F9ED69DB29AA12E60070F569 /* CPProductionCompaniesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ED69DA29AA12E60070F569 /* CPProductionCompaniesView.swift */; };
+		F9ED69DE29AA137F0070F569 /* CPCompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ED69DD29AA137F0070F569 /* CPCompanyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +148,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F90F4C1929A9403400E4891E /* CPLogOutRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLogOutRepository.swift; sourceTree = "<group>"; };
+		F90F4C1B29A9404C00E4891E /* CPLogOutRepositoryHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLogOutRepositoryHttp.swift; sourceTree = "<group>"; };
+		F90F4C1D29A9405900E4891E /* CPLogOutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLogOutService.swift; sourceTree = "<group>"; };
+		F90F4C2229A9770300E4891E /* CPMovieRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieRepository.swift; sourceTree = "<group>"; };
+		F90F4C2329A9770300E4891E /* CPMovieRepositoryHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieRepositoryHttp.swift; sourceTree = "<group>"; };
+		F90F4C2429A9770300E4891E /* CPMovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieService.swift; sourceTree = "<group>"; };
+		F90F4C2929A977FA00E4891E /* CPResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPResult.swift; sourceTree = "<group>"; };
+		F90F4C2B29A9780C00E4891E /* CPList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPList.swift; sourceTree = "<group>"; };
+		F90F4C2D29A9786200E4891E /* CPMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMovies.swift; sourceTree = "<group>"; };
+		F90F4C2F29A97E3F00E4891E /* CPMovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMovieData.swift; sourceTree = "<group>"; };
+		F90F4C3229A993C300E4891E /* CPProfileRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPProfileRepository.swift; sourceTree = "<group>"; };
+		F90F4C3329A993C300E4891E /* CPProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPProfileService.swift; sourceTree = "<group>"; };
+		F90F4C3429A993C300E4891E /* CPProfileRepositoryHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPProfileRepositoryHttp.swift; sourceTree = "<group>"; };
+		F90F4C3829A9992500E4891E /* CPAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPAccount.swift; sourceTree = "<group>"; };
+		F90F4C3B29A9B8BF00E4891E /* CPRoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRoundedImageView.swift; sourceTree = "<group>"; };
+		F90F4C3E29A9BF0300E4891E /* CPFormatDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFormatDate.swift; sourceTree = "<group>"; };
+		F90F4C5429A9C4F100E4891E /* CPMovieDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieDetailPresenter.swift; sourceTree = "<group>"; };
+		F90F4C5729A9C4F100E4891E /* CPMovieDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieDetailView.swift; sourceTree = "<group>"; };
+		F90F4C5A29A9C4F100E4891E /* CPMovieDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieDetailProtocols.swift; sourceTree = "<group>"; };
+		F90F4C5C29A9C4F100E4891E /* CPMovieDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieDetailInteractor.swift; sourceTree = "<group>"; };
+		F90F4C5E29A9C4F100E4891E /* CPMovieDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieDetailRouter.swift; sourceTree = "<group>"; };
+		F90F4C6729A9C67500E4891E /* CPMovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMovieDetail.swift; sourceTree = "<group>"; };
+		F90F4C6929A9E69100E4891E /* CPMovieImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMovieImageView.swift; sourceTree = "<group>"; };
+		F90F4C6B29AA003E00E4891E /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		F92B26A629A6D9C8007E97CD /* AppMovieCoppel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMovieCoppel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92B26A929A6D9C8007E97CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92B26AB29A6D9C8007E97CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F92B26AD29A6D9C8007E97CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F92B26B029A6D9C8007E97CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F92B26B229A6D9CA007E97CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92B26B529A6D9CA007E97CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92B26B729A6D9CA007E97CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +183,95 @@
 		F92B26C629A6D9CA007E97CD /* AppMovieCoppelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppMovieCoppelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92B26CA29A6D9CA007E97CD /* AppMovieCoppelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMovieCoppelUITests.swift; sourceTree = "<group>"; };
 		F92B26CC29A6D9CA007E97CD /* AppMovieCoppelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMovieCoppelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F92B26E829A6DA7D007E97CD /* CPLoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginProtocols.swift; sourceTree = "<group>"; };
+		F92B26EA29A6DA7D007E97CD /* CPLoginRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginRemoteDataManager.swift; sourceTree = "<group>"; };
+		F92B26ED29A6DA7D007E97CD /* CPLoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginInteractor.swift; sourceTree = "<group>"; };
+		F92B26EF29A6DA7D007E97CD /* CPLoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginRouter.swift; sourceTree = "<group>"; };
+		F92B26F129A6DA7D007E97CD /* CPLoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPLoginPresenter.swift; sourceTree = "<group>"; };
+		F92B26FE29A6DBFA007E97CD /* CPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPTextField.swift; sourceTree = "<group>"; };
+		F92B270229A6DD11007E97CD /* CPColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPColor.swift; sourceTree = "<group>"; };
+		F92B270429A6DD23007E97CD /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		F92B270729A6DE71007E97CD /* CPFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFont.swift; sourceTree = "<group>"; };
+		F92B270B29A6DF48007E97CD /* ufonts.com_gotham-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-bold.ttf"; sourceTree = "<group>"; };
+		F92B270C29A6DF48007E97CD /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		F92B270D29A6DF48007E97CD /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		F92B270E29A6DF48007E97CD /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		F92B270F29A6DF49007E97CD /* ufonts.com_gotham-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-light.ttf"; sourceTree = "<group>"; };
+		F92B271029A6DF49007E97CD /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		F92B271129A6DF49007E97CD /* ufonts.com_gotham-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-medium.ttf"; sourceTree = "<group>"; };
+		F92B271229A6DF49007E97CD /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		F92B271329A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F92B271429A6DF49007E97CD /* ufonts.com_gotham-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-book.ttf"; sourceTree = "<group>"; };
+		F92B272029A6E3A3007E97CD /* CPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPButton.swift; sourceTree = "<group>"; };
+		F92B272329A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		F92B272629A6F07B007E97CD /* CPIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPIcon.swift; sourceTree = "<group>"; };
+		F92B272829A6F352007E97CD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F92B272A29A6F44C007E97CD /* MyTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTapGestureRecognizer.swift; sourceTree = "<group>"; };
+		F92B272C29A6F6BD007E97CD /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
+		F993FD6D29A7CA7F00081A69 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		F993FD7D29A7CC6400081A69 /* CPBackgroundRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPBackgroundRouter.swift; sourceTree = "<group>"; };
+		F993FD8229A7CC6400081A69 /* CPBackgroundPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPBackgroundPresenter.swift; sourceTree = "<group>"; };
+		F993FD8429A7CC6400081A69 /* CPBackgroundInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPBackgroundInteractor.swift; sourceTree = "<group>"; };
+		F993FD8629A7CC6400081A69 /* CPBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPBackgroundView.swift; sourceTree = "<group>"; };
+		F993FD8929A7CC6400081A69 /* CPBackgroundProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPBackgroundProtocols.swift; sourceTree = "<group>"; };
+		F993FD9229A7CE7C00081A69 /* loader_d.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader_d.json; sourceTree = "<group>"; };
+		F993FDA929A7DC1200081A69 /* CPMovieRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieRouter.swift; sourceTree = "<group>"; };
+		F993FDAC29A7DC1200081A69 /* CPMoviesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMoviesView.swift; sourceTree = "<group>"; };
+		F993FDAE29A7DC1200081A69 /* CPMovieProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieProtocols.swift; sourceTree = "<group>"; };
+		F993FDB029A7DC1200081A69 /* CPMovieInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieInteractor.swift; sourceTree = "<group>"; };
+		F993FDB229A7DC1200081A69 /* CPMovieRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieRemoteDataManager.swift; sourceTree = "<group>"; };
+		F993FDB529A7DC1200081A69 /* CPMoviePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMoviePresenter.swift; sourceTree = "<group>"; };
+		F993FDF329A8459A00081A69 /* CPTapBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarInteractor.swift; sourceTree = "<group>"; };
+		F993FDF529A8459A00081A69 /* CPTapBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarRouter.swift; sourceTree = "<group>"; };
+		F993FDF729A8459A00081A69 /* CPTapBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarPresenter.swift; sourceTree = "<group>"; };
+		F993FDFA29A8459A00081A69 /* CPTapBarRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarRemoteDataManager.swift; sourceTree = "<group>"; };
+		F993FDFD29A8459A00081A69 /* CPTapBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarView.swift; sourceTree = "<group>"; };
+		F993FDFF29A8459A00081A69 /* CPTapBarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarProtocols.swift; sourceTree = "<group>"; };
+		F993FE0D29A84B9800081A69 /* UISegmentedControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extension.swift"; sourceTree = "<group>"; };
+		F993FE0F29A84E0000081A69 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F9BE949629A71BCC00C07F4A /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		F9BE949829A71BDB00C07F4A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F9BE949B29A7206C00C07F4A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F9BE949E29A720A700C07F4A /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		F9BE94A029A720BC00C07F4A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		F9BE94A229A720ED00C07F4A /* InternetConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionManager.swift; sourceTree = "<group>"; };
+		F9BE94A429A7225400C07F4A /* CPAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPAppInfo.swift; sourceTree = "<group>"; };
+		F9BE94A629A7238200C07F4A /* CPSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPSetting.swift; sourceTree = "<group>"; };
+		F9BE94A929A723EE00C07F4A /* CPLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLoginRepository.swift; sourceTree = "<group>"; };
+		F9BE94AB29A7240B00C07F4A /* CPLoginRepositoryHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLoginRepositoryHttp.swift; sourceTree = "<group>"; };
+		F9BE94AD29A7242E00C07F4A /* CPLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLoginService.swift; sourceTree = "<group>"; };
+		F9BE94AF29A7253E00C07F4A /* CPGuestSessionNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPGuestSessionNew.swift; sourceTree = "<group>"; };
+		F9BE94B129A725D900C07F4A /* CPRequestToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRequestToken.swift; sourceTree = "<group>"; };
+		F9BE94B329A726EE00C07F4A /* CPSesionUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPSesionUser.swift; sourceTree = "<group>"; };
+		F9BE94B529A72A7A00C07F4A /* NSError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Extension.swift"; sourceTree = "<group>"; };
+		F9BE94B729A72FDD00C07F4A /* CPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPSession.swift; sourceTree = "<group>"; };
+		F9BE94B929A730B100C07F4A /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		F9D0075A29AAC66300079864 /* CPBackgroundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPBackgroundType.swift; sourceTree = "<group>"; };
+		F9D2F71129A7489D00D85132 /* CPLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLoginView.swift; sourceTree = "<group>"; };
+		F9D2F71B29A752DA00D85132 /* CPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPError.swift; sourceTree = "<group>"; };
+		F9D2F71E29A7568000D85132 /* CPAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPAlert.swift; sourceTree = "<group>"; };
+		F9D2F72029A7B4C000D85132 /* CPDeleteSesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPDeleteSesion.swift; sourceTree = "<group>"; };
+		F9D2F72429A7C72800D85132 /* CPLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLoader.swift; sourceTree = "<group>"; };
+		F9D5E17C29A868FA00C9230D /* CTapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTapBar.swift; sourceTree = "<group>"; };
+		F9D5E17E29A86E8000C9230D /* CPTapBarTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPTapBarTop.swift; sourceTree = "<group>"; };
+		F9D5E18529A8779200C9230D /* CPCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		F9D5E18729A877A100C9230D /* CPCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		F9D5E18D29A8781600C9230D /* CPCollectionMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCollectionMovies.swift; sourceTree = "<group>"; };
+		F9D5E19529A879A100C9230D /* CPMovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		F9E1B23E29A8A7A5003621A6 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		F9E1B24229A8B1D5003621A6 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		F9E1B25129A8B39B003621A6 /* CPProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPProfileRouter.swift; sourceTree = "<group>"; };
+		F9E1B25329A8B39B003621A6 /* CPProfileProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPProfileProtocols.swift; sourceTree = "<group>"; };
+		F9E1B25529A8B39B003621A6 /* CPProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPProfileInteractor.swift; sourceTree = "<group>"; };
+		F9E1B25829A8B39B003621A6 /* CPProfileRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPProfileRemoteDataManager.swift; sourceTree = "<group>"; };
+		F9E1B25B29A8B39B003621A6 /* CPProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPProfileView.swift; sourceTree = "<group>"; };
+		F9E1B25D29A8B39B003621A6 /* CPProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPProfilePresenter.swift; sourceTree = "<group>"; };
+		F9E1B26629A8B769003621A6 /* CPProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPProfileDataView.swift; sourceTree = "<group>"; };
+		F9E1B26829A8BE7B003621A6 /* CPProfileMoviewFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPProfileMoviewFavoriteView.swift; sourceTree = "<group>"; };
+		F9ED69D629AA11230070F569 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F9ED69D829AA11940070F569 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F9ED69DA29AA12E60070F569 /* CPProductionCompaniesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPProductionCompaniesView.swift; sourceTree = "<group>"; };
+		F9ED69DD29AA137F0070F569 /* CPCompanyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCompanyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +279,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D2F72829A7C84700D85132 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +300,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F90F4C1829A9401100E4891E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDFA29A8459A00081A69 /* CPTapBarRemoteDataManager.swift */,
+				F90F4C1929A9403400E4891E /* CPLogOutRepository.swift */,
+				F90F4C1B29A9404C00E4891E /* CPLogOutRepositoryHttp.swift */,
+				F90F4C1D29A9405900E4891E /* CPLogOutService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F90F4C2129A9769400E4891E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDB229A7DC1200081A69 /* CPMovieRemoteDataManager.swift */,
+				F90F4C2229A9770300E4891E /* CPMovieRepository.swift */,
+				F90F4C2329A9770300E4891E /* CPMovieRepositoryHttp.swift */,
+				F90F4C2429A9770300E4891E /* CPMovieService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F90F4C3129A9938D00E4891E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F9E1B25829A8B39B003621A6 /* CPProfileRemoteDataManager.swift */,
+				F90F4C3229A993C300E4891E /* CPProfileRepository.swift */,
+				F90F4C3429A993C300E4891E /* CPProfileRepositoryHttp.swift */,
+				F90F4C3329A993C300E4891E /* CPProfileService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F90F4C3A29A9B89800E4891E /* CPRoundedImageView */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C3B29A9B8BF00E4891E /* CPRoundedImageView.swift */,
+			);
+			path = CPRoundedImageView;
+			sourceTree = "<group>";
+		};
+		F90F4C3D29A9BEED00E4891E /* CPDateFormat */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C3E29A9BF0300E4891E /* CPFormatDate.swift */,
+			);
+			path = CPDateFormat;
+			sourceTree = "<group>";
+		};
+		F90F4C4F29A9C4F100E4891E /* CPMovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5529A9C4F100E4891E /* View */,
+				F90F4C5B29A9C4F100E4891E /* Interactor */,
+				F90F4C5329A9C4F100E4891E /* Presenter */,
+				F90F4C5929A9C4F100E4891E /* Protocols */,
+				F90F4C5D29A9C4F100E4891E /* Router */,
+			);
+			path = CPMovieDetail;
+			sourceTree = "<group>";
+		};
+		F90F4C5329A9C4F100E4891E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5429A9C4F100E4891E /* CPMovieDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F90F4C5529A9C4F100E4891E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5729A9C4F100E4891E /* CPMovieDetailView.swift */,
+				F90F4C6929A9E69100E4891E /* CPMovieImageView.swift */,
+				F9ED69DA29AA12E60070F569 /* CPProductionCompaniesView.swift */,
+				F9ED69DD29AA137F0070F569 /* CPCompanyCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F90F4C5929A9C4F100E4891E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5A29A9C4F100E4891E /* CPMovieDetailProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F90F4C5B29A9C4F100E4891E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5C29A9C4F100E4891E /* CPMovieDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F90F4C5D29A9C4F100E4891E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5E29A9C4F100E4891E /* CPMovieDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		F92B269D29A6D9C8007E97CD = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +427,13 @@
 		F92B26A829A6D9C8007E97CD /* AppMovieCoppel */ = {
 			isa = PBXGroup;
 			children = (
+				F9BE949A29A7206000C07F4A /* Network */,
+				F9BE949529A71BBF00C07F4A /* Supporting */,
+				F92B270929A6DE9A007E97CD /* Resources */,
+				F92B26FD29A6DBDF007E97CD /* Utility */,
+				F92B26D929A6DA51007E97CD /* Modules */,
 				F92B26A929A6D9C8007E97CD /* AppDelegate.swift */,
 				F92B26AB29A6D9C8007E97CD /* SceneDelegate.swift */,
-				F92B26AD29A6D9C8007E97CD /* ViewController.swift */,
-				F92B26AF29A6D9C8007E97CD /* Main.storyboard */,
 				F92B26B229A6D9CA007E97CD /* Assets.xcassets */,
 				F92B26B429A6D9CA007E97CD /* LaunchScreen.storyboard */,
 				F92B26B729A6D9CA007E97CD /* Info.plist */,
@@ -127,6 +458,546 @@
 			path = AppMovieCoppelUITests;
 			sourceTree = "<group>";
 		};
+		F92B26D929A6DA51007E97CD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C4F29A9C4F100E4891E /* CPMovieDetail */,
+				F993FD9B29A7DBCE00081A69 /* CPMovie */,
+				F9D5E18029A8702800C9230D /* CPProfile */,
+				F993FDE529A8457200081A69 /* CPTapBar */,
+				F993FD6F29A7CBD500081A69 /* CPBackground */,
+				F92B26DA29A6DA5B007E97CD /* CPLogin */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F92B26DA29A6DA5B007E97CD /* CPLogin */ = {
+			isa = PBXGroup;
+			children = (
+				F9BE94A829A723D800C07F4A /* Networking */,
+				F92B26E929A6DA7D007E97CD /* Entity */,
+				F92B26EC29A6DA7D007E97CD /* Interactor */,
+				F92B26F029A6DA7D007E97CD /* Presenter */,
+				F92B26E729A6DA7D007E97CD /* Protocols */,
+				F92B26EE29A6DA7D007E97CD /* Router */,
+				F92B26F229A6DA7D007E97CD /* View */,
+			);
+			path = CPLogin;
+			sourceTree = "<group>";
+		};
+		F92B26E729A6DA7D007E97CD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26E829A6DA7D007E97CD /* CPLoginProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F92B26E929A6DA7D007E97CD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F9BE94AF29A7253E00C07F4A /* CPGuestSessionNew.swift */,
+				F9BE94B129A725D900C07F4A /* CPRequestToken.swift */,
+				F9BE94B329A726EE00C07F4A /* CPSesionUser.swift */,
+				F9D2F71B29A752DA00D85132 /* CPError.swift */,
+				F9D2F72029A7B4C000D85132 /* CPDeleteSesion.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F92B26EC29A6DA7D007E97CD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26ED29A6DA7D007E97CD /* CPLoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F92B26EE29A6DA7D007E97CD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26EF29A6DA7D007E97CD /* CPLoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F92B26F029A6DA7D007E97CD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26F129A6DA7D007E97CD /* CPLoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F92B26F229A6DA7D007E97CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9D2F71129A7489D00D85132 /* CPLoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F92B26FD29A6DBDF007E97CD /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F9D2F72229A7C70D00D85132 /* Generics */,
+				F92B272229A6E3E4007E97CD /* Extensions */,
+				F92B272A29A6F44C007E97CD /* MyTapGestureRecognizer.swift */,
+				F9BE94A229A720ED00C07F4A /* InternetConnectionManager.swift */,
+				F9BE94A429A7225400C07F4A /* CPAppInfo.swift */,
+				F9BE94B729A72FDD00C07F4A /* CPSession.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F92B270029A6DC64007E97CD /* CPTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F92B26FE29A6DBFA007E97CD /* CPTextField.swift */,
+			);
+			path = CPTextField;
+			sourceTree = "<group>";
+		};
+		F92B270129A6DC6F007E97CD /* CPColor */ = {
+			isa = PBXGroup;
+			children = (
+				F92B270229A6DD11007E97CD /* CPColor.swift */,
+				F92B270429A6DD23007E97CD /* UIColorExtension.swift */,
+			);
+			path = CPColor;
+			sourceTree = "<group>";
+		};
+		F92B270629A6DE66007E97CD /* CPFont */ = {
+			isa = PBXGroup;
+			children = (
+				F92B270729A6DE71007E97CD /* CPFont.swift */,
+			);
+			path = CPFont;
+			sourceTree = "<group>";
+		};
+		F92B270929A6DE9A007E97CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9D2F72929A7C97200D85132 /* Animation */,
+				F92B270A29A6DEA0007E97CD /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F92B270A29A6DEA0007E97CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F92B271229A6DF49007E97CD /* RobotoCondensed-Bold.ttf */,
+				F92B271329A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf */,
+				F92B270C29A6DF48007E97CD /* RobotoCondensed-Italic.ttf */,
+				F92B271029A6DF49007E97CD /* RobotoCondensed-Light.ttf */,
+				F92B270D29A6DF48007E97CD /* RobotoCondensed-LightItalic.ttf */,
+				F92B270E29A6DF48007E97CD /* RobotoCondensed-Regular.ttf */,
+				F92B270B29A6DF48007E97CD /* ufonts.com_gotham-bold.ttf */,
+				F92B271429A6DF49007E97CD /* ufonts.com_gotham-book.ttf */,
+				F92B270F29A6DF49007E97CD /* ufonts.com_gotham-light.ttf */,
+				F92B271129A6DF49007E97CD /* ufonts.com_gotham-medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F92B271F29A6E388007E97CD /* CPButton */ = {
+			isa = PBXGroup;
+			children = (
+				F92B272029A6E3A3007E97CD /* CPButton.swift */,
+			);
+			path = CPButton;
+			sourceTree = "<group>";
+		};
+		F92B272229A6E3E4007E97CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F92B272329A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift */,
+				F92B272829A6F352007E97CD /* UIView+Extension.swift */,
+				F92B272C29A6F6BD007E97CD /* UIVIewController+Extension.swift */,
+				F9BE94B529A72A7A00C07F4A /* NSError+Extension.swift */,
+				F9BE94B929A730B100C07F4A /* UserDefaults+Extension.swift */,
+				F993FD6D29A7CA7F00081A69 /* UIApplication+Extension.swift */,
+				F993FE0D29A84B9800081A69 /* UISegmentedControl+Extension.swift */,
+				F993FE0F29A84E0000081A69 /* UIImage+Extension.swift */,
+				F9E1B23E29A8A7A5003621A6 /* UIImageView+Extension.swift */,
+				F9E1B24229A8B1D5003621A6 /* UIDevice+Extension.swift */,
+				F90F4C6B29AA003E00E4891E /* Double+Extension.swift */,
+				F9ED69D629AA11230070F569 /* String+Extension.swift */,
+				F9ED69D829AA11940070F569 /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F92B272529A6F070007E97CD /* CPIcon */ = {
+			isa = PBXGroup;
+			children = (
+				F92B272629A6F07B007E97CD /* CPIcon.swift */,
+			);
+			path = CPIcon;
+			sourceTree = "<group>";
+		};
+		F993FD6F29A7CBD500081A69 /* CPBackground */ = {
+			isa = PBXGroup;
+			children = (
+				F9D0075929AAC65500079864 /* Entity */,
+				F993FD8329A7CC6400081A69 /* Interactor */,
+				F993FD8129A7CC6400081A69 /* Presenter */,
+				F993FD8829A7CC6400081A69 /* Protocols */,
+				F993FD7C29A7CC6400081A69 /* Router */,
+				F993FD8529A7CC6400081A69 /* View */,
+			);
+			path = CPBackground;
+			sourceTree = "<group>";
+		};
+		F993FD7C29A7CC6400081A69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD7D29A7CC6400081A69 /* CPBackgroundRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F993FD8129A7CC6400081A69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD8229A7CC6400081A69 /* CPBackgroundPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F993FD8329A7CC6400081A69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD8429A7CC6400081A69 /* CPBackgroundInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F993FD8529A7CC6400081A69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD8629A7CC6400081A69 /* CPBackgroundView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F993FD8829A7CC6400081A69 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD8929A7CC6400081A69 /* CPBackgroundProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F993FD9B29A7DBCE00081A69 /* CPMovie */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C2129A9769400E4891E /* Networking */,
+				F993FDB129A7DC1200081A69 /* Entity */,
+				F993FDAF29A7DC1200081A69 /* Interactor */,
+				F993FDB429A7DC1200081A69 /* Presenter */,
+				F993FDAD29A7DC1200081A69 /* Protocols */,
+				F993FDA829A7DC1200081A69 /* Router */,
+				F993FDAA29A7DC1200081A69 /* View */,
+			);
+			path = CPMovie;
+			sourceTree = "<group>";
+		};
+		F993FDA829A7DC1200081A69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDA929A7DC1200081A69 /* CPMovieRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F993FDAA29A7DC1200081A69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5E19429A8798B00C9230D /* CollectionViewCell */,
+				F993FDAC29A7DC1200081A69 /* CPMoviesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F993FDAD29A7DC1200081A69 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDAE29A7DC1200081A69 /* CPMovieProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F993FDAF29A7DC1200081A69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDB029A7DC1200081A69 /* CPMovieInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F993FDB129A7DC1200081A69 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C2929A977FA00E4891E /* CPResult.swift */,
+				F9D5E18D29A8781600C9230D /* CPCollectionMovies.swift */,
+				F90F4C2B29A9780C00E4891E /* CPList.swift */,
+				F90F4C2D29A9786200E4891E /* CPMovies.swift */,
+				F90F4C2F29A97E3F00E4891E /* CPMovieData.swift */,
+				F90F4C6729A9C67500E4891E /* CPMovieDetail.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F993FDB429A7DC1200081A69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDB529A7DC1200081A69 /* CPMoviePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F993FDE529A8457200081A69 /* CPTapBar */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C1829A9401100E4891E /* Networking */,
+				F993FDF829A8459A00081A69 /* Entity */,
+				F993FDF229A8459A00081A69 /* Interactor */,
+				F993FDF629A8459A00081A69 /* Presenter */,
+				F993FDFE29A8459A00081A69 /* Protocols */,
+				F993FDF429A8459A00081A69 /* Router */,
+				F993FDFB29A8459A00081A69 /* View */,
+			);
+			path = CPTapBar;
+			sourceTree = "<group>";
+		};
+		F993FDF229A8459A00081A69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDF329A8459A00081A69 /* CPTapBarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F993FDF429A8459A00081A69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDF529A8459A00081A69 /* CPTapBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F993FDF629A8459A00081A69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDF729A8459A00081A69 /* CPTapBarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F993FDF829A8459A00081A69 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5E17C29A868FA00C9230D /* CTapBar.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F993FDFB29A8459A00081A69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDFD29A8459A00081A69 /* CPTapBarView.swift */,
+				F9D5E17E29A86E8000C9230D /* CPTapBarTop.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F993FDFE29A8459A00081A69 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F993FDFF29A8459A00081A69 /* CPTapBarProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F9BE949529A71BBF00C07F4A /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				F9BE949629A71BCC00C07F4A /* Localizable.swift */,
+				F9BE949829A71BDB00C07F4A /* Localizable.strings */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		F9BE949A29A7206000C07F4A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F9BE949D29A7209A00C07F4A /* Enum */,
+				F9BE949B29A7206C00C07F4A /* APIService.swift */,
+				F9BE94A629A7238200C07F4A /* CPSetting.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F9BE949D29A7209A00C07F4A /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				F9BE949E29A720A700C07F4A /* Environment.swift */,
+				F9BE94A029A720BC00C07F4A /* HTTPMethod.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		F9BE94A829A723D800C07F4A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F9BE94A929A723EE00C07F4A /* CPLoginRepository.swift */,
+				F92B26EA29A6DA7D007E97CD /* CPLoginRemoteDataManager.swift */,
+				F9BE94AB29A7240B00C07F4A /* CPLoginRepositoryHttp.swift */,
+				F9BE94AD29A7242E00C07F4A /* CPLoginService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F9D0075929AAC65500079864 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F9D0075A29AAC66300079864 /* CPBackgroundType.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F9D2F71D29A7566F00D85132 /* CPAlert */ = {
+			isa = PBXGroup;
+			children = (
+				F9D2F71E29A7568000D85132 /* CPAlert.swift */,
+			);
+			path = CPAlert;
+			sourceTree = "<group>";
+		};
+		F9D2F72229A7C70D00D85132 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C3D29A9BEED00E4891E /* CPDateFormat */,
+				F90F4C3A29A9B89800E4891E /* CPRoundedImageView */,
+				F9E1B24129A8B025003621A6 /* CPCollectionDelegate */,
+				F9E1B24029A8AFF8003621A6 /* CPCollectionDataSource */,
+				F9D2F72329A7C71A00D85132 /* CPLoader */,
+				F9D2F71D29A7566F00D85132 /* CPAlert */,
+				F92B272529A6F070007E97CD /* CPIcon */,
+				F92B271F29A6E388007E97CD /* CPButton */,
+				F92B270629A6DE66007E97CD /* CPFont */,
+				F92B270129A6DC6F007E97CD /* CPColor */,
+				F92B270029A6DC64007E97CD /* CPTextField */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		F9D2F72329A7C71A00D85132 /* CPLoader */ = {
+			isa = PBXGroup;
+			children = (
+				F9D2F72429A7C72800D85132 /* CPLoader.swift */,
+			);
+			path = CPLoader;
+			sourceTree = "<group>";
+		};
+		F9D2F72929A7C97200D85132 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F993FD9229A7CE7C00081A69 /* loader_d.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		F9D5E18029A8702800C9230D /* CPProfile */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C3129A9938D00E4891E /* Networking */,
+				F9E1B25629A8B39B003621A6 /* Entity */,
+				F9E1B25429A8B39B003621A6 /* Interactor */,
+				F9E1B25C29A8B39B003621A6 /* Presenter */,
+				F9E1B25229A8B39B003621A6 /* Protocols */,
+				F9E1B25029A8B39B003621A6 /* Router */,
+				F9E1B25929A8B39B003621A6 /* View */,
+			);
+			path = CPProfile;
+			sourceTree = "<group>";
+		};
+		F9D5E19429A8798B00C9230D /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5E19529A879A100C9230D /* CPMovieCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		F9E1B24029A8AFF8003621A6 /* CPCollectionDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5E18529A8779200C9230D /* CPCollectionViewDataSource.swift */,
+			);
+			path = CPCollectionDataSource;
+			sourceTree = "<group>";
+		};
+		F9E1B24129A8B025003621A6 /* CPCollectionDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5E18729A877A100C9230D /* CPCollectionViewDelegate.swift */,
+			);
+			path = CPCollectionDelegate;
+			sourceTree = "<group>";
+		};
+		F9E1B25029A8B39B003621A6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F9E1B25129A8B39B003621A6 /* CPProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F9E1B25229A8B39B003621A6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F9E1B25329A8B39B003621A6 /* CPProfileProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F9E1B25429A8B39B003621A6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F9E1B25529A8B39B003621A6 /* CPProfileInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F9E1B25629A8B39B003621A6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C3829A9992500E4891E /* CPAccount.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F9E1B25929A8B39B003621A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9E1B25B29A8B39B003621A6 /* CPProfileView.swift */,
+				F9E1B26629A8B769003621A6 /* CPProfileDataView.swift */,
+				F9E1B26829A8BE7B003621A6 /* CPProfileMoviewFavoriteView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9E1B25C29A8B39B003621A6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F9E1B25D29A8B39B003621A6 /* CPProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +1014,9 @@
 			dependencies = (
 			);
 			name = AppMovieCoppel;
+			packageProductDependencies = (
+				F9D2F72729A7C84700D85132 /* Lottie */,
+			);
 			productName = AppMovieCoppel;
 			productReference = F92B26A629A6D9C8007E97CD /* AppMovieCoppel.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +1089,9 @@
 				Base,
 			);
 			mainGroup = F92B269D29A6D9C8007E97CD;
+			packageReferences = (
+				F9D2F72629A7C84700D85132 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = F92B26A729A6D9C8007E97CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +1108,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92B271729A6DF49007E97CD /* RobotoCondensed-LightItalic.ttf in Resources */,
+				F92B271A29A6DF49007E97CD /* RobotoCondensed-Light.ttf in Resources */,
+				F993FD9329A7CE7C00081A69 /* loader_d.json in Resources */,
+				F92B271D29A6DF49007E97CD /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				F9BE949929A71BDB00C07F4A /* Localizable.strings in Resources */,
 				F92B26B629A6D9CA007E97CD /* LaunchScreen.storyboard in Resources */,
+				F92B271829A6DF49007E97CD /* RobotoCondensed-Regular.ttf in Resources */,
 				F92B26B329A6D9CA007E97CD /* Assets.xcassets in Resources */,
-				F92B26B129A6D9C8007E97CD /* Main.storyboard in Resources */,
+				F92B271E29A6DF49007E97CD /* ufonts.com_gotham-book.ttf in Resources */,
+				F92B271529A6DF49007E97CD /* ufonts.com_gotham-bold.ttf in Resources */,
+				F92B271629A6DF49007E97CD /* RobotoCondensed-Italic.ttf in Resources */,
+				F92B271929A6DF49007E97CD /* ufonts.com_gotham-light.ttf in Resources */,
+				F92B271B29A6DF49007E97CD /* ufonts.com_gotham-medium.ttf in Resources */,
+				F92B271C29A6DF49007E97CD /* RobotoCondensed-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +1146,109 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92B26AE29A6D9C8007E97CD /* ViewController.swift in Sources */,
+				F92B26FF29A6DBFA007E97CD /* CPTextField.swift in Sources */,
+				F90F4C6A29A9E69100E4891E /* CPMovieImageView.swift in Sources */,
+				F9D2F71C29A752DA00D85132 /* CPError.swift in Sources */,
+				F9BE94AA29A723EE00C07F4A /* CPLoginRepository.swift in Sources */,
+				F9BE949729A71BCC00C07F4A /* Localizable.swift in Sources */,
+				F9E1B26029A8B39B003621A6 /* CPProfileInteractor.swift in Sources */,
+				F92B26F629A6DA7D007E97CD /* CPLoginRemoteDataManager.swift in Sources */,
+				F9D2F72529A7C72800D85132 /* CPLoader.swift in Sources */,
+				F9BE949C29A7206C00C07F4A /* APIService.swift in Sources */,
+				F92B272729A6F07B007E97CD /* CPIcon.swift in Sources */,
+				F9BE94AE29A7242E00C07F4A /* CPLoginService.swift in Sources */,
+				F993FDB629A7DC1200081A69 /* CPMovieRouter.swift in Sources */,
+				F9D5E17F29A86E8000C9230D /* CPTapBarTop.swift in Sources */,
+				F993FE0629A8459A00081A69 /* CPTapBarView.swift in Sources */,
+				F9E1B25E29A8B39B003621A6 /* CPProfileRouter.swift in Sources */,
+				F92B26FA29A6DA7D007E97CD /* CPLoginPresenter.swift in Sources */,
+				F92B26F929A6DA7D007E97CD /* CPLoginRouter.swift in Sources */,
+				F9BE94AC29A7240B00C07F4A /* CPLoginRepositoryHttp.swift in Sources */,
+				F90F4C3629A993C300E4891E /* CPProfileService.swift in Sources */,
+				F9E1B26429A8B39B003621A6 /* CPProfileView.swift in Sources */,
+				F9ED69DE29AA137F0070F569 /* CPCompanyCollectionViewCell.swift in Sources */,
+				F993FE0129A8459A00081A69 /* CPTapBarRouter.swift in Sources */,
+				F9BE94B229A725D900C07F4A /* CPRequestToken.swift in Sources */,
+				F92B272929A6F352007E97CD /* UIView+Extension.swift in Sources */,
+				F90F4C1C29A9404C00E4891E /* CPLogOutRepositoryHttp.swift in Sources */,
+				F993FDBB29A7DC1200081A69 /* CPMovieRemoteDataManager.swift in Sources */,
+				F90F4C2E29A9786200E4891E /* CPMovies.swift in Sources */,
+				F9ED69D929AA11940070F569 /* Date+Extension.swift in Sources */,
+				F92B26F829A6DA7D007E97CD /* CPLoginInteractor.swift in Sources */,
+				F9BE94A529A7225400C07F4A /* CPAppInfo.swift in Sources */,
+				F993FE0729A8459A00081A69 /* CPTapBarProtocols.swift in Sources */,
+				F993FE0E29A84B9800081A69 /* UISegmentedControl+Extension.swift in Sources */,
+				F993FD9129A7CC6400081A69 /* CPBackgroundProtocols.swift in Sources */,
+				F90F4C1E29A9405900E4891E /* CPLogOutService.swift in Sources */,
+				F90F4C3F29A9BF0300E4891E /* CPFormatDate.swift in Sources */,
 				F92B26AA29A6D9C8007E97CD /* AppDelegate.swift in Sources */,
+				F9E1B26729A8B769003621A6 /* CPProfileDataView.swift in Sources */,
+				F9D5E17D29A868FA00C9230D /* CTapBar.swift in Sources */,
+				F9E1B26929A8BE7B003621A6 /* CPProfileMoviewFavoriteView.swift in Sources */,
+				F9E1B25F29A8B39B003621A6 /* CPProfileProtocols.swift in Sources */,
+				F9D2F71229A7489D00D85132 /* CPLoginView.swift in Sources */,
+				F9BE94B829A72FDD00C07F4A /* CPSession.swift in Sources */,
+				F90F4C3529A993C300E4891E /* CPProfileRepository.swift in Sources */,
+				F9BE94B029A7253E00C07F4A /* CPGuestSessionNew.swift in Sources */,
+				F993FDBD29A7DC1200081A69 /* CPMoviePresenter.swift in Sources */,
+				F9BE949F29A720A700C07F4A /* Environment.swift in Sources */,
+				F9D5E18629A8779200C9230D /* CPCollectionViewDataSource.swift in Sources */,
+				F993FD8F29A7CC6400081A69 /* CPBackgroundView.swift in Sources */,
+				F9D0075B29AAC66300079864 /* CPBackgroundType.swift in Sources */,
+				F92B272D29A6F6BD007E97CD /* UIVIewController+Extension.swift in Sources */,
+				F90F4C2729A9770300E4891E /* CPMovieService.swift in Sources */,
+				F92B272429A6E3EF007E97CD /* NSMutableAttributedString+Extension.swift in Sources */,
+				F9BE94B429A726EE00C07F4A /* CPSesionUser.swift in Sources */,
+				F9D2F72129A7B4C000D85132 /* CPDeleteSesion.swift in Sources */,
+				F993FDBA29A7DC1200081A69 /* CPMovieInteractor.swift in Sources */,
+				F90F4C3029A97E3F00E4891E /* CPMovieData.swift in Sources */,
+				F993FD6E29A7CA7F00081A69 /* UIApplication+Extension.swift in Sources */,
+				F90F4C6529A9C4F100E4891E /* CPMovieDetailInteractor.swift in Sources */,
+				F9BE94A729A7238200C07F4A /* CPSetting.swift in Sources */,
+				F92B270829A6DE71007E97CD /* CPFont.swift in Sources */,
+				F993FE0429A8459A00081A69 /* CPTapBarRemoteDataManager.swift in Sources */,
+				F9E1B24329A8B1D5003621A6 /* UIDevice+Extension.swift in Sources */,
+				F92B26F529A6DA7D007E97CD /* CPLoginProtocols.swift in Sources */,
+				F90F4C2629A9770300E4891E /* CPMovieRepositoryHttp.swift in Sources */,
+				F92B272129A6E3A3007E97CD /* CPButton.swift in Sources */,
+				F92B270329A6DD11007E97CD /* CPColor.swift in Sources */,
+				F90F4C3929A9992500E4891E /* CPAccount.swift in Sources */,
+				F9BE94A129A720BC00C07F4A /* HTTPMethod.swift in Sources */,
+				F9E1B26229A8B39B003621A6 /* CPProfileRemoteDataManager.swift in Sources */,
+				F90F4C3C29A9B8BF00E4891E /* CPRoundedImageView.swift in Sources */,
+				F92B272B29A6F44C007E97CD /* MyTapGestureRecognizer.swift in Sources */,
+				F993FDB829A7DC1200081A69 /* CPMoviesView.swift in Sources */,
+				F90F4C6629A9C4F100E4891E /* CPMovieDetailRouter.swift in Sources */,
+				F90F4C6C29AA003E00E4891E /* Double+Extension.swift in Sources */,
+				F90F4C3729A993C300E4891E /* CPProfileRepositoryHttp.swift in Sources */,
 				F92B26AC29A6D9C8007E97CD /* SceneDelegate.swift in Sources */,
+				F90F4C2529A9770300E4891E /* CPMovieRepository.swift in Sources */,
+				F9ED69D729AA11230070F569 /* String+Extension.swift in Sources */,
+				F9E1B26529A8B39B003621A6 /* CPProfilePresenter.swift in Sources */,
+				F993FE0029A8459A00081A69 /* CPTapBarInteractor.swift in Sources */,
+				F9D5E19729A879A100C9230D /* CPMovieCollectionViewCell.swift in Sources */,
+				F90F4C6429A9C4F100E4891E /* CPMovieDetailProtocols.swift in Sources */,
+				F993FE0229A8459A00081A69 /* CPTapBarPresenter.swift in Sources */,
+				F90F4C1A29A9403400E4891E /* CPLogOutRepository.swift in Sources */,
+				F92B270529A6DD23007E97CD /* UIColorExtension.swift in Sources */,
+				F90F4C6829A9C67500E4891E /* CPMovieDetail.swift in Sources */,
+				F9D2F71F29A7568000D85132 /* CPAlert.swift in Sources */,
+				F90F4C6329A9C4F100E4891E /* CPMovieDetailView.swift in Sources */,
+				F993FD8E29A7CC6400081A69 /* CPBackgroundInteractor.swift in Sources */,
+				F993FD8D29A7CC6400081A69 /* CPBackgroundPresenter.swift in Sources */,
+				F9D5E18E29A8781600C9230D /* CPCollectionMovies.swift in Sources */,
+				F90F4C6129A9C4F100E4891E /* CPMovieDetailPresenter.swift in Sources */,
+				F9BE94A329A720ED00C07F4A /* InternetConnectionManager.swift in Sources */,
+				F9BE94BA29A730B100C07F4A /* UserDefaults+Extension.swift in Sources */,
+				F9E1B23F29A8A7A5003621A6 /* UIImageView+Extension.swift in Sources */,
+				F90F4C2C29A9780C00E4891E /* CPList.swift in Sources */,
+				F993FE1029A84E0000081A69 /* UIImage+Extension.swift in Sources */,
+				F9BE94B629A72A7A00C07F4A /* NSError+Extension.swift in Sources */,
+				F9ED69DB29AA12E60070F569 /* CPProductionCompaniesView.swift in Sources */,
+				F993FDB929A7DC1200081A69 /* CPMovieProtocols.swift in Sources */,
+				F9D5E18829A877A100C9230D /* CPCollectionViewDelegate.swift in Sources */,
+				F90F4C2A29A977FA00E4891E /* CPResult.swift in Sources */,
+				F993FD8A29A7CC6400081A69 /* CPBackgroundRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +1285,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F92B26AF29A6D9C8007E97CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F92B26B029A6D9C8007E97CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F92B26B429A6D9CA007E97CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -316,7 +1296,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F92B26CE29A6D9CA007E97CD /* Debug */ = {
+		F92B26CE29A6D9CA007E97CD /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -366,7 +1346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -374,9 +1354,75 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Development;
 		};
-		F92B26CF29A6D9CA007E97CD /* Release */ = {
+		F92B26D129A6D9CA007E97CD /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3ZJKHQJTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppMovieCoppel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cas.company.com.AppMovieCoppel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		F92B26D429A6D9CA007E97CD /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3ZJKHQJTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cas.company.com.AppMovieCoppelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppMovieCoppel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppMovieCoppel";
+			};
+			name = Development;
+		};
+		F92B26D729A6D9CA007E97CD /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3ZJKHQJTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cas.company.com.AppMovieCoppelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AppMovieCoppel;
+			};
+			name = Development;
+		};
+		F9D2F71329A74F1A00D85132 /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -420,7 +1466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -428,9 +1474,9 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Production;
 		};
-		F92B26D129A6D9CA007E97CD /* Debug */ = {
+		F9D2F71429A74F1A00D85132 /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -442,9 +1488,9 @@
 				INFOPLIST_FILE = AppMovieCoppel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,37 +1502,9 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Production;
 		};
-		F92B26D229A6D9CA007E97CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S3ZJKHQJTJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppMovieCoppel/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cas.company.com.AppMovieCoppel;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F92B26D429A6D9CA007E97CD /* Debug */ = {
+		F9D2F71529A74F1A00D85132 /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -504,9 +1522,115 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppMovieCoppel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppMovieCoppel";
 			};
-			name = Debug;
+			name = Production;
 		};
-		F92B26D529A6D9CA007E97CD /* Release */ = {
+		F9D2F71629A74F1A00D85132 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3ZJKHQJTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cas.company.com.AppMovieCoppelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AppMovieCoppel;
+			};
+			name = Production;
+		};
+		F9D2F71729A74F5D00D85132 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = QA;
+		};
+		F9D2F71829A74F5D00D85132 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3ZJKHQJTJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppMovieCoppel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cas.company.com.AppMovieCoppel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = QA;
+		};
+		F9D2F71929A74F5D00D85132 /* QA */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -524,9 +1648,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppMovieCoppel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppMovieCoppel";
 			};
-			name = Release;
+			name = QA;
 		};
-		F92B26D729A6D9CA007E97CD /* Debug */ = {
+		F9D2F71A29A74F5D00D85132 /* QA */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -542,25 +1666,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = AppMovieCoppel;
 			};
-			name = Debug;
-		};
-		F92B26D829A6D9CA007E97CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S3ZJKHQJTJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cas.company.com.AppMovieCoppelUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AppMovieCoppel;
-			};
-			name = Release;
+			name = QA;
 		};
 /* End XCBuildConfiguration section */
 
@@ -568,40 +1674,64 @@
 		F92B26A129A6D9C8007E97CD /* Build configuration list for PBXProject "AppMovieCoppel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F92B26CE29A6D9CA007E97CD /* Debug */,
-				F92B26CF29A6D9CA007E97CD /* Release */,
+				F92B26CE29A6D9CA007E97CD /* Development */,
+				F9D2F71729A74F5D00D85132 /* QA */,
+				F9D2F71329A74F1A00D85132 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		F92B26D029A6D9CA007E97CD /* Build configuration list for PBXNativeTarget "AppMovieCoppel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F92B26D129A6D9CA007E97CD /* Debug */,
-				F92B26D229A6D9CA007E97CD /* Release */,
+				F92B26D129A6D9CA007E97CD /* Development */,
+				F9D2F71829A74F5D00D85132 /* QA */,
+				F9D2F71429A74F1A00D85132 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		F92B26D329A6D9CA007E97CD /* Build configuration list for PBXNativeTarget "AppMovieCoppelTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F92B26D429A6D9CA007E97CD /* Debug */,
-				F92B26D529A6D9CA007E97CD /* Release */,
+				F92B26D429A6D9CA007E97CD /* Development */,
+				F9D2F71929A74F5D00D85132 /* QA */,
+				F9D2F71529A74F1A00D85132 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		F92B26D629A6D9CA007E97CD /* Build configuration list for PBXNativeTarget "AppMovieCoppelUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F92B26D729A6D9CA007E97CD /* Debug */,
-				F92B26D829A6D9CA007E97CD /* Release */,
+				F92B26D729A6D9CA007E97CD /* Development */,
+				F9D2F71A29A74F5D00D85132 /* QA */,
+				F9D2F71629A74F1A00D85132 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9D2F72629A7C84700D85132 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 5.0.0;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9D2F72729A7C84700D85132 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9D2F72629A7C84700D85132 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F92B269E29A6D9C8007E97CD /* Project object */;
 }
