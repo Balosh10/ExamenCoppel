@@ -12,7 +12,6 @@ class CPTapBarInteractor: CPTapBarInteractorInputProtocol {
 
     // MARK: Properties
     weak var presenter: CPTapBarInteractorOutputProtocol?
-    var localDatamanager: CPTapBarLocalDataManagerInputProtocol?
     var remoteDatamanager: CPTapBarRemoteDataManagerInputProtocol?
 
     func logOut() {

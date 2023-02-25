@@ -27,4 +27,23 @@ class CPMovieRepositoryHttp: CPMovieRepository {
             self.services = nil
         }
     }
+    
+    func fetchMovieDetail(_ list: CPList,
+                     _ id: Int,
+                     _ completion: @escaping (Result<CPMovieDetail, NSError>) -> Void) {
+        services = APIService()
+        let endPoint = "\(list)/\(id)?api_key=\(Setting.apiKey)&language=es-MX&page=1"
+        services?.apiRequest(endPoint,
+                             CPMovieDetail.self,
+                             .get) { result in
+            switch result {
+            case .success(let objct):
+                completion(.success(objct))
+            case .failure(let failure):
+                completion(.failure(failure))
+            }
+            self.services = nil
+        }
+    }
+    
 }

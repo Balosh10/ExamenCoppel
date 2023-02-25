@@ -17,6 +17,9 @@ enum colorType: String {
     case red100 = "#D14722"
     case gray100 = "#C6C6C6"
     case gray200 = "#474747"
+    case blue100 = "#09D6D3"
+    case purple100 = "#7112BC"
+    case yellow100 = "#D3B72F"
 }
 
 extension UIColor {
@@ -46,6 +49,15 @@ extension UIColor {
     }
     static var CPGray200: UIColor {
         return .getColorWith(hex: colorType.gray200.rawValue)
+    }
+    static var CPBlue100: UIColor {
+        return .getColorWith(hex: colorType.blue100.rawValue)
+    }
+    static var CPPurple100: UIColor {
+        return .getColorWith(hex: colorType.purple100.rawValue)
+    }
+    static var CPYellow100: UIColor {
+        return .getColorWith(hex: colorType.yellow100.rawValue)
     }
 }
 extension UIColor {

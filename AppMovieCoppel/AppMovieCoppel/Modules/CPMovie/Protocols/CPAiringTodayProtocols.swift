@@ -18,7 +18,7 @@ protocol CPAiringTodayViewProtocol: AnyObject {
 
 protocol CPAiringTodayRouterProtocol: AnyObject {
     static func createCPAiringTodayModule(dataMovie: CPMovieData) -> UIViewController
-    func presentMovieDetail(from view: CPAiringTodayViewProtocol?)
+    func presentMovieDetail(from view: CPAiringTodayViewProtocol?, movies: CPMovieDetail)
 }
 
 protocol CPAiringTodayPresenterProtocol: AnyObject {
@@ -27,12 +27,13 @@ protocol CPAiringTodayPresenterProtocol: AnyObject {
     var router: CPAiringTodayRouterProtocol? { get set }
     
     func viewDidLoad()
-    
+    func fetchMovieDetail(_ id: Int)
 }
 
 protocol CPAiringTodayInteractorOutputProtocol: AnyObject {
     func showInfo(message: String)
     func loadData(movies: [CPCollectionMovies], type: CPList)
+    func loadMovieDetail(movies: CPMovieDetail)
 }
 
 protocol CPAiringTodayInteractorInputProtocol: AnyObject {
@@ -41,20 +42,19 @@ protocol CPAiringTodayInteractorInputProtocol: AnyObject {
     var dataMovie: CPMovieData? { get set }
     
     func fechtMovie()
-
-}
-
-protocol CPDashboardDataManagerInputProtocol: AnyObject {
+    func fetchMovieDetail(_ id: Int)
 }
 
 protocol CPAiringTodayRemoteDataManagerInputProtocol: AnyObject {
     var remoteRequestHandler: CPDashboardRemoteDataManagerOutputProtocol? { get set }
+    
     func fechtMovie(_ list: CPList, _ result: CPResult)
-
+    func fetchMovieDetail(_ list: CPList, _ id: Int)
 }
 
 protocol CPDashboardRemoteDataManagerOutputProtocol: AnyObject {
     func loadData(movies: CPMovies)
+    func loadMovieDetail(movies: CPMovieDetail)
     func showError(message: String)
 }
 

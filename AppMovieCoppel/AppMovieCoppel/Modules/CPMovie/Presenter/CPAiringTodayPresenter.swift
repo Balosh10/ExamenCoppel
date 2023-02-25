@@ -18,14 +18,23 @@ class CPAiringTodayPresenter  {
 }
 
 extension CPAiringTodayPresenter: CPAiringTodayPresenterProtocol {
+    
     func viewDidLoad() {
         view?.initUI()
         interactor?.fechtMovie()
     }
     
+    func fetchMovieDetail( _ id: Int) {
+        interactor?.fetchMovieDetail(id)
+    }
+    
 }
 
 extension CPAiringTodayPresenter: CPAiringTodayInteractorOutputProtocol {
+    func loadMovieDetail(movies: CPMovieDetail) {
+        CPLoader.hide()
+        router?.presentMovieDetail(from: view, movies: movies)
+    }
     
     func showInfo(message: String) {
         CPLoader.hide()

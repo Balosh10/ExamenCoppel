@@ -15,14 +15,13 @@ class CPAiringTodayView: UIViewController {
     var presenter: CPAiringTodayPresenterProtocol?
     private var movieCollectioView: UICollectionView?
     private var cellCollectionViewIdentifier = "MovieCollectionViewCell"
-    private var collectiondataSource: CPCollectionViewDataSource<MovieCollectionViewCell, CPCollectionMovies>!
-    
+    private var collectionDataSource: CPCollectionViewDataSource<MovieCollectionViewCell, CPCollectionMovies>!
+    private var collectionDelegate : CPCollectionViewDelegate<MovieCollectionViewCell, CPCollectionMovies>!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
-
     }
-    
 }
 
 extension CPAiringTodayView: CPAiringTodayViewProtocol {
@@ -46,21 +45,29 @@ extension CPAiringTodayView: CPAiringTodayViewProtocol {
         }
         view.addSubview(collection)
         NSLayoutConstraint.activate([
-            collection.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            collection.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            collection.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collection.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             collection.topAnchor.constraint(equalTo: view.topAnchor, constant: 22),
-            collection.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
+            collection.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
     func loadData(movies: [CPCollectionMovies], type: CPList) {
-        self.collectiondataSource = CPCollectionViewDataSource(cellIdentifier: cellCollectionViewIdentifier,
+        collectionDataSource = CPCollectionViewDataSource(cellIdentifier: cellCollectionViewIdentifier,
                                                                items: movies,
                                                                configureCell: { (cellCollection, itemMovie) in
             guard let data = itemMovie else { return }
             cellCollection.loadView(movie: data, type: type)
         })
+        collectionDelegate = CPCollectionViewDelegate(cellIdentifier: cellCollectionViewIdentifier,
+                                                      items: movies,
+                                                      configureCell: { [weak self] (cellCollection, itemMovie) in
+            guard let self = self, let id = itemMovie?.id else { return }
+            self.presenter?.fetchMovieDetail(id)
+        })
+        
         DispatchQueue.main.async {
-            self.movieCollectioView?.dataSource = self.collectiondataSource
+            self.movieCollectioView?.dataSource = self.collectionDataSource
+            self.movieCollectioView?.delegate = self.collectionDelegate
             self.movieCollectioView?.register(UINib(nibName: self.cellCollectionViewIdentifier, bundle: nil),
                                               forCellWithReuseIdentifier: self.cellCollectionViewIdentifier)
             self.movieCollectioView?.reloadData()

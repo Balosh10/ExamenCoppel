@@ -16,7 +16,7 @@ extension NSMutableAttributedString {
                   _ background: UIColor = UIColor.clear) -> NSMutableAttributedString {
         
         var attributes:[NSAttributedString.Key: Any] = [:]
-        attributes[.font] = CPFont.gothamBook.size(size)
+        attributes[.font] = CPFont.gothamMedium.size(size)
         attributes[.foregroundColor] = color
         attributes[.backgroundColor] = background
         self.append(NSAttributedString(string: value, attributes: attributes))

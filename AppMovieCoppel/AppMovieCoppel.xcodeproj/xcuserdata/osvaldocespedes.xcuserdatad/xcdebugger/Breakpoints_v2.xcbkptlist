@@ -126,8 +126,8 @@
             filePath = "AppMovieCoppel/Modules/CPTapBar/Router/CPTapBarRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "createCPTapBarModule()"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +142,8 @@
             filePath = "AppMovieCoppel/Modules/CPTapBar/Router/CPTapBarRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "createCPTapBarModule()"
             landmarkType = "7">
          </BreakpointContent>
@@ -386,54 +386,6 @@
             endingLineNumber = "26"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D6BE0105-5013-4965-9D46-684905EEFE45"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovieCoppel/Modules/CPMovie/View/CollectionViewCell/MovieCollectionViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "loadView(movie:type:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D6BE0105-5013-4965-9D46-684905EEFE45 - 1af35202df1dc337"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AppMovieCoppel.MovieCollectionViewCell.loadView(movie: AppMovieCoppel.CPCollectionMovies, type: AppMovieCoppel.CPList) -&gt; ()"
-                  moduleName = "AppMovieCoppel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/osvaldocespedes/ExamenCoppel/AppMovieCoppel/AppMovieCoppel/Modules/CPMovie/View/CollectionViewCell/MovieCollectionViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "2793">
-               </Location>
-               <Location
-                  uuid = "D6BE0105-5013-4965-9D46-684905EEFE45 - 1af35202df1dc337"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AppMovieCoppel.MovieCollectionViewCell.loadView(movie: AppMovieCoppel.CPCollectionMovies, type: AppMovieCoppel.CPList) -&gt; ()"
-                  moduleName = "AppMovieCoppel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/osvaldocespedes/ExamenCoppel/AppMovieCoppel/AppMovieCoppel/Modules/CPMovie/View/CollectionViewCell/MovieCollectionViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "2844">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

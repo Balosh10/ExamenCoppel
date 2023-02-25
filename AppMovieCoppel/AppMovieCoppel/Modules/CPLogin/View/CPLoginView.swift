@@ -113,8 +113,8 @@ extension CPLoginView: CPLoginViewProtocol {
             logo.heightAnchor.constraint(equalToConstant: 75),
             stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 44),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -44),
-            stackView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor, constant: 0),
-            stackView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor, constant: 0),
+            stackView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            stackView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             stackView.heightAnchor.constraint(equalToConstant: 180),
             messageError.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 44),
             messageError.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -44),
@@ -143,11 +143,11 @@ extension CPLoginView: CPLoginViewProtocol {
         
         NSLayoutConstraint.activate([
             scrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -0),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 44),
-            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
-            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
+            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor),
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor)

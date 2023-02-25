@@ -23,6 +23,15 @@
 		F90F4C3929A9992500E4891E /* CPAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C3829A9992500E4891E /* CPAccount.swift */; };
 		F90F4C3C29A9B8BF00E4891E /* CPRoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C3B29A9B8BF00E4891E /* CPRoundedImageView.swift */; };
 		F90F4C3F29A9BF0300E4891E /* CPFormatDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C3E29A9BF0300E4891E /* CPFormatDate.swift */; };
+		F90F4C5F29A9C4F100E4891E /* CPMovieDetailRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C5129A9C4F100E4891E /* CPMovieDetailRemoteDataManager.swift */; };
+		F90F4C6129A9C4F100E4891E /* CPMovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C5429A9C4F100E4891E /* CPMovieDetailPresenter.swift */; };
+		F90F4C6329A9C4F100E4891E /* CPMovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C5729A9C4F100E4891E /* CPMovieDetailView.swift */; };
+		F90F4C6429A9C4F100E4891E /* CPMovieDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C5A29A9C4F100E4891E /* CPMovieDetailProtocols.swift */; };
+		F90F4C6529A9C4F100E4891E /* CPMovieDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C5C29A9C4F100E4891E /* CPMovieDetailInteractor.swift */; };
+		F90F4C6629A9C4F100E4891E /* CPMovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C5E29A9C4F100E4891E /* CPMovieDetailRouter.swift */; };
+		F90F4C6829A9C67500E4891E /* CPMovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C6729A9C67500E4891E /* CPMovieDetail.swift */; };
+		F90F4C6A29A9E69100E4891E /* CPMovieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C6929A9E69100E4891E /* CPMovieImageView.swift */; };
+		F90F4C6C29AA003E00E4891E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F4C6B29AA003E00E4891E /* Double+Extension.swift */; };
 		F92B26AA29A6D9C8007E97CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26A929A6D9C8007E97CD /* AppDelegate.swift */; };
 		F92B26AC29A6D9C8007E97CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B26AB29A6D9C8007E97CD /* SceneDelegate.swift */; };
 		F92B26B329A6D9CA007E97CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92B26B229A6D9CA007E97CD /* Assets.xcassets */; };
@@ -71,7 +80,6 @@
 		F993FE0029A8459A00081A69 /* CPTapBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDF329A8459A00081A69 /* CPTapBarInteractor.swift */; };
 		F993FE0129A8459A00081A69 /* CPTapBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDF529A8459A00081A69 /* CPTapBarRouter.swift */; };
 		F993FE0229A8459A00081A69 /* CPTapBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDF729A8459A00081A69 /* CPTapBarPresenter.swift */; };
-		F993FE0329A8459A00081A69 /* CPTapBarLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDF929A8459A00081A69 /* CPTapBarLocalDataManager.swift */; };
 		F993FE0429A8459A00081A69 /* CPTapBarRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDFA29A8459A00081A69 /* CPTapBarRemoteDataManager.swift */; };
 		F993FE0629A8459A00081A69 /* CPTapBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDFD29A8459A00081A69 /* CPTapBarView.swift */; };
 		F993FE0729A8459A00081A69 /* CPTapBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993FDFF29A8459A00081A69 /* CPTapBarProtocols.swift */; };
@@ -120,6 +128,10 @@
 		F9E1B26529A8B39B003621A6 /* CPProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B25D29A8B39B003621A6 /* CPProfilePresenter.swift */; };
 		F9E1B26729A8B769003621A6 /* CPProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B26629A8B769003621A6 /* CPProfileDataView.swift */; };
 		F9E1B26929A8BE7B003621A6 /* CPProfileMoviewFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1B26829A8BE7B003621A6 /* CPProfileMoviewFavoriteView.swift */; };
+		F9ED69D729AA11230070F569 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ED69D629AA11230070F569 /* String+Extension.swift */; };
+		F9ED69D929AA11940070F569 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ED69D829AA11940070F569 /* Date+Extension.swift */; };
+		F9ED69DB29AA12E60070F569 /* CPProductionCompaniesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ED69DA29AA12E60070F569 /* CPProductionCompaniesView.swift */; };
+		F9ED69DE29AA137F0070F569 /* CPCompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ED69DD29AA137F0070F569 /* CPCompanyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +168,15 @@
 		F90F4C3829A9992500E4891E /* CPAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPAccount.swift; sourceTree = "<group>"; };
 		F90F4C3B29A9B8BF00E4891E /* CPRoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRoundedImageView.swift; sourceTree = "<group>"; };
 		F90F4C3E29A9BF0300E4891E /* CPFormatDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFormatDate.swift; sourceTree = "<group>"; };
+		F90F4C5129A9C4F100E4891E /* CPMovieDetailRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieDetailRemoteDataManager.swift; sourceTree = "<group>"; };
+		F90F4C5429A9C4F100E4891E /* CPMovieDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieDetailPresenter.swift; sourceTree = "<group>"; };
+		F90F4C5729A9C4F100E4891E /* CPMovieDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieDetailView.swift; sourceTree = "<group>"; };
+		F90F4C5A29A9C4F100E4891E /* CPMovieDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieDetailProtocols.swift; sourceTree = "<group>"; };
+		F90F4C5C29A9C4F100E4891E /* CPMovieDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieDetailInteractor.swift; sourceTree = "<group>"; };
+		F90F4C5E29A9C4F100E4891E /* CPMovieDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMovieDetailRouter.swift; sourceTree = "<group>"; };
+		F90F4C6729A9C67500E4891E /* CPMovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMovieDetail.swift; sourceTree = "<group>"; };
+		F90F4C6929A9E69100E4891E /* CPMovieImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMovieImageView.swift; sourceTree = "<group>"; };
+		F90F4C6B29AA003E00E4891E /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		F92B26A629A6D9C8007E97CD /* AppMovieCoppel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMovieCoppel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92B26A929A6D9C8007E97CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92B26AB29A6D9C8007E97CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,7 +229,6 @@
 		F993FDF329A8459A00081A69 /* CPTapBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarInteractor.swift; sourceTree = "<group>"; };
 		F993FDF529A8459A00081A69 /* CPTapBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarRouter.swift; sourceTree = "<group>"; };
 		F993FDF729A8459A00081A69 /* CPTapBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarPresenter.swift; sourceTree = "<group>"; };
-		F993FDF929A8459A00081A69 /* CPTapBarLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarLocalDataManager.swift; sourceTree = "<group>"; };
 		F993FDFA29A8459A00081A69 /* CPTapBarRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarRemoteDataManager.swift; sourceTree = "<group>"; };
 		F993FDFD29A8459A00081A69 /* CPTapBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarView.swift; sourceTree = "<group>"; };
 		F993FDFF29A8459A00081A69 /* CPTapBarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTapBarProtocols.swift; sourceTree = "<group>"; };
@@ -256,6 +276,10 @@
 		F9E1B25D29A8B39B003621A6 /* CPProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPProfilePresenter.swift; sourceTree = "<group>"; };
 		F9E1B26629A8B769003621A6 /* CPProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPProfileDataView.swift; sourceTree = "<group>"; };
 		F9E1B26829A8BE7B003621A6 /* CPProfileMoviewFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPProfileMoviewFavoriteView.swift; sourceTree = "<group>"; };
+		F9ED69D629AA11230070F569 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F9ED69D829AA11940070F569 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F9ED69DA29AA12E60070F569 /* CPProductionCompaniesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPProductionCompaniesView.swift; sourceTree = "<group>"; };
+		F9ED69DD29AA137F0070F569 /* CPCompanyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCompanyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +311,7 @@
 		F90F4C1829A9401100E4891E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F993FDFA29A8459A00081A69 /* CPTapBarRemoteDataManager.swift */,
 				F90F4C1929A9403400E4891E /* CPLogOutRepository.swift */,
 				F90F4C1B29A9404C00E4891E /* CPLogOutRepositoryHttp.swift */,
 				F90F4C1D29A9405900E4891E /* CPLogOutService.swift */,
@@ -297,6 +322,7 @@
 		F90F4C2129A9769400E4891E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F993FDB229A7DC1200081A69 /* CPAiringTodayRemoteDataManager.swift */,
 				F90F4C2229A9770300E4891E /* CPMovieRepository.swift */,
 				F90F4C2329A9770300E4891E /* CPMovieRepositoryHttp.swift */,
 				F90F4C2429A9770300E4891E /* CPMovieService.swift */,
@@ -307,6 +333,7 @@
 		F90F4C3129A9938D00E4891E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F9E1B25829A8B39B003621A6 /* CPProfileRemoteDataManager.swift */,
 				F90F4C3229A993C300E4891E /* CPProfileRepository.swift */,
 				F90F4C3429A993C300E4891E /* CPProfileRepositoryHttp.swift */,
 				F90F4C3329A993C300E4891E /* CPProfileService.swift */,
@@ -328,6 +355,70 @@
 				F90F4C3E29A9BF0300E4891E /* CPFormatDate.swift */,
 			);
 			path = CPDateFormat;
+			sourceTree = "<group>";
+		};
+		F90F4C4F29A9C4F100E4891E /* CPMovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5529A9C4F100E4891E /* View */,
+				F90F4C5B29A9C4F100E4891E /* Interactor */,
+				F90F4C5329A9C4F100E4891E /* Presenter */,
+				F90F4C5929A9C4F100E4891E /* Protocols */,
+				F90F4C5029A9C4F100E4891E /* Entity */,
+				F90F4C5D29A9C4F100E4891E /* Router */,
+			);
+			path = CPMovieDetail;
+			sourceTree = "<group>";
+		};
+		F90F4C5029A9C4F100E4891E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5129A9C4F100E4891E /* CPMovieDetailRemoteDataManager.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F90F4C5329A9C4F100E4891E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5429A9C4F100E4891E /* CPMovieDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F90F4C5529A9C4F100E4891E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5729A9C4F100E4891E /* CPMovieDetailView.swift */,
+				F90F4C6929A9E69100E4891E /* CPMovieImageView.swift */,
+				F9ED69DA29AA12E60070F569 /* CPProductionCompaniesView.swift */,
+				F9ED69DD29AA137F0070F569 /* CPCompanyCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F90F4C5929A9C4F100E4891E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5A29A9C4F100E4891E /* CPMovieDetailProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F90F4C5B29A9C4F100E4891E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5C29A9C4F100E4891E /* CPMovieDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F90F4C5D29A9C4F100E4891E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F90F4C5E29A9C4F100E4891E /* CPMovieDetailRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		F92B269D29A6D9C8007E97CD = {
@@ -388,6 +479,7 @@
 		F92B26D929A6DA51007E97CD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F90F4C4F29A9C4F100E4891E /* CPMovieDetail */,
 				F993FD9B29A7DBCE00081A69 /* CPMovie */,
 				F9D5E18029A8702800C9230D /* CPProfile */,
 				F993FDE529A8457200081A69 /* CPTapBar */,
@@ -422,7 +514,6 @@
 		F92B26E929A6DA7D007E97CD /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				F92B26EA29A6DA7D007E97CD /* CPLoginRemoteDataManager.swift */,
 				F9BE94AF29A7253E00C07F4A /* CPGuestSessionNew.swift */,
 				F9BE94B129A725D900C07F4A /* CPRequestToken.swift */,
 				F9BE94B329A726EE00C07F4A /* CPSesionUser.swift */,
@@ -549,6 +640,9 @@
 				F993FE0F29A84E0000081A69 /* UIImage+Extension.swift */,
 				F9E1B23E29A8A7A5003621A6 /* UIImageView+Extension.swift */,
 				F9E1B24229A8B1D5003621A6 /* UIDevice+Extension.swift */,
+				F90F4C6B29AA003E00E4891E /* Double+Extension.swift */,
+				F9ED69D629AA11230070F569 /* String+Extension.swift */,
+				F9ED69D829AA11940070F569 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -664,13 +758,13 @@
 			isa = PBXGroup;
 			children = (
 				F90F4C2929A977FA00E4891E /* CPResult.swift */,
-				F993FDB229A7DC1200081A69 /* CPAiringTodayRemoteDataManager.swift */,
 				F9D5E18929A877C800C9230D /* SubCategoryModel.swift */,
 				F9D5E18B29A8780300C9230D /* MoviesModel.swift */,
 				F9D5E18D29A8781600C9230D /* CPCollectionMovies.swift */,
 				F90F4C2B29A9780C00E4891E /* CPList.swift */,
 				F90F4C2D29A9786200E4891E /* CPMovies.swift */,
 				F90F4C2F29A97E3F00E4891E /* CPMovieData.swift */,
+				F90F4C6729A9C67500E4891E /* CPMovieDetail.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -724,8 +818,6 @@
 		F993FDF829A8459A00081A69 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				F993FDF929A8459A00081A69 /* CPTapBarLocalDataManager.swift */,
-				F993FDFA29A8459A00081A69 /* CPTapBarRemoteDataManager.swift */,
 				F9D5E17C29A868FA00C9230D /* CTapBar.swift */,
 			);
 			path = Entity;
@@ -780,6 +872,7 @@
 			isa = PBXGroup;
 			children = (
 				F9BE94A929A723EE00C07F4A /* CPLoginRepository.swift */,
+				F92B26EA29A6DA7D007E97CD /* CPLoginRemoteDataManager.swift */,
 				F9BE94AB29A7240B00C07F4A /* CPLoginRepositoryHttp.swift */,
 				F9BE94AD29A7242E00C07F4A /* CPLoginService.swift */,
 			);
@@ -894,7 +987,6 @@
 		F9E1B25629A8B39B003621A6 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				F9E1B25829A8B39B003621A6 /* CPProfileRemoteDataManager.swift */,
 				F90F4C3829A9992500E4891E /* CPAccount.swift */,
 			);
 			path = Entity;
@@ -1069,6 +1161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F92B26FF29A6DBFA007E97CD /* CPTextField.swift in Sources */,
+				F90F4C6A29A9E69100E4891E /* CPMovieImageView.swift in Sources */,
 				F9D2F71C29A752DA00D85132 /* CPError.swift in Sources */,
 				F9BE94AA29A723EE00C07F4A /* CPLoginRepository.swift in Sources */,
 				F9BE949729A71BCC00C07F4A /* Localizable.swift in Sources */,
@@ -1087,19 +1180,21 @@
 				F9BE94AC29A7240B00C07F4A /* CPLoginRepositoryHttp.swift in Sources */,
 				F90F4C3629A993C300E4891E /* CPProfileService.swift in Sources */,
 				F9E1B26429A8B39B003621A6 /* CPProfileView.swift in Sources */,
+				F9ED69DE29AA137F0070F569 /* CPCompanyCollectionViewCell.swift in Sources */,
 				F993FE0129A8459A00081A69 /* CPTapBarRouter.swift in Sources */,
 				F9BE94B229A725D900C07F4A /* CPRequestToken.swift in Sources */,
 				F92B272929A6F352007E97CD /* UIView+Extension.swift in Sources */,
 				F90F4C1C29A9404C00E4891E /* CPLogOutRepositoryHttp.swift in Sources */,
 				F993FDBB29A7DC1200081A69 /* CPAiringTodayRemoteDataManager.swift in Sources */,
 				F90F4C2E29A9786200E4891E /* CPMovies.swift in Sources */,
+				F9ED69D929AA11940070F569 /* Date+Extension.swift in Sources */,
 				F92B26F829A6DA7D007E97CD /* CPLoginInteractor.swift in Sources */,
 				F9BE94A529A7225400C07F4A /* AppInfo.swift in Sources */,
 				F993FE0729A8459A00081A69 /* CPTapBarProtocols.swift in Sources */,
 				F993FE0E29A84B9800081A69 /* UISegmentedControl+Extension.swift in Sources */,
 				F993FD9129A7CC6400081A69 /* CPBackgroundProtocols.swift in Sources */,
+				F90F4C5F29A9C4F100E4891E /* CPMovieDetailRemoteDataManager.swift in Sources */,
 				F90F4C1E29A9405900E4891E /* CPLogOutService.swift in Sources */,
-				F993FE0329A8459A00081A69 /* CPTapBarLocalDataManager.swift in Sources */,
 				F90F4C3F29A9BF0300E4891E /* CPFormatDate.swift in Sources */,
 				F92B26AA29A6D9C8007E97CD /* AppDelegate.swift in Sources */,
 				F9E1B26729A8B769003621A6 /* CPProfileDataView.swift in Sources */,
@@ -1122,6 +1217,7 @@
 				F993FDBA29A7DC1200081A69 /* CPAiringTodayInteractor.swift in Sources */,
 				F90F4C3029A97E3F00E4891E /* CPMovieData.swift in Sources */,
 				F993FD6E29A7CA7F00081A69 /* UIApplication+Extension.swift in Sources */,
+				F90F4C6529A9C4F100E4891E /* CPMovieDetailInteractor.swift in Sources */,
 				F9BE94A729A7238200C07F4A /* Setting.swift in Sources */,
 				F92B270829A6DE71007E97CD /* CPFont.swift in Sources */,
 				F993FE0429A8459A00081A69 /* CPTapBarRemoteDataManager.swift in Sources */,
@@ -1137,26 +1233,34 @@
 				F90F4C3C29A9B8BF00E4891E /* CPRoundedImageView.swift in Sources */,
 				F92B272B29A6F44C007E97CD /* MyTapGestureRecognizer.swift in Sources */,
 				F993FDB829A7DC1200081A69 /* CPAiringTodayView.swift in Sources */,
+				F90F4C6629A9C4F100E4891E /* CPMovieDetailRouter.swift in Sources */,
+				F90F4C6C29AA003E00E4891E /* Double+Extension.swift in Sources */,
 				F90F4C3729A993C300E4891E /* CPProfileRepositoryHttp.swift in Sources */,
 				F92B26AC29A6D9C8007E97CD /* SceneDelegate.swift in Sources */,
 				F90F4C2529A9770300E4891E /* CPMovieRepository.swift in Sources */,
+				F9ED69D729AA11230070F569 /* String+Extension.swift in Sources */,
 				F9E1B26529A8B39B003621A6 /* CPProfilePresenter.swift in Sources */,
 				F993FE0029A8459A00081A69 /* CPTapBarInteractor.swift in Sources */,
 				F9D5E19729A879A100C9230D /* MovieCollectionViewCell.swift in Sources */,
+				F90F4C6429A9C4F100E4891E /* CPMovieDetailProtocols.swift in Sources */,
 				F993FE0229A8459A00081A69 /* CPTapBarPresenter.swift in Sources */,
 				F90F4C1A29A9403400E4891E /* CPLogOutRepository.swift in Sources */,
 				F9D5E18C29A8780300C9230D /* MoviesModel.swift in Sources */,
 				F92B270529A6DD23007E97CD /* UIColorExtension.swift in Sources */,
+				F90F4C6829A9C67500E4891E /* CPMovieDetail.swift in Sources */,
 				F9D2F71F29A7568000D85132 /* CPAlert.swift in Sources */,
+				F90F4C6329A9C4F100E4891E /* CPMovieDetailView.swift in Sources */,
 				F993FD8E29A7CC6400081A69 /* CPBackgroundInteractor.swift in Sources */,
 				F993FD8D29A7CC6400081A69 /* CPBackgroundPresenter.swift in Sources */,
 				F9D5E18E29A8781600C9230D /* CPCollectionMovies.swift in Sources */,
+				F90F4C6129A9C4F100E4891E /* CPMovieDetailPresenter.swift in Sources */,
 				F9BE94A329A720ED00C07F4A /* InternetConnectionManager.swift in Sources */,
 				F9BE94BA29A730B100C07F4A /* UserDefaults+Extension.swift in Sources */,
 				F9E1B23F29A8A7A5003621A6 /* UIImageView+Extension.swift in Sources */,
 				F90F4C2C29A9780C00E4891E /* CPList.swift in Sources */,
 				F993FE1029A84E0000081A69 /* UIImage+Extension.swift in Sources */,
 				F9BE94B629A72A7A00C07F4A /* NSError+Extension.swift in Sources */,
+				F9ED69DB29AA12E60070F569 /* CPProductionCompaniesView.swift in Sources */,
 				F993FDB929A7DC1200081A69 /* CPAiringTodayProtocols.swift in Sources */,
 				F9D5E18829A877A100C9230D /* CPCollectionViewDelegate.swift in Sources */,
 				F90F4C2A29A977FA00E4891E /* CPResult.swift in Sources */,

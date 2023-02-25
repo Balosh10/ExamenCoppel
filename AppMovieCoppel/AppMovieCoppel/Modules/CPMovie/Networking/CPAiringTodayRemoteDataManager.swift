@@ -27,4 +27,17 @@ class CPAiringTodayRemoteDataManager:CPAiringTodayRemoteDataManagerInputProtocol
             self.movieService = nil
         }
     }
+    func fetchMovieDetail(_ list: CPList, _ id: Int) {
+        movieService = CPMovieService(repository: CPMovieRepositoryHttp())
+        movieService?.fetchMovieDetail(list, id) { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+                case .success(let result):
+                    self.remoteRequestHandler?.loadMovieDetail(movies: result)
+                case .failure(let failure):
+                    self.remoteRequestHandler?.showError(message: failure.localizedDescription)
+            }
+            self.movieService = nil
+        }
+    }
 }

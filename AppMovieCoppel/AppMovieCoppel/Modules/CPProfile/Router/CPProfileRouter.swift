@@ -31,8 +31,4 @@ class CPProfileRouter: CPProfileRouterProtocol {
 
     }
     
-    static var mainStoryboard: UIStoryboard {
-        return UIStoryboard(name: "CPProfileView", bundle: Bundle.main)
-    }
-    
 }

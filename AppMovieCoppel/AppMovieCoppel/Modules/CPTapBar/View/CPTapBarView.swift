@@ -35,14 +35,14 @@ extension CPTapBarView: CPTapBarViewProtocol {
         view.addSubview(viewSegmentedControl)
         viewSegmentedControl.addSubview(uiSegmentedControl)
         NSLayoutConstraint.activate([
-            viewSegmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            viewSegmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            viewSegmentedControl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
+            viewSegmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            viewSegmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            viewSegmentedControl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             viewSegmentedControl.heightAnchor.constraint(equalToConstant: 44),
             uiSegmentedControl.leadingAnchor.constraint(equalTo: viewSegmentedControl.leadingAnchor, constant: 16),
             uiSegmentedControl.topAnchor.constraint(equalTo: viewSegmentedControl.topAnchor, constant: 8),
             uiSegmentedControl.trailingAnchor.constraint(equalTo: viewSegmentedControl.trailingAnchor, constant: -16),
-            uiSegmentedControl.bottomAnchor.constraint(equalTo: viewSegmentedControl.bottomAnchor, constant: 0)
+            uiSegmentedControl.bottomAnchor.constraint(equalTo: viewSegmentedControl.bottomAnchor)
         ])
         uiSegmentedControl.tag = 20
         uiSegmentedControl.removeAllSegments()

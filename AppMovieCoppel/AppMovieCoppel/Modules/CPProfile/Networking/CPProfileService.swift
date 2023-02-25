@@ -12,10 +12,10 @@ class CPProfileService {
     init(repository: CPProfileRepository) {
         self.repository = repository
     }
-    func fetchMoviesFavorite(_ completion: @escaping(Result<CPMovies, NSError>) -> Void){
+    func fetchMoviesFavorite(_ completion: @escaping(Result<CPMovies, NSError>) -> Void) {
         repository.fetchMoviesFavorite(completion)
     }
-    func fetchAccount(_ completion: @escaping(Result<CPAccount, NSError>) -> Void){
+    func fetchAccount(_ completion: @escaping(Result<CPAccount, NSError>) -> Void) {
         repository.fetchAccount(completion)
     }
     

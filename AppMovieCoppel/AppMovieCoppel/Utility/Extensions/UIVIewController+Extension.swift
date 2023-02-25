@@ -72,9 +72,9 @@ import UIKit
         child.didMove(toParent: self)
         child.view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            child.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            child.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            child.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
+            child.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            child.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            child.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             child.view.heightAnchor.constraint(equalToConstant: 44)
         ])
         child.view.backgroundColor = .clear
@@ -89,9 +89,9 @@ import UIKit
         child.didMove(toParent: self)
         child.view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            child.view.bottomAnchor.constraint(equalTo:  view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
-            child.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            child.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            child.view.bottomAnchor.constraint(equalTo:  view.safeAreaLayoutGuide.bottomAnchor),
+            child.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            child.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             child.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 44),
         ])
         child.view.backgroundColor = .clear

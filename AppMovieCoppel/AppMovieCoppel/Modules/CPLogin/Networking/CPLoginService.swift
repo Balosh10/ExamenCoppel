@@ -12,15 +12,15 @@ class CPLoginService {
     init(repository: CPLoginRepository) {
         self.repository = repository
     }
-    func createRequestToken(_ completion: @escaping(Result<CPRequestToken, NSError>) -> Void){
+    func createRequestToken(_ completion: @escaping(Result<CPRequestToken, NSError>) -> Void) {
         repository.createRequestToken(completion)
     }
     func createSesionWithLogin(_ userName: String,
                                _ password: String,
-                               _ completion: @escaping(Result<CPSesionUser, NSError>) -> Void){
+                               _ completion: @escaping(Result<CPSesionUser, NSError>) -> Void) {
         repository.createSesionWithLogin(userName, password, completion)
     }
-    func createGuestSessionNew(_ completion: @escaping(Result<CPGuestSessionNew, NSError>) -> Void){
+    func createGuestSessionNew(_ completion: @escaping(Result<CPGuestSessionNew, NSError>) -> Void) {
         repository.createGuestSessionNew(completion)
     }
 }

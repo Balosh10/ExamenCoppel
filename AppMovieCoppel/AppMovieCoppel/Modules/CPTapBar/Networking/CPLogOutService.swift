@@ -12,7 +12,7 @@ class CPLogOutService {
     init(repository: CPLogOutRepository) {
         self.repository = repository
     }
-    func createDeleteSesion(_ completion: @escaping(Result<CPDeleteSesion, NSError>) -> Void){
+    func createDeleteSesion(_ completion: @escaping(Result<CPDeleteSesion, NSError>) -> Void) {
         repository.createDeleteSesion(completion)
     }
 }

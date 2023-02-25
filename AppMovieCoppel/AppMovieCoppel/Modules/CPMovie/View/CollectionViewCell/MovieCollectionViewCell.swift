@@ -51,7 +51,6 @@ class MovieCollectionViewCell: UICollectionViewCell {
     }
     
     func loadView(movie: CPCollectionMovies, type: CPList) {
-        let frame = movieImage.frame
         movieImage.setTopCornerRadius(rect: CGRect(x: 0,
                                                    y: 0,
                                                    width: contentView.frame.width,
@@ -59,29 +58,21 @@ class MovieCollectionViewCell: UICollectionViewCell {
         lbInfo.text = movie.overview
         lbStart.text = String(movie.voteCount ?? 0)
         icStart.tintColorImg(image: CPIcon.of(.icStar)!, color: .CPPrincipal)
-        let inputDate = formatter(.yyyyMMdd)
-        let outDate = formatter(.ddMMMyyyy)
         switch type {
             case .movie:
                 lbTitle.text = movie.title
                 if let releaseDate = movie.releaseDate,
-                   let release = inputDate.date(from: releaseDate) {
-                    lbDate.text = outDate.string(from: release)
+                   let release = releaseDate.formatter(.yyyyMMdd) {
+                    lbDate.text = release.formatter(.ddMMMyyyy)?.capitalized ?? ""
                 }
             case .tv:
                 lbTitle.text = movie.name
                 if let releaseDate = movie.firstAirDate,
-                   let release = inputDate.date(from: releaseDate) {
-                    lbDate.text = outDate.string(from: release)
+                   let release = releaseDate.formatter(.yyyyMMdd) {
+                    lbDate.text = release.formatter(.ddMMMyyyy)?.capitalized ?? ""
                 }
         }
         guard let url:URL = URL(string: Setting.imageBase + (movie.posterPath ?? "")) else { return }
         movieImage.load(url: url)
-    }
-    func formatter(_ typeFormart: CPFormatDate) -> DateFormatter {
-        let df = DateFormatter()
-        df.locale = Locale(identifier: "es_MX")
-        df.dateFormat = typeFormart.rawValue
-        return df
     }
 }

@@ -15,7 +15,6 @@ class CPTapBarRouter: CPTapBarRouterProtocol {
         let view: CPTapBarViewProtocol = CPTapBarView()
         let presenter: CPTapBarPresenterProtocol & CPTapBarInteractorOutputProtocol = CPTapBarPresenter()
         let interactor: CPTapBarInteractorInputProtocol & CPTapBarRemoteDataManagerOutputProtocol = CPTapBarInteractor()
-        let localDataManager: CPTapBarLocalDataManagerInputProtocol = CPTapBarLocalDataManager()
         let remoteDataManager: CPTapBarRemoteDataManagerInputProtocol = CPTapBarRemoteDataManager()
         let router: CPTapBarRouterProtocol = CPTapBarRouter()
         
@@ -24,7 +23,6 @@ class CPTapBarRouter: CPTapBarRouterProtocol {
         presenter.router = router
         presenter.interactor = interactor
         interactor.presenter = presenter
-        interactor.localDatamanager = localDataManager
         interactor.remoteDatamanager = remoteDataManager
         remoteDataManager.remoteRequestHandler = interactor
         

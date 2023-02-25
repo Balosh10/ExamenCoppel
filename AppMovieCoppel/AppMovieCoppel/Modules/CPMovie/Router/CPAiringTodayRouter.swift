@@ -11,12 +11,6 @@ import UIKit
 
 class CPAiringTodayRouter: CPAiringTodayRouterProtocol {
 
-    
-    func presentMovieDetail(from view: CPAiringTodayViewProtocol?) {
-        
-    }
-    
-
     class func createCPAiringTodayModule(dataMovie: CPMovieData) -> UIViewController {
         let view: CPAiringTodayViewProtocol = CPAiringTodayView()
         let presenter: CPAiringTodayPresenterProtocol & CPAiringTodayInteractorOutputProtocol = CPAiringTodayPresenter()
@@ -35,7 +29,14 @@ class CPAiringTodayRouter: CPAiringTodayRouterProtocol {
         
         guard let view = view as? UIViewController else { return UIViewController() }
         return view
-
     }
     
+    func presentMovieDetail(from view: CPAiringTodayViewProtocol?, movies: CPMovieDetail) {
+        guard let newView = view as? CPAiringTodayView else { return }
+        let movieDetail = CPMovieDetailRouter.createCPMovieDetailModule(movies)
+        DispatchQueue.main.async {
+            movieDetail.modalPresentationStyle = .overFullScreen
+            newView.present(movieDetail, animated: true)
+        }
+    }
 }

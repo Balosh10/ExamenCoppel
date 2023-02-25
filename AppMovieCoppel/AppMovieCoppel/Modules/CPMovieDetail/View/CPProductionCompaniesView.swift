@@ -1,20 +1,20 @@
 //
-//  CPProfileMoviewFavoriteView.swift
+//  CPCompanyView.swift
 //  AppMovieCoppel
 //
-//  Created by osvaldo cespedes on 24/02/23.
+//  Created by osvaldo cespedes on 25/02/23.
 //
 
 import UIKit
 
-internal class CPProfileMoviewFavoriteView: UIView {
+internal class CPProductionCompaniesView: UIView {
     private lazy var lbTitle: UILabel = {
         var lbTitle = UILabel()
         lbTitle.translatesAutoresizingMaskIntoConstraints = false
         lbTitle.numberOfLines = 0
-        lbTitle.text = "Favorite Shows"
+        lbTitle.text = "Compañías de producción"
         lbTitle.textColor = UIColor.CPPrincipal
-        lbTitle.font = CPFont.gothamMedium.size(.title)
+        lbTitle.font = CPFont.gothamMedium.size(.large)
         return lbTitle
     }()
     private lazy var contentView: UIView = {
@@ -24,8 +24,8 @@ internal class CPProfileMoviewFavoriteView: UIView {
     }()
     
     private var movieCollectioView: UICollectionView?
-    private var cellCollectionViewIdentifier = "MovieCollectionViewCell"
-    private var collectiondataSource: CPCollectionViewDataSource<MovieCollectionViewCell, CPCollectionMovies>!
+    private var cellCollectionViewIdentifier = "CPCompanyCollectionViewCell"
+    private var collectiondataSource: CPCollectionViewDataSource<CPCompanyCollectionViewCell, CPProductionCompany>!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -72,17 +72,17 @@ internal class CPProfileMoviewFavoriteView: UIView {
             collection.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
     }
-    func loadData(movies: [CPCollectionMovies]?, type: CPList) {
+    func loadData(movies: [CPProductionCompany]?) {
         guard let movies = movies else { return }
         collectiondataSource = CPCollectionViewDataSource(cellIdentifier: cellCollectionViewIdentifier,
                                                                items: movies,
-                                                               configureCell: { (cellCollection, itemMovie) in
-            guard let data = itemMovie else { return }
-            cellCollection.loadView(movie: data, type: type)
+                                                               configureCell: { (cellCollection, company) in
+            guard let company = company else { return }
+            cellCollection.loadData(item: company)
         })
         DispatchQueue.main.async {
             self.movieCollectioView?.dataSource = self.collectiondataSource
-            self.movieCollectioView?.register(UINib(nibName: self.cellCollectionViewIdentifier, bundle: nil),
+            self.movieCollectioView?.register(CPCompanyCollectionViewCell.self,
                                               forCellWithReuseIdentifier: self.cellCollectionViewIdentifier)
             self.movieCollectioView?.reloadData()
         }

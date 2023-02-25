@@ -74,8 +74,7 @@ internal class CPProfileDataView: UIView {
     }
     func loadData(item: CPAccount) {
         DispatchQueue.main.async {
-            let info = NSMutableAttributedString().normal("Developer", .CPPrincipal, .left, .medium)
-            info.append(NSMutableAttributedString().normal("\n\(item.username)", .CPPrincipal, .left, .medium))
+            let info = NSMutableAttributedString().normal(item.username, .CPPrincipal, .left, .medium)
             self.lbName.attributedText = info
             if let avatar = item.avatar.tmdb?.avatarPath,
                let url = URL(string: Setting.imageBase + avatar)  {
