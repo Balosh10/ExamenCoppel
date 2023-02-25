@@ -33,6 +33,7 @@ class CPLoginRemoteDataManager: CPLoginRemoteDataManagerInputProtocol {
                         self.remoteRequestHandler?.showInfo(message: Localizable.text(.serviceNotAvailable))
                     }
                 case .failure(let failure):
+                    
                     self.remoteRequestHandler?.showInfo(message: failure.localizedDescription)
             }
             self.loginService = nil

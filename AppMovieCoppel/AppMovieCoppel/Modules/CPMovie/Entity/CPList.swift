@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 enum CPList: String {
     case movie
     case tv

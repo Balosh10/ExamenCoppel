@@ -12,7 +12,7 @@ class CPLoginRepositoryHttp: CPLoginRepository {
 
     func createRequestToken(_ completion: @escaping (Result<CPRequestToken, NSError>) -> Void) {
         services = APIService()
-        services?.apiRequest("authentication/token/new?api_key=\(Setting.apiKey)",
+        services?.apiRequest("authentication/token/new?api_key=\(CPSetting.apiKey)",
                              CPRequestToken.self,
                              .get) { result in
             switch result {
@@ -29,7 +29,7 @@ class CPLoginRepositoryHttp: CPLoginRepository {
                                _ password: String,
                                _ completion: @escaping (Result<CPSesionUser, NSError>) -> Void) {
         services = APIService()
-        services?.apiRequest("authentication/token/validate_with_login?api_key=\(Setting.apiKey)",
+        services?.apiRequest("authentication/token/validate_with_login?api_key=\(CPSetting.apiKey)",
                              CPSesionUser.self,
                              .post,
                              ["username": userName,
@@ -47,7 +47,7 @@ class CPLoginRepositoryHttp: CPLoginRepository {
     
     func createGuestSessionNew(_ completion: @escaping (Result<CPGuestSessionNew, NSError>) -> Void) {
         services = APIService()
-        services?.apiRequest("authentication/session/new?api_key=\(Setting.apiKey)",
+        services?.apiRequest("authentication/session/new?api_key=\(CPSetting.apiKey)",
                              CPGuestSessionNew.self,
                              .post,
                              ["request_token": CPSession.shared.getStringValue(.requestToken)]) { result in
@@ -63,7 +63,7 @@ class CPLoginRepositoryHttp: CPLoginRepository {
     
     func createDeleteSesion(_ completion: @escaping (Result<CPDeleteSesion, NSError>) -> Void) {
         services = APIService()
-        services?.apiRequest("authentication/session?api_key=\(Setting.apiKey)",
+        services?.apiRequest("authentication/session?api_key=\(CPSetting.apiKey)",
                              CPDeleteSesion.self,
                              .delete,
                              ["session_id": CPSession.shared.getStringValue(.sessionId)]) { [weak self] result in

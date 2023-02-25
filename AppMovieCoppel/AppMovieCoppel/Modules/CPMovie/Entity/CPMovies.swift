@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct CPMovies: Codable {
     var title: String?
     var type: String?

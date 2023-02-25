@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 
-struct AppInfo {
+struct CPAppInfo {
 
-    static var shared:AppInfo {
-        return AppInfo()
+    static var shared: CPAppInfo {
+        return CPAppInfo()
     }
 
     var environment: String  {

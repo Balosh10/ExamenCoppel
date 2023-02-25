@@ -11,13 +11,10 @@ import Foundation
 enum CpImagen: String {
     case logoMovie
     case background
-    case icMenu
-    case icStar
     case imageUser
 }
 
 struct CPIcon {
-
     static func of(_ name: CpImagen) -> UIImage? {
         return UIImage(named: name.rawValue)
     }

@@ -31,10 +31,16 @@ enum Localizable {
     enum TapBar: String, LocalizableDelegate {
         case tvShow
     }
+    enum DetailMovie: String, LocalizableDelegate {
+        case companies
+    }
+    enum Profile: String, LocalizableDelegate {
+        case profile
+        case favoriteShows
+    }
     enum ErrorService: String, LocalizableDelegate {
         case withoutInternet
         case serviceNotAvailable
-
     }
     static func text(_ description: LoginView) -> String {
         return description.localized
@@ -43,6 +49,12 @@ enum Localizable {
         return description.localized
     }
     static func text(_ description: TapBar) -> String {
+        return description.localized
+    }
+    static func text(_ description: DetailMovie) -> String {
+        return description.localized
+    }
+    static func text(_ description: Profile) -> String {
         return description.localized
     }
 }

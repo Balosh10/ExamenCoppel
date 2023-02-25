@@ -29,4 +29,7 @@ extension CPProfileInteractor: CPProfileRemoteDataManagerOutputProtocol {
     func showError(message: String) {
         presenter?.showError(message: message)
     }
+    func backgroundView(message: String) {
+        presenter?.backgroundView(message: message)
+    }
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum colorType: String {
+enum CPColorType: String {
     case principal = "#46AA0E"
     case secundary = "#05771A"
     case text100 = "#9F9F9F"
@@ -24,58 +24,44 @@ enum colorType: String {
 
 extension UIColor {
     static var CPPrincipal: UIColor {
-        return .getColorWith(hex: colorType.principal.rawValue)
+        return .getColorWith(hex: CPColorType.principal.rawValue)
     }
     static var CPSecundary: UIColor {
-        return .getColorWith(hex: colorType.secundary.rawValue)
+        return .getColorWith(hex: CPColorType.secundary.rawValue)
     }
     static var CPText100: UIColor {
-        return .getColorWith(hex: colorType.text100.rawValue)
+        return .getColorWith(hex: CPColorType.text100.rawValue)
     }
     static var CPWhite100: UIColor {
-        return .getColorWith(hex: colorType.white100.rawValue)
+        return .getColorWith(hex: CPColorType.white100.rawValue)
     }
     static var CPBase100: UIColor {
-        return .getColorWith(hex: colorType.base100.rawValue)
+        return .getColorWith(hex: CPColorType.base100.rawValue)
     }
     static var CPBase200: UIColor {
-        return .getColorWith(hex: colorType.base200.rawValue)
+        return .getColorWith(hex: CPColorType.base200.rawValue)
     }
     static var CPRed100: UIColor {
-        return .getColorWith(hex: colorType.red100.rawValue)
+        return .getColorWith(hex: CPColorType.red100.rawValue)
     }
     static var CPGray100: UIColor {
-        return .getColorWith(hex: colorType.gray100.rawValue)
+        return .getColorWith(hex: CPColorType.gray100.rawValue)
     }
     static var CPGray200: UIColor {
-        return .getColorWith(hex: colorType.gray200.rawValue)
+        return .getColorWith(hex: CPColorType.gray200.rawValue)
     }
     static var CPBlue100: UIColor {
-        return .getColorWith(hex: colorType.blue100.rawValue)
+        return .getColorWith(hex: CPColorType.blue100.rawValue)
     }
     static var CPPurple100: UIColor {
-        return .getColorWith(hex: colorType.purple100.rawValue)
+        return .getColorWith(hex: CPColorType.purple100.rawValue)
     }
     static var CPYellow100: UIColor {
-        return .getColorWith(hex: colorType.yellow100.rawValue)
+        return .getColorWith(hex: CPColorType.yellow100.rawValue)
     }
 }
 extension UIColor {
-    func darker(by percentage: CGFloat = 30.0) -> UIColor? {
-        return self.adjust(by: -1 * abs(percentage) )
-    }
     
-    private func adjust(by percentage: CGFloat = 30.0) -> UIColor? {
-        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
-        if self.getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
-            return UIColor(red: min(red + percentage/100, 1.0),
-                           green: min(green + percentage/100, 1.0),
-                           blue: min(blue + percentage/100, 1.0),
-                           alpha: alpha)
-        } else {
-            return nil
-        }
-    }
     static func getColorWith(hex: String, alpha: CGFloat = 1.0) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         if cString.hasPrefix("#") {
@@ -92,5 +78,6 @@ extension UIColor {
             blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
             alpha: alpha)
     }
+    
 }
 

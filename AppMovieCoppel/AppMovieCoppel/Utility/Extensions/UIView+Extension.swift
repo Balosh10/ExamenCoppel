@@ -22,14 +22,6 @@ extension UIView {
         layer.insertSublayer(gradientLayer, at:0)
     }
     
-    func radiusCircle() {
-        layer.borderWidth = 1
-        layer.masksToBounds = false
-        layer.borderColor = UIColor.black.cgColor
-        layer.cornerRadius = self.frame.height / 2
-        clipsToBounds = true
-    }
-    
     func radiusView(radius: CGFloat = 10.0, _ backgroundColor: UIColor = .CPWhite100){
         layer.cornerRadius = radius
         clipsToBounds = true
@@ -45,21 +37,6 @@ extension UIView {
         layer.shadowOffset = CGSize(width: 0.0, height: 3.0)
         layer.shadowOpacity = 0.2
         layer.shadowRadius = 2.0
-    }
-    
-    func addShadow(offset: CGSize,
-                   color: UIColor,
-                   radius: CGFloat,
-                   opacity: Float) {
-        layer.masksToBounds = false
-        layer.shadowOffset = offset
-        layer.shadowColor = color.cgColor
-        layer.shadowRadius = radius
-        layer.shadowOpacity = opacity
-        
-        let backgroundCGColor = backgroundColor?.cgColor
-        backgroundColor = nil
-        layer.backgroundColor =  backgroundCGColor
     }
     func addTapGesture(action: @escaping () -> Void) {
         let tap = MyTapGestureRecognizer(target: self, action: #selector(handleTap(_:)))

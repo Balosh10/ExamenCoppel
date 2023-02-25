@@ -20,8 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         currentScene = scene
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let loginView = CPBackgroundRouter.createCPBackgroundModule()
-        window?.rootViewController = UINavigationController(rootViewController: loginView)
+        let backgroundView = CPBackgroundRouter.createCPBackgroundModule()
+        window?.rootViewController = UINavigationController(rootViewController: backgroundView)
         window?.makeKeyAndVisible()
     }
 
@@ -61,6 +61,13 @@ extension SceneDelegate {
         DispatchQueue.main.async {
             let loginView = CPLoginRouter.createCPLoginModule()
             self.window?.rootViewController = loginView
+            self.window?.makeKeyAndVisible()
+        }
+    }
+    func showBackgroundView() {
+        DispatchQueue.main.async {
+            let backgroundView = CPBackgroundRouter.createCPBackgroundModule()
+            self.window?.rootViewController = backgroundView
             self.window?.makeKeyAndVisible()
         }
     }

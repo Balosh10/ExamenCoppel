@@ -41,7 +41,7 @@ class CPTapBarRouter: CPTapBarRouterProtocol {
     }
     func presentMovies(from view: CPTapBarViewProtocol?, dataMovie: CPMovieData) {
         guard let newView = view as? CPTapBarView else { return }
-        let airingTodayView = CPAiringTodayRouter.createCPAiringTodayModule(dataMovie: dataMovie)
+        let airingTodayView = CPMovieRouter.createCPMovieModule(dataMovie: dataMovie)
         let menuTop = CPTapBarTop()
         newView.showVC(asChildViewController: airingTodayView)
         newView.showMenu(asChildViewController: menuTop)

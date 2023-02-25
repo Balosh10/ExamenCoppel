@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIImage {
-    
     func colored(with color: UIColor, size: CGSize, isClear:Bool = false) -> UIImage {
         UIGraphicsBeginImageContext(size)
         let context = UIGraphicsGetCurrentContext()

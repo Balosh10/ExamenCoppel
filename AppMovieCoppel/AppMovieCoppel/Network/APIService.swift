@@ -8,7 +8,6 @@
 import Foundation
 
 class APIService {
-    
     static var shared: APIService {
         return APIService()
     }
@@ -26,7 +25,7 @@ extension APIService {
         guard InternetConnectionManager.isConnectedToNetwork() else {
             return completion(.failure(NSError().loadErrorGeneric(message: Localizable.text(.withoutInternet))))
         }
-        let urlString = "\(Setting.baseGateway)/\(endpoint)"
+        let urlString = "\(CPSetting.baseGateway)/\(endpoint)"
         guard let urlRequest:URLRequest = self.createRequest(url: urlString,
                                                              method: methodType,
                                                              parameters: parameters,
@@ -35,32 +34,35 @@ extension APIService {
         }
         
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+            let code = (response as? HTTPURLResponse)?.statusCode ?? 0
             self.printRequest(urlRequest: urlRequest,
                               data: data,
                               error: error?.localizedDescription,
-                              code: (response as? HTTPURLResponse)?.statusCode ?? 0)
+                              code: code)
             guard let safeData = data,
                   let response = response as? HTTPURLResponse,
                   error == nil else {
-                return completion(.failure(error as NSError? ?? NSError().loadErrorGeneric(message: Localizable.text(.serviceNotAvailable))))
+                return completion(.failure(error as NSError? ?? NSError().loadErrorGeneric(message: Localizable.text(.serviceNotAvailable),
+                                                                                           code: code)))
             }
             guard (200 ... 299) ~= response.statusCode else {
                 do {
                     let decoder = JSONDecoder()
                     let result = try decoder.decode(CPErrorLogin.self, from: safeData)
-                    return completion(.failure(NSError().loadErrorGeneric(message: result.statusMessage)))
-                } catch let errorCodable {
-                    print(errorCodable)
-                    return completion(.failure(NSError().loadErrorGeneric(message: Localizable.text(.serviceNotAvailable))))
+                    return completion(.failure(NSError().loadErrorGeneric(message: result.statusMessage,
+                                                                          code: code)))
+                } catch {
+                    return completion(.failure(NSError().loadErrorGeneric(message: Localizable.text(.serviceNotAvailable),
+                                                                          code: code)))
                 }
             }
             do {
                 let decoder = JSONDecoder()
                 let result = try decoder.decode(model!.self, from: safeData)
                 return completion(.success(result))
-            } catch let errorCodable {
-                print(errorCodable)
-                return completion(.failure(NSError().loadErrorGeneric(message: Localizable.text(.serviceNotAvailable))))
+            } catch {
+                return completion(.failure(NSError().loadErrorGeneric(message: Localizable.text(.serviceNotAvailable),
+                                                                      code: code)))
             }
         }.resume()
     }
@@ -95,7 +97,7 @@ extension APIService {
                               error: String?,
                               code: Int) {
         
-        guard Setting.activePrintRequest else {
+        guard CPSetting.activePrintRequest else {
             return
         }
         

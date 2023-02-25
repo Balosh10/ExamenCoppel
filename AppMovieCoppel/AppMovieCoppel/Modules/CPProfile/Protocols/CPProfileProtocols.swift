@@ -19,6 +19,7 @@ protocol CPProfileViewProtocol: AnyObject {
 
 protocol CPProfileRouterProtocol: AnyObject {
     static func createCPProfileModule() -> UIViewController
+    func presentBackground(from view: CPProfileViewProtocol?)
 }
 
 protocol CPProfilePresenterProtocol: AnyObject {
@@ -33,6 +34,7 @@ protocol CPProfileInteractorOutputProtocol: AnyObject {
     func loadData(data: CPAccount)
     func loadDataMovie(data: CPMovies)
     func showError(message: String)
+    func backgroundView(message: String)
 }
 
 protocol CPProfileInteractorInputProtocol: AnyObject {
@@ -53,4 +55,5 @@ protocol CPProfileRemoteDataManagerOutputProtocol: AnyObject {
     func loadData(data: CPAccount)
     func loadDataMovie(data: CPMovies)
     func showError(message: String)
+    func backgroundView(message: String)
 }

@@ -11,7 +11,6 @@ import Foundation
 class CPMovieDetailInteractor: CPMovieDetailInteractorInputProtocol {
     // MARK: Properties
     weak var presenter: CPMovieDetailInteractorOutputProtocol?
-    var remoteDatamanager: CPMovieDetailRemoteDataManagerInputProtocol?
     var movies: CPMovieDetail?
 
     func getMovieData() {
@@ -21,5 +20,3 @@ class CPMovieDetailInteractor: CPMovieDetailInteractorInputProtocol {
 
 }
 
-extension CPMovieDetailInteractor: CPMovieDetailRemoteDataManagerOutputProtocol {
-}

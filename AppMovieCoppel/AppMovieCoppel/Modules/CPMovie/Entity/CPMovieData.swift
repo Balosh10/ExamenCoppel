@@ -10,6 +10,8 @@ import Foundation
 struct CPMovieData {
     var list: CPList = .movie
     var result: CPResult = .popular
+    
     init() {
     }
+    
 }

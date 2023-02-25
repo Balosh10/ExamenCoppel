@@ -149,7 +149,7 @@ internal class CPMovieImageView: UIView {
     func loadInfoMovie(item: CPMovieDetail) {
         lbTitle.text = item.title
         if let genres = item.genres?.first {
-            lbGenres.text = "  \(genres.name)  "
+            lbGenres.text = "  \(genres.name ?? "")  "
         } else {
             lbGenres.isHidden = true
         }
@@ -177,7 +177,7 @@ internal class CPMovieImageView: UIView {
         }
         
         if let posterPath = item.posterPath,
-           let url:URL = URL(string: Setting.imageBase + posterPath) {
+           let url:URL = URL(string: CPSetting.imageBase + posterPath) {
             self.imageMovie.load(url: url)
         }
     }

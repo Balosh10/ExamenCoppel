@@ -118,7 +118,7 @@ extension CPMovieDetailView: CPMovieDetailViewProtocol {
             productionCompaniesView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             productionCompaniesView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             productionCompaniesView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -44),
-            productionCompaniesView.heightAnchor.constraint(equalToConstant: 400)
+            productionCompaniesView.heightAnchor.constraint(equalToConstant: 300)
         ])
     }
     func loadInfoMovie(item: CPMovieDetail) {
@@ -130,7 +130,7 @@ extension CPMovieDetailView: CPMovieDetailViewProtocol {
                                                                 .CPPrincipal,
                                                                 .left,
                                                                 .medium)
-                info.append(NSMutableAttributedString().normal("\n\n\(overview)",
+                info.append(NSMutableAttributedString().normalText("\n\n\(overview)",
                                                                .CPWhite100,
                                                                .left,
                                                                .medium))

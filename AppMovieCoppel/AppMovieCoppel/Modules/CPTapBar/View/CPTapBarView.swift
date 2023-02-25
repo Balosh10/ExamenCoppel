@@ -54,7 +54,8 @@ extension CPTapBarView: CPTapBarViewProtocol {
         uiSegmentedControl.insertSegment(withTitle: CPTapsName.airingToday.rawValue, at: CPTaps.airingToday.rawValue, animated: true)
         uiSegmentedControl.addTarget(self, action: #selector(selectionDidChange), for: .valueChanged)
         uiSegmentedControl.selectedSegmentIndex = CPTaps.popular.rawValue
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: CPIcon.of(.icMenu),
+        let icMenu = UIImage(systemName: "list.star")?.withTintColor(.CPWhite100, renderingMode: .alwaysOriginal)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: icMenu,
                                                             style: .plain,
                                                             target: self,
                                                             action: #selector(didTapMenu))

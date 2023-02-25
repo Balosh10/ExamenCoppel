@@ -8,11 +8,11 @@
 
 import Foundation
 
-class CPAiringTodayInteractor: CPAiringTodayInteractorInputProtocol {
-
+class CPMovieInteractor: CPMovieInteractorInputProtocol {
+    
     // MARK: Properties
-    weak var presenter: CPAiringTodayInteractorOutputProtocol?
-    var remoteDatamanager: CPAiringTodayRemoteDataManagerInputProtocol?
+    weak var presenter: CPMovieInteractorOutputProtocol?
+    var remoteDatamanager: CPMovieRemoteDataManagerInputProtocol?
     var dataMovie: CPMovieData?
     
     func fechtMovie() {
@@ -33,7 +33,8 @@ class CPAiringTodayInteractor: CPAiringTodayInteractorInputProtocol {
     
 }
 
-extension CPAiringTodayInteractor: CPDashboardRemoteDataManagerOutputProtocol {
+extension CPMovieInteractor: CPMovieRemoteDataManagerOutputProtocol {
+    
     func loadMovieDetail(movies: CPMovieDetail) {
         presenter?.loadMovieDetail(movies: movies)
     }
@@ -50,4 +51,7 @@ extension CPAiringTodayInteractor: CPDashboardRemoteDataManagerOutputProtocol {
         presenter?.loadData(movies: result, type: dataMovie.list)
     }
     
+    func backgroundView(message: String) {
+        presenter?.backgroundView(message: message)
+    }
 }

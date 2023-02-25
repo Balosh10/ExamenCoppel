@@ -30,17 +30,8 @@ struct CPSession {
     func getStringValue(_ key: Keys) -> String {
         return self.userData.object(forKey: key.rawValue) as? String ?? ""
     }
-    func getBoolValue(_ key: Keys) -> Bool {
-        return self.userData.object(forKey: key.rawValue) as? Bool ?? false
-    }
     func getIntValue(_ key: Keys) -> Int {
         return self.userData.object(forKey: key.rawValue) as? Int ?? 0
-    }
-    func getDateValue(_ key: Keys) -> Date? {
-        return self.userData.object(forKey: key.rawValue) as? Date
-    }
-    func getObjectValue(_ key: Keys) -> AnyObject? {
-        return self.userData.object(forKey: key.rawValue) as? AnyObject
     }
     func singOut() {
         UserDefaults.clear()

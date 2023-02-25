@@ -8,16 +8,16 @@
 
 import Foundation
 
-class CPAiringTodayPresenter  {
+class CPMoviePresenter  {
     
     // MARK: Properties
-    weak var view: CPAiringTodayViewProtocol?
-    var interactor: CPAiringTodayInteractorInputProtocol?
-    var router: CPAiringTodayRouterProtocol?
+    weak var view: CPMovieViewProtocol?
+    var interactor: CPMovieInteractorInputProtocol?
+    var router: CPMovieRouterProtocol?
     
 }
 
-extension CPAiringTodayPresenter: CPAiringTodayPresenterProtocol {
+extension CPMoviePresenter: CPMoviePresenterProtocol {
     
     func viewDidLoad() {
         view?.initUI()
@@ -30,7 +30,7 @@ extension CPAiringTodayPresenter: CPAiringTodayPresenterProtocol {
     
 }
 
-extension CPAiringTodayPresenter: CPAiringTodayInteractorOutputProtocol {
+extension CPMoviePresenter: CPMovieInteractorOutputProtocol {
     func loadMovieDetail(movies: CPMovieDetail) {
         CPLoader.hide()
         router?.presentMovieDetail(from: view, movies: movies)
@@ -46,4 +46,7 @@ extension CPAiringTodayPresenter: CPAiringTodayInteractorOutputProtocol {
         view?.loadData(movies: movies, type: type)
     }
     
+    func backgroundView(message: String) {
+        router?.presentBackground(from: view)
+    }
 }

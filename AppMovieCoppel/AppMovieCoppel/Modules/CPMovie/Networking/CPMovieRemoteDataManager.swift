@@ -8,10 +8,9 @@
 
 import Foundation
 
-class CPAiringTodayRemoteDataManager:CPAiringTodayRemoteDataManagerInputProtocol {
- 
+class CPMovieRemoteDataManager:CPMovieRemoteDataManagerInputProtocol {
     
-    var remoteRequestHandler: CPDashboardRemoteDataManagerOutputProtocol?
+    var remoteRequestHandler: CPMovieRemoteDataManagerOutputProtocol?
     var movieService: CPMovieService?
     
     func fechtMovie(_ list: CPList, _ result: CPResult) {

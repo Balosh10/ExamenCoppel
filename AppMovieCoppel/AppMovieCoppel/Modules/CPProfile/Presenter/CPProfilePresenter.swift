@@ -18,7 +18,6 @@ class CPProfilePresenter  {
 }
 
 extension CPProfilePresenter: CPProfilePresenterProtocol {
-    // TODO: implement presenter methods
     func viewDidLoad() {
         view?.initUI()
         CPLoader.show()
@@ -27,7 +26,6 @@ extension CPProfilePresenter: CPProfilePresenterProtocol {
 }
 
 extension CPProfilePresenter: CPProfileInteractorOutputProtocol {
-
     func loadData(data: CPAccount) {
         CPLoader.hide()
         view?.loadData(data: data)
@@ -38,5 +36,8 @@ extension CPProfilePresenter: CPProfileInteractorOutputProtocol {
     func showError(message: String) {
         CPLoader.hide()
         view?.showError(message: message)
+    }
+    func backgroundView(message: String) {
+        router?.presentBackground(from: view)
     }
 }

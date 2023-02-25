@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 public extension UIDevice {
-    public class var isPhone:Bool {
+    public class var isPhone: Bool {
         UIDevice.current.userInterfaceIdiom == .phone
     }
 }

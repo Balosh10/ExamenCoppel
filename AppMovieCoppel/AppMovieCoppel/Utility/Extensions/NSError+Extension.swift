@@ -7,7 +7,7 @@
 
 import Foundation
 extension NSError {
-    func loadErrorGeneric(message: String = Localizable.text(.serviceNotAvailable)) -> NSError {
-        return NSError(domain: Bundle.main.bundleIdentifier!, code: 404, userInfo: [NSLocalizedDescriptionKey: message])
+    func loadErrorGeneric(message: String = Localizable.text(.serviceNotAvailable), code: Int = 404) -> NSError {
+        return NSError(domain: Bundle.main.bundleIdentifier!, code: code, userInfo: [NSLocalizedDescriptionKey: message])
     }
 }

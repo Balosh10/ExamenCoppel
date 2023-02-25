@@ -6,7 +6,9 @@
 //
 
 import Foundation
+
 struct CPMovieDetail: Codable {
+    
     let id: Int?
     let overview: String?
     let posterPath: String?
@@ -28,12 +30,16 @@ struct CPMovieDetail: Codable {
         case runtime
         case productionCompanies = "production_companies"
     }
+    
 }
+
 struct CPGenre: Codable {
     let id: Int?
     let name: String?
 }
+
 struct CPProductionCompany: Codable {
+    
     let id: Int?
     let logoPath, name, originCountry: String?
 
@@ -43,4 +49,5 @@ struct CPProductionCompany: Codable {
         case name
         case originCountry = "origin_country"
     }
+    
 }

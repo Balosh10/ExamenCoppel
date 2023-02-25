@@ -9,22 +9,22 @@
 import Foundation
 import UIKit
 
-class CPAiringTodayView: UIViewController {
-
+class CPMoviesView: UIViewController {
+    
     // MARK: Properties
-    var presenter: CPAiringTodayPresenterProtocol?
+    var presenter: CPMoviePresenterProtocol?
     private var movieCollectioView: UICollectionView?
-    private var cellCollectionViewIdentifier = "MovieCollectionViewCell"
-    private var collectionDataSource: CPCollectionViewDataSource<MovieCollectionViewCell, CPCollectionMovies>!
-    private var collectionDelegate : CPCollectionViewDelegate<MovieCollectionViewCell, CPCollectionMovies>!
-
+    private var cellCollectionViewIdentifier = "CPMovieCollectionViewCell"
+    private var collectionDataSource: CPCollectionViewDataSource<CPMovieCollectionViewCell, CPCollectionMovies>!
+    private var collectionDelegate : CPCollectionViewDelegate<CPMovieCollectionViewCell, CPCollectionMovies>!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
     }
 }
 
-extension CPAiringTodayView: CPAiringTodayViewProtocol {
+extension CPMoviesView: CPMovieViewProtocol {
     
     func initUI() {
         view.backgroundColor = .CPBase100
@@ -53,8 +53,8 @@ extension CPAiringTodayView: CPAiringTodayViewProtocol {
     }
     func loadData(movies: [CPCollectionMovies], type: CPList) {
         collectionDataSource = CPCollectionViewDataSource(cellIdentifier: cellCollectionViewIdentifier,
-                                                               items: movies,
-                                                               configureCell: { (cellCollection, itemMovie) in
+                                                          items: movies,
+                                                          configureCell: { (cellCollection, itemMovie) in
             guard let data = itemMovie else { return }
             cellCollection.loadView(movie: data, type: type)
         })
@@ -68,8 +68,9 @@ extension CPAiringTodayView: CPAiringTodayViewProtocol {
         DispatchQueue.main.async {
             self.movieCollectioView?.dataSource = self.collectionDataSource
             self.movieCollectioView?.delegate = self.collectionDelegate
-            self.movieCollectioView?.register(UINib(nibName: self.cellCollectionViewIdentifier, bundle: nil),
+            self.movieCollectioView?.register(CPMovieCollectionViewCell.self,
                                               forCellWithReuseIdentifier: self.cellCollectionViewIdentifier)
+            
             self.movieCollectioView?.reloadData()
         }
     }

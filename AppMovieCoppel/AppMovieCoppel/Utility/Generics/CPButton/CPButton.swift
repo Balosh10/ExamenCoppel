@@ -31,7 +31,7 @@ import UIKit
         }
     }
     internal func loadStyle() {
-        isEnabled = false
+        isEnabled = true
         layer.borderColor = UIColor.clear.cgColor
         clipsToBounds = true
         switch styleButton {
@@ -90,7 +90,7 @@ import UIKit
                 layer.cornerRadius = 6
                 contentHorizontalAlignment = .center
                 backgroundColor = .CPGray100
-                isEnabled = true
+                isEnabled = false
                 
         }
     }

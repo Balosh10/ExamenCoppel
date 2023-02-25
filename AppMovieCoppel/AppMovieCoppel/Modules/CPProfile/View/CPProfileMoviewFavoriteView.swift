@@ -12,7 +12,7 @@ internal class CPProfileMoviewFavoriteView: UIView {
         var lbTitle = UILabel()
         lbTitle.translatesAutoresizingMaskIntoConstraints = false
         lbTitle.numberOfLines = 0
-        lbTitle.text = "Favorite Shows"
+        lbTitle.text = Localizable.text(.favoriteShows)
         lbTitle.textColor = UIColor.CPPrincipal
         lbTitle.font = CPFont.gothamMedium.size(.title)
         return lbTitle
@@ -24,8 +24,8 @@ internal class CPProfileMoviewFavoriteView: UIView {
     }()
     
     private var movieCollectioView: UICollectionView?
-    private var cellCollectionViewIdentifier = "MovieCollectionViewCell"
-    private var collectiondataSource: CPCollectionViewDataSource<MovieCollectionViewCell, CPCollectionMovies>!
+    private var cellCollectionViewIdentifier = "CPMovieCollectionViewCell"
+    private var collectiondataSource: CPCollectionViewDataSource<CPMovieCollectionViewCell, CPCollectionMovies>!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -82,7 +82,7 @@ internal class CPProfileMoviewFavoriteView: UIView {
         })
         DispatchQueue.main.async {
             self.movieCollectioView?.dataSource = self.collectiondataSource
-            self.movieCollectioView?.register(UINib(nibName: self.cellCollectionViewIdentifier, bundle: nil),
+            self.movieCollectioView?.register(CPMovieCollectionViewCell.self,
                                               forCellWithReuseIdentifier: self.cellCollectionViewIdentifier)
             self.movieCollectioView?.reloadData()
         }

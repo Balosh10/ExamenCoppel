@@ -19,7 +19,6 @@ import UIKit
         return nil
     }
     func statusBarView(color: UIColor = UIColor.CPPrincipal) {
-        let main = UIScreen.main.bounds
         if #available(iOS 13.0, *) {
             let keyWindow = UIApplication.shared.connectedScenes
                 .filter({$0.activationState == .foregroundActive})
@@ -40,11 +39,8 @@ import UIKit
         }
     }
     func removeChild(_ child: UIViewController) {
-        // Notify Child View Controller
         child.willMove(toParent: nil)
-        // Remove Child View From Superview
         child.view.removeFromSuperview()
-        // Notify Child View Controller
         child.removeFromParent()
     }
     func removeChild() {

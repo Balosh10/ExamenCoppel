@@ -33,17 +33,6 @@ protocol CPMovieDetailInteractorOutputProtocol: AnyObject {
 
 protocol CPMovieDetailInteractorInputProtocol: AnyObject {
     var presenter: CPMovieDetailInteractorOutputProtocol? { get set }
-    var remoteDatamanager: CPMovieDetailRemoteDataManagerInputProtocol? { get set }
     var movies: CPMovieDetail? { get set }
     func getMovieData()
-}
-
-protocol CPMovieDetailDataManagerInputProtocol: AnyObject {
-}
-
-protocol CPMovieDetailRemoteDataManagerInputProtocol: AnyObject {
-    var remoteRequestHandler: CPMovieDetailRemoteDataManagerOutputProtocol? { get set }
-}
-
-protocol CPMovieDetailRemoteDataManagerOutputProtocol: AnyObject {
 }

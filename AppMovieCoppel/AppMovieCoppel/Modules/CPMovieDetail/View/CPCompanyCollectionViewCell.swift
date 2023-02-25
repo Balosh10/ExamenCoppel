@@ -12,7 +12,7 @@ class CPCompanyCollectionViewCell: UICollectionViewCell {
     private lazy var companyImage: CPRoundedImageView = {
         var companyImage = CPRoundedImageView()
         companyImage.contentMode = .scaleToFill
-        companyImage.backgroundColor = .CPWhite100
+        companyImage.backgroundColor = .CPBase200
         companyImage.translatesAutoresizingMaskIntoConstraints = false
         companyImage.radiusView()
         return companyImage
@@ -40,7 +40,7 @@ class CPCompanyCollectionViewCell: UICollectionViewCell {
         addViews()
     }
     
-    func addViews(){
+    func addViews() {
         backgroundColor = UIColor.clear
         contentView.addSubview(viewContent)
         [companyImage, lbTitle].forEach({viewContent.addSubview($0)})
@@ -55,12 +55,13 @@ class CPCompanyCollectionViewCell: UICollectionViewCell {
             companyImage.trailingAnchor.constraint(equalTo: viewContent.trailingAnchor),
             companyImage.centerXAnchor.constraint(equalTo: viewContent.centerXAnchor),
             companyImage.topAnchor.constraint(equalTo: viewContent.topAnchor),
-            companyImage.bottomAnchor.constraint(equalTo: lbTitle.topAnchor, constant: -16),
+            companyImage.heightAnchor.constraint(equalToConstant: 150),
             
             lbTitle.leadingAnchor.constraint(equalTo: viewContent.leadingAnchor, constant: 16),
             lbTitle.trailingAnchor.constraint(equalTo: viewContent.trailingAnchor, constant: -16),
             lbTitle.centerXAnchor.constraint(equalTo: viewContent.centerXAnchor),
             lbTitle.bottomAnchor.constraint(equalTo: viewContent.bottomAnchor, constant: -16),
+            lbTitle.topAnchor.constraint(equalTo: companyImage.bottomAnchor, constant: 16)
         ])
     }
     
@@ -70,12 +71,12 @@ class CPCompanyCollectionViewCell: UICollectionViewCell {
     
     func loadData(item: CPProductionCompany) {
         if let logoPath = item.logoPath,
-           let url:URL = URL(string: Setting.imageBase + logoPath) {
+           let url:URL = URL(string: CPSetting.imageBase + logoPath) {
             companyImage.load(url: url)
         }
         lbTitle.text = item.name
         let frame = contentView.bounds
-        let rect = CGRect(x: 0, y: 0, width: frame.width, height: frame.height - 44)
+        let rect = CGRect(x: 0, y: 0, width: frame.width, height: 150)
         companyImage.setTopCornerRadius(rect: rect)
     }
 }

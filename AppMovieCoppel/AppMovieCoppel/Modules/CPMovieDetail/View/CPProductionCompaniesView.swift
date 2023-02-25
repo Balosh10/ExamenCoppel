@@ -12,7 +12,7 @@ internal class CPProductionCompaniesView: UIView {
         var lbTitle = UILabel()
         lbTitle.translatesAutoresizingMaskIntoConstraints = false
         lbTitle.numberOfLines = 0
-        lbTitle.text = "Compañías de producción"
+        lbTitle.text = Localizable.text(.companies)
         lbTitle.textColor = UIColor.CPPrincipal
         lbTitle.font = CPFont.gothamMedium.size(.large)
         return lbTitle
@@ -53,7 +53,7 @@ internal class CPProductionCompaniesView: UIView {
         flowLayout.scrollDirection = .horizontal
         flowLayout.minimumLineSpacing = 10
         flowLayout.minimumInteritemSpacing = 10
-        let size = CGSize(width: (UIScreen.main.bounds.width - 30) / 2, height: 300)
+        let size = CGSize(width: (UIScreen.main.bounds.width - 30) / 2, height: 200)
         flowLayout.itemSize = size
         flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         movieCollectioView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)

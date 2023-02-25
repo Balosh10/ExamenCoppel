@@ -124,6 +124,9 @@ extension CPLoginView: CPLoginViewProtocol {
             guard let self = self else { return }
             self.presenter?.logIn(self.textName.text!, self.textPassword.text!)
         }
+        if CPSetting.activateTestUser {
+            setTestUser()
+        }
     }
     func setupImageBackground() {
         view.addSubview(bakcgroundImage)
@@ -165,8 +168,8 @@ extension CPLoginView: CPLoginViewProtocol {
         let bounds = UIScreen.main.bounds
         contentViewDegradate.gradient(width: bounds.width,
                                       height: bounds.height,
-                                      color: [UIColor.black.withAlphaComponent(0.2).cgColor,
-                                              UIColor.black.withAlphaComponent(0.5).cgColor,
+                                      color: [UIColor.black.withAlphaComponent(0.4).cgColor,
+                                              UIColor.black.withAlphaComponent(0.65).cgColor,
                                               UIColor.black.withAlphaComponent(1).cgColor])
     }
     func showError(text: String) {
@@ -174,18 +177,28 @@ extension CPLoginView: CPLoginViewProtocol {
             self.messageError.attributedText = NSMutableAttributedString().boldText(text, UIColor.CPRed100, .center)
         }
     }
+    func verifyPasswordAndUsername() {
+        let name = textName.text!
+        let password = textPassword.text!
+        if !name.isEmpty && !password.isEmpty {
+            btnLogin.styleButton = .primary
+        } else {
+            btnLogin.styleButton = .inactive
+        }
+    }
+    func setTestUser() {
+        textName.text = CPSetting.user
+        textPassword.text = CPSetting.password
+        verifyPasswordAndUsername()
+    }
 }
 
 extension CPLoginView: UITextFieldDelegate {
     func textField(_ textField: UITextField,
                    shouldChangeCharactersIn range: NSRange,
                    replacementString string: String) -> Bool {
-        if !textName.text!.isEmpty && !textPassword.text!.isEmpty {
-            btnLogin.styleButton = .primary
-            btnLogin.isEnabled = true
-        } else {
-            btnLogin.styleButton = .inactive
-            btnLogin.isEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+           self.verifyPasswordAndUsername()
         }
         return true
     }

@@ -12,7 +12,7 @@ internal class CPProfileDataView: UIView {
         var lbTitle = UILabel()
         lbTitle.translatesAutoresizingMaskIntoConstraints = false
         lbTitle.numberOfLines = 0
-        lbTitle.text = "Profile"
+        lbTitle.text = Localizable.text(.profile)
         lbTitle.textColor = UIColor.CPPrincipal
         lbTitle.font = CPFont.gothamMedium.size(.title)
         return lbTitle
@@ -74,10 +74,10 @@ internal class CPProfileDataView: UIView {
     }
     func loadData(item: CPAccount) {
         DispatchQueue.main.async {
-            let info = NSMutableAttributedString().normal(item.username, .CPPrincipal, .left, .medium)
+            let info = NSMutableAttributedString().normalText(item.username, .CPPrincipal, .left, .medium)
             self.lbName.attributedText = info
             if let avatar = item.avatar.tmdb?.avatarPath,
-               let url = URL(string: Setting.imageBase + avatar)  {
+               let url = URL(string: CPSetting.imageBase + avatar)  {
                 self.imageUser.load(url: url)
             }
         }
