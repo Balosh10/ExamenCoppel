@@ -1,4 +1,9 @@
 Examen técnico
+
+Datos de Prueba
+Usuario: osvaldo.cespedes
+Password: Movie2023
+
 Lee atentamente las instrucciones, y si tienes alguna duda contacta a la persona que lleva tu seguimiento para que pueda apoyarte.
 Objetivo:
 - Crear una aplicación móvil que cumpla con las vistas y funcionalidades listadas a continuación; así como con los requerimientos técnicos indicados.
