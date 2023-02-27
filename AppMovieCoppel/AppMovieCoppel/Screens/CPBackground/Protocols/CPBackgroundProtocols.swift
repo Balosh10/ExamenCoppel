@@ -12,6 +12,8 @@ import UIKit
 protocol CPBackgroundViewProtocol: AnyObject {
     var presenter: CPBackgroundPresenterProtocol? { get set }
     func initUI()
+    func setupImageBackground()
+    func gradientImageBackground()
     func showInfo(message: String)
 }
 
@@ -40,5 +42,7 @@ protocol CPBackgroundInteractorInputProtocol: AnyObject {
     var presenter: CPBackgroundInteractorOutputProtocol? { get set }
     var dataBackground: CPDataBackground? { get set }
     
-    func validCredencialUser()
+    func validateTheTypeOfAction()
+    func validateCredentials()
+    func logOutAction(message: String?)
 }

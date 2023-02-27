@@ -19,7 +19,7 @@ class CPBackgroundPresenter  {
 extension CPBackgroundPresenter: CPBackgroundPresenterProtocol {
     func viewDidLoad() {
         view?.initUI()
-        interactor?.validCredencialUser()
+        interactor?.validateTheTypeOfAction()
     }
 }
 

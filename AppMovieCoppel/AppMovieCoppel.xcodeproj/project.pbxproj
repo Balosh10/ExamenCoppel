@@ -431,12 +431,7 @@
 				F9BE949529A71BBF00C07F4A /* Supporting */,
 				F92B270929A6DE9A007E97CD /* Resources */,
 				F92B26FD29A6DBDF007E97CD /* Utility */,
-				F92B26D929A6DA51007E97CD /* Modules */,
-				F92B26A929A6D9C8007E97CD /* AppDelegate.swift */,
-				F92B26AB29A6D9C8007E97CD /* SceneDelegate.swift */,
-				F92B26B229A6D9CA007E97CD /* Assets.xcassets */,
-				F92B26B429A6D9CA007E97CD /* LaunchScreen.storyboard */,
-				F92B26B729A6D9CA007E97CD /* Info.plist */,
+				F92B26D929A6DA51007E97CD /* Screens */,
 			);
 			path = AppMovieCoppel;
 			sourceTree = "<group>";
@@ -458,7 +453,7 @@
 			path = AppMovieCoppelUITests;
 			sourceTree = "<group>";
 		};
-		F92B26D929A6DA51007E97CD /* Modules */ = {
+		F92B26D929A6DA51007E97CD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				F90F4C4F29A9C4F100E4891E /* CPMovieDetail */,
@@ -468,7 +463,7 @@
 				F993FD6F29A7CBD500081A69 /* CPBackground */,
 				F92B26DA29A6DA5B007E97CD /* CPLogin */,
 			);
-			path = Modules;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		F92B26DA29A6DA5B007E97CD /* CPLogin */ = {
@@ -578,8 +573,13 @@
 		F92B270929A6DE9A007E97CD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F9D2F72929A7C97200D85132 /* Animation */,
 				F92B270A29A6DEA0007E97CD /* Fonts */,
+				F9D2F72929A7C97200D85132 /* Animation */,
+				F92B26B729A6D9CA007E97CD /* Info.plist */,
+				F92B26A929A6D9C8007E97CD /* AppDelegate.swift */,
+				F92B26AB29A6D9C8007E97CD /* SceneDelegate.swift */,
+				F92B26B229A6D9CA007E97CD /* Assets.xcassets */,
+				F92B26B429A6D9CA007E97CD /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1365,7 +1365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3ZJKHQJTJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppMovieCoppel/Info.plist;
+				INFOPLIST_FILE = AppMovieCoppel/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
@@ -1485,7 +1485,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3ZJKHQJTJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppMovieCoppel/Info.plist;
+				INFOPLIST_FILE = AppMovieCoppel/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
@@ -1611,7 +1611,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S3ZJKHQJTJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppMovieCoppel/Info.plist;
+				INFOPLIST_FILE = AppMovieCoppel/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;

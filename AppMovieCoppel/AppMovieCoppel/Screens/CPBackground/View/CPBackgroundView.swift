@@ -11,9 +11,6 @@ import UIKit
 
 class CPBackgroundView: UIViewController {
     
-    // MARK: Properties
-    var presenter: CPBackgroundPresenterProtocol?
-    
     private lazy var bakcgroundImage: UIImageView = {
         var logo = UIImageView()
         logo.image = CPIcon.of(.background)
@@ -42,6 +39,9 @@ class CPBackgroundView: UIViewController {
         viewContent.backgroundColor = .clear
         return viewContent
     }()
+    
+    // MARK: Properties
+    var presenter: CPBackgroundPresenterProtocol?
     
     // MARK: Lifecycle
     override func viewDidLoad() {
